@@ -63,32 +63,67 @@ TEMPERAMENT_DE = {
     "loving": "Liebend", "easygoing": "Entspannt", "outgoing": "Kontaktfreudig"
 }
 
-# German overview/health/care translations (AI-generated for common breeds)
+# German overview/health/care/intro translations
 CONTENT_DE = {
     "persian": {
+        "intro": "Die Perserkatze ist eine der ältesten und bekanntesten Katzenrassen der Welt.",
         "overview": "Die Perserkatze ist eine der ältesten und bekanntesten Katzenrassen der Welt. Mit ihrem charakteristischen flachen Gesicht, den runden Augen und dem fließenden Fell sind sie seit Jahrhunderten geschätzte Begleiter. Perser sind der Inbegriff einer Schoßkatze – ruhig, sanftmütig und zufrieden damit, bequem zu faulenzen.",
         "health": "Perser sind anfällig für Polyzystische Nierenerkrankung (PKD), Atemprobleme aufgrund ihres flachen Gesichts (brachyzephales Syndrom) und Augenerkrankungen wie übermäßiges Tränen. Regelmäßige Tierarztuntersuchungen und Gentests werden empfohlen. Ihr flaches Gesicht kann auch zu Zahnproblemen führen.",
         "care": "Tägliche Fellpflege ist unerlässlich, um Verfilzungen im langen Fell zu verhindern. Ihre Augen müssen regelmäßig gereinigt werden, da sie zu Tränenflecken neigen. Halten Sie sie drinnen, da ihr Fell und flaches Gesicht sie anfällig machen. Füttern Sie hochwertiges Futter und überwachen Sie das Gewicht, da sie zu Übergewicht neigen."
     },
     "maine-coon": {
+        "intro": "Die Maine Coon ist Amerikas einheimische Langhaarkatze und eine der größten domestizierten Rassen.",
         "overview": "Die Maine Coon ist Amerikas einheimische Langhaarkatze und eine der größten domestizierten Rassen. Als 'sanfte Riesen' bekannt, verbinden sie beeindruckende Größe mit einer freundlichen, hundeähnlichen Persönlichkeit. Sie sind ausgezeichnete Mäusejäger mit einem robusten Aussehen, das für die harten Winter Neuenglands geeignet ist.",
         "health": "Maine Coons können anfällig für Hypertrophe Kardiomyopathie (HCM), Hüftdysplasie und Spinale Muskelatrophie (SMA) sein. Regelmäßige Herzuntersuchungen werden empfohlen. Trotz ihrer Größe sind sie bei richtiger Pflege generell gesunde Katzen und können 12-15 Jahre alt werden.",
         "care": "Ihr halblanges Fell muss 2-3 mal wöchentlich gebürstet werden, um Verfilzungen zu verhindern. Sie genießen interaktives Spielen und brauchen Platz zum Klettern und Erkunden. Stellen Sie stabile Kratzbäume bereit, die ihr Gewicht tragen können. Sie mögen oft Wasser und 'helfen' gerne beim Abwaschen!"
     },
     "ragdoll": {
+        "intro": "Die Ragdoll ist für ihr ruhiges Temperament und ihre wunderschönen blauen Augen bekannt.",
         "overview": "Die Ragdoll erhielt ihren Namen von ihrer Tendenz, beim Hochheben schlaff zu werden wie eine Stoffpuppe. Diese sanften Riesen sind für ihr ruhiges Temperament und ihre wunderschönen blauen Augen bekannt. Sie folgen ihren Besitzern oft von Raum zu Raum und sind bemerkenswert gutmütig.",
         "health": "Ragdolls können anfällig für Hypertrophe Kardiomyopathie (HCM) und Blasensteine sein. Regelmäßige Herzuntersuchungen werden empfohlen. Sie sind im Allgemeinen gesund und leben typischerweise 12-17 Jahre bei richtiger Pflege.",
         "care": "Ihr seidiges Fell verfilzt weniger als bei anderen Langhaarkatzen, aber wöchentliches Bürsten wird empfohlen. Halten Sie sie drinnen, da sie sehr vertrauensvoll und schlecht auf der Straße sind. Bieten Sie interaktives Spielzeug und Klettermöglichkeiten."
     },
     "british-shorthair": {
+        "intro": "Die Britisch Kurzhaar ist für ihr ruhiges, ausgeglichenes Temperament und ihr plüschiges Fell bekannt.",
         "overview": "Die Britisch Kurzhaar ist eine der ältesten englischen Katzenrassen mit einem robusten, muskulösen Körperbau und einem dichten, plüschigen Fell. Sie sind für ihr ruhiges, ausgeglichenes Temperament bekannt und werden oft als 'Teddy-Bär-Katzen' bezeichnet.",
         "health": "Britisch Kurzhaar können anfällig für Hypertrophe Kardiomyopathie (HCM) und Polyzystische Nierenerkrankung (PKD) sein. Regelmäßige Gesundheitsuntersuchungen werden empfohlen. Sie neigen zu Übergewicht, daher ist eine kontrollierte Ernährung wichtig.",
         "care": "Wöchentliches Bürsten reicht aus, um ihr dichtes Fell in gutem Zustand zu halten. Sie sind relativ pflegeleicht, brauchen aber regelmäßige Bewegung, um ein gesundes Gewicht zu halten. Bieten Sie interaktives Spielzeug und Kratzmöglichkeiten."
     },
     "siamese": {
+        "intro": "Die Siamkatze ist berühmt für ihre auffälligen blauen Augen und ihre gesprächige Natur.",
         "overview": "Die Siamkatze ist eine der ältesten und bekanntesten Katzenrassen, berühmt für ihre auffälligen blauen Augen, ihr Points-Muster und ihre gesprächige Natur. Sie sind äußerst sozial und bilden starke Bindungen zu ihren Menschen.",
         "health": "Siamesen können anfällig für Amyloidose, Asthma und bestimmte Herzerkrankungen sein. Regelmäßige Tierarztbesuche sind wichtig. Sie sind im Allgemeinen langlebig und können 15-20 Jahre alt werden.",
         "care": "Ihr kurzes Fell braucht minimale Pflege – wöchentliches Bürsten reicht aus. Sie brauchen viel geistige Stimulation und soziale Interaktion. Einsamkeit tolerieren sie schlecht, daher ist ein Spielkamerad oder viel menschliche Gesellschaft ideal."
+    },
+    "bengal": {
+        "intro": "Die Bengalkatze besticht durch ihr exotisches, leopardenähnliches Aussehen und ihre aktive Persönlichkeit.",
+        "overview": "Die Bengalkatze ist eine domestizierte Rasse mit dem exotischen Aussehen eines Wildkatzen-Vorfahren. Ihr auffälliges geflecktes oder marmoriertes Fell und ihre athletische Figur machen sie zu einer der schönsten Katzenrassen.",
+        "health": "Bengalen können anfällig für Progressive Retinaatrophie und Hypertrophe Kardiomyopathie sein. Regelmäßige Gesundheitsuntersuchungen sind wichtig.",
+        "care": "Bengalen brauchen viel körperliche und geistige Stimulation. Sie sind sehr aktiv und lieben es zu klettern und zu spielen. Ein großer Kratzbaum und interaktives Spielzeug sind unerlässlich."
+    },
+    "russian-blue": {
+        "intro": "Die Russisch Blau ist bekannt für ihr schimmerndes blaugraues Fell und ihre sanften Manieren.",
+        "overview": "Die Russisch Blau ist eine elegante Katze mit einem kurzen, dichten, silberblau schimmernden Fell. Sie sind für ihre Intelligenz, Loyalität und ihr sanftes Wesen bekannt.",
+        "health": "Russisch Blau sind generell eine gesunde Rasse mit wenigen erblichen Gesundheitsproblemen. Regelmäßige Vorsorgeuntersuchungen werden empfohlen.",
+        "care": "Ihr dichtes Fell braucht nur wöchentliches Bürsten. Sie sind etwas schüchtern gegenüber Fremden, aber sehr anhänglich gegenüber ihrer Familie."
+    },
+    "sphynx": {
+        "intro": "Die Sphynx ist eine einzigartige haarlose Rasse mit einem liebevollen, aufmerksamkeitssuchenden Charakter.",
+        "overview": "Die Sphynx ist vielleicht die bekannteste haarlose Katzenrasse. Trotz ihres ungewöhnlichen Aussehens sind sie äußerst liebevoll und suchen ständig menschliche Gesellschaft.",
+        "health": "Sphynx benötigen besondere Hautpflege und sind anfällig für Sonnenbrand und Kälte. Sie können auch zu Herzproblemen neigen.",
+        "care": "Regelmäßiges Baden ist notwendig, da ihre Haut natürliche Öle produziert. Halten Sie sie warm und schützen Sie sie vor direkter Sonneneinstrahlung."
+    },
+    "scottish-fold": {
+        "intro": "Die Scottish Fold ist bekannt für ihre einzigartigen gefalteten Ohren und ihren süßen Gesichtsausdruck.",
+        "overview": "Die Scottish Fold ist eine unverwechselbare Rasse mit nach vorne gefalteten Ohren, die ihr ein eulenähnliches Aussehen verleihen. Sie sind ruhig, anhänglich und passen sich gut an verschiedene Lebensumstände an.",
+        "health": "Scottish Folds können anfällig für Gelenkprobleme sein, die mit dem Gen verbunden sind, das ihre gefalteten Ohren verursacht. Achten Sie auf Anzeichen von Steifheit.",
+        "care": "Wöchentliches Bürsten und regelmäßige Ohrenreinigung sind ausreichend. Sie sind pflegeleicht und anpassungsfähig."
+    },
+    "norwegian-forest-cat": {
+        "intro": "Die Norwegische Waldkatze ist eine majestätische Rasse mit langem, wasserabweisendem Fell.",
+        "overview": "Die Norwegische Waldkatze ist eine natürliche Rasse, die sich an das raue skandinavische Klima angepasst hat. Sie sind groß, muskulös und haben ein prächtiges, dichtes Fell.",
+        "health": "Diese Rasse kann anfällig für Glykogenspeicherkrankheit und Hypertrophe Kardiomyopathie sein. Genetische Tests werden empfohlen.",
+        "care": "Ihr langes Fell muss regelmäßig gebürstet werden, besonders während des Fellwechsels. Sie sind aktiv und genießen es zu klettern."
     }
 }
 
@@ -112,6 +147,10 @@ def generate_breed_page(breed):
     overview = get_de_content(breed_id, 'overview', breed.get('overview', ''))
     health = get_de_content(breed_id, 'health', breed.get('health', ''))
     care = get_de_content(breed_id, 'care', breed.get('care', ''))
+    
+    # Get intro (first sentence of overview or custom)
+    default_intro = f"Die {de_name} ist eine wunderbare Katzenrasse mit einzigartigem Charakter."
+    intro = get_de_content(breed_id, 'intro', default_intro)
     
     # Translate temperament
     temps = get_de_temperament(breed.get('temperament', []))
@@ -211,6 +250,7 @@ def generate_breed_page(breed):
                             <div><p class="text-xs text-slate-500">Fell</p><p class="font-semibold text-slate-700">{coat}</p></div>
                         </div>
                     </div>
+                    <p class="mt-4 text-slate-600 leading-relaxed">{intro}</p>
                 </div>
             </div>
         </div>
