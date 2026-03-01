@@ -356,8 +356,18 @@
                 'extra-large': 'extra grande'
             };
 
+            const tempES = {
+                "affectionate": "cariñoso", "playful": "juguetón", "gentle": "gentil",
+                "intelligent": "inteligente", "curious": "curioso", "active": "activo",
+                "calm": "tranquilo", "social": "social", "loyal": "leal", "shy": "tímido",
+                "independent": "independiente", "friendly": "amigable", "quiet": "silencioso",
+                "vocal": "vocal", "energetic": "enérgico", "adaptable": "adaptable",
+                "sweet": "dulce", "devoted": "devoto", "sensitive": "sensible",
+                "mischievous": "travieso", "bold": "audaz", "athletic": "atlético",
+                "reserved": "reservado", "docile": "dócil", "patient": "paciente"
+            };
             const temperamentTags = breed.temperament.slice(0, 3).map(t => 
-                `<span class="tag bg-slate-100 text-slate-600">${t}</span>`
+                `<span class="tag bg-slate-100 text-slate-600">${tempES[t.toLowerCase()] || t}</span>`
             ).join('');
 
             return `
