@@ -181,6 +181,13 @@ def generate_breed_page(breed):
     <link rel="alternate" hreflang="en" href="https://catfinder.app/breeds/{breed_id}/">
     <link rel="alternate" hreflang="de" href="https://catfinder.app/de/breeds/{breed_id}/">
     <link rel="alternate" hreflang="es" href="https://catfinder.app/es/breeds/{breed_id}/">
+    <link rel="alternate" hreflang="x-default" href="https://catfinder.app/breeds/{breed_id}/">
+    <meta property="og:title" content="{de_name} - Rasseführer | CatFinder">
+    <meta property="og:description" content="{de_name}: Erfahren Sie alles über Temperament, Pflege und Eigenschaften.">
+    <meta property="og:url" content="https://catfinder.app/de/breeds/{breed_id}/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://catfinder.app/images/breeds/{breed_id}.webp">
+    <meta property="og:site_name" content="CatFinder">
     <link rel="icon" href="/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>

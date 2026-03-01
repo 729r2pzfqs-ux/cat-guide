@@ -418,6 +418,7 @@ def generate_es_breed_page(breed):
     <link rel="alternate" hreflang="en" href="https://catfinder.app/breeds/{breed_id}/">
     <link rel="alternate" hreflang="es" href="https://catfinder.app/es/breeds/{breed_id}/">
     <link rel="alternate" hreflang="de" href="https://catfinder.app/de/breeds/{breed_id}/">
+    <link rel="alternate" hreflang="x-default" href="https://catfinder.app/breeds/{breed_id}/">
     <meta property="og:title" content="{name_es} - Guía de Raza | CatFinder">
     <meta property="og:description" content="Todo sobre el {name_es}: personalidad, cuidados, necesidades de aseo y más.">
     <meta property="og:image" content="https://catfinder.app/images/breeds/{breed_id}.webp">

@@ -74,6 +74,10 @@ def generate_breed_html(breed):
     <meta property="og:description" content="{description[:150]}">
     <meta property="og:image" content="https://catfinder.app/images/breeds/{slug}.webp">
     <meta property="og:url" content="https://catfinder.app/breeds/{slug}/">
+    <link rel="alternate" hreflang="en" href="https://catfinder.app/breeds/{slug}/">
+    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/breeds/{slug}/">
+    <link rel="alternate" hreflang="de" href="https://catfinder.app/de/breeds/{slug}/">
+    <link rel="alternate" hreflang="x-default" href="https://catfinder.app/breeds/{slug}/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
