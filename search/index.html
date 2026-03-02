@@ -24,46 +24,69 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://catfinder.app/images/og-search.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    display: ['Instrument Serif', 'Georgia', 'serif']
+                },
+                colors: {
+                    cream: {
+                        50: '#faf9f6', 100: '#f7f6f2', 200: '#f3f0ec',
+                        300: '#edeae5', 400: '#dcd9d5',
+                    },
+                    teal: {
+                        50: '#eef8f8', 100: '#d5eded', 200: '#aadada',
+                        300: '#6fbfc0', 400: '#3da0a3', 500: '#01696f',
+                        600: '#0c4e54', 700: '#0f3638',
+                    }
+                }
+            }
+        }
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
         .breed-card { transition: transform 0.2s, box-shadow 0.2s; }
-        .breed-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
-        .filter-section { border-bottom: 1px solid #e2e8f0; }
+        .breed-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(40,37,29,0.08); }
+        .filter-section { border-bottom: 1px solid #edeae5; }
         .filter-section:last-child { border-bottom: none; }
         input[type="range"] { -webkit-appearance: none; height: 6px; border-radius: 3px; background: #e2e8f0; }
-        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, #d946ef, #a855f7); cursor: pointer; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, #3da0a3, #01696f); cursor: pointer; }
         .tag { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 12px; font-weight: 500; }
-        input[type="checkbox"]:checked { background-color: #d946ef; border-color: #d946ef; }
+        input[type="checkbox"]:checked { background-color: #01696f; border-color: #01696f; }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen">
+<body class="bg-cream-100 min-h-screen">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                    <span class="font-bold text-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
-                </a>
-                <nav class="flex items-center gap-6">
-                    <a href="/search/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Breeds</a>
-                    <a href="/quiz/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Quiz</a>
-                    <a href="/compare/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Compare</a>
-                    <a href="/search/" class="text-fuchsia-600 font-medium">Search</a>
-                </nav>
-            </div>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
+            </a>
+            <nav class="flex items-center gap-6">
+                <a href="/search/" class="text-teal-600 font-medium hidden sm:block">Breeds</a>
+                <a href="/quiz/" class="text-slate-600 hover:text-teal-600 font-medium hidden sm:block">Quiz</a>
+                <a href="/compare/" class="text-slate-600 hover:text-teal-600 font-medium hidden sm:block">Compare</a>
+                <a href="/search/" class="text-teal-600 font-medium sm:hidden">Search</a>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <main class="max-w-7xl mx-auto px-4 py-8">
         <!-- Hero Section -->
         <div class="text-center mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-3">Find Your Perfect Cat Breed</h1>
+            <h1 class="text-3xl md:text-4xl font-bold font-display text-slate-800 mb-3">Find Your Perfect Cat Breed</h1>
             <p class="text-slate-600 text-lg">Filter by size, activity level, grooming needs & more</p>
         </div>
 
@@ -72,12 +95,12 @@
             <div class="relative">
                 <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 <input type="text" id="searchInput" placeholder="Search breeds... (e.g. Persian, Maine Coon)" 
-                    class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 bg-white shadow-sm focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 text-lg" autocomplete="off">
+                    class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 bg-white shadow-sm focus:ring-2 focus:ring-teal-500/20 focus:border-teal-400 text-lg" autocomplete="off">
                 <button id="clearSearch" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-600 hidden">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
                 <!-- Autocomplete dropdown -->
-                <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
+                <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-cream-300 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
                 </div>
             </div>
         </div>
@@ -85,13 +108,13 @@
         <div class="flex flex-col lg:flex-row gap-8">
             <!-- Filters Sidebar -->
             <aside class="lg:w-72 flex-shrink-0">
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                <div class="bg-white rounded-xl shadow-sm border border-cream-300 p-5">
                     <div class="flex items-center justify-between mb-4">
                         <h2 class="font-semibold text-slate-800 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
                             Filters
                         </h2>
-                        <button id="resetFilters" class="text-sm text-fuchsia-600 hover:text-fuchsia-700">Reset</button>
+                        <button id="resetFilters" class="text-sm text-teal-600 hover:text-teal-700">Reset</button>
                     </div>
 
                     <!-- Size Filter -->
@@ -99,19 +122,19 @@
                         <h3 class="font-medium text-slate-700 mb-3">Size</h3>
                         <div class="space-y-2">
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="small" class="size-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="small" class="size-filter rounded text-teal-600">
                                 <span class="text-slate-600">Small</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="medium" class="size-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="medium" class="size-filter rounded text-teal-600">
                                 <span class="text-slate-600">Medium</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="large" class="size-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="large" class="size-filter rounded text-teal-600">
                                 <span class="text-slate-600">Large</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="extra-large" class="size-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="extra-large" class="size-filter rounded text-teal-600">
                                 <span class="text-slate-600">Extra Large</span>
                             </label>
                         </div>
@@ -121,7 +144,7 @@
                     <div class="filter-section py-4">
                         <label class="flex items-center justify-between mb-3 cursor-pointer">
                             <h3 class="font-medium text-slate-700">Activity Level</h3>
-                            <input type="checkbox" id="activityEnabled" class="rounded text-fuchsia-600">
+                            <input type="checkbox" id="activityEnabled" class="rounded text-teal-600">
                         </label>
                         <div id="activityControls" class="hidden">
                             <div class="flex items-center gap-3">
@@ -139,7 +162,7 @@
                     <div class="filter-section py-4">
                         <label class="flex items-center justify-between mb-3 cursor-pointer">
                             <h3 class="font-medium text-slate-700">Grooming Needs</h3>
-                            <input type="checkbox" id="groomingEnabled" class="rounded text-fuchsia-600">
+                            <input type="checkbox" id="groomingEnabled" class="rounded text-teal-600">
                         </label>
                         <div id="groomingControls" class="hidden">
                             <div class="flex items-center gap-3">
@@ -157,7 +180,7 @@
                     <div class="filter-section py-4">
                         <label class="flex items-center justify-between mb-3 cursor-pointer">
                             <h3 class="font-medium text-slate-700">Vocality</h3>
-                            <input type="checkbox" id="vocalityEnabled" class="rounded text-fuchsia-600">
+                            <input type="checkbox" id="vocalityEnabled" class="rounded text-teal-600">
                         </label>
                         <div id="vocalityControls" class="hidden">
                             <div class="flex items-center gap-3">
@@ -175,7 +198,7 @@
                     <div class="filter-section py-4">
                         <label class="flex items-center justify-between mb-3 cursor-pointer">
                             <h3 class="font-medium text-slate-700">Affection Level</h3>
-                            <input type="checkbox" id="affectionEnabled" class="rounded text-fuchsia-600">
+                            <input type="checkbox" id="affectionEnabled" class="rounded text-teal-600">
                         </label>
                         <div id="affectionControls" class="hidden">
                             <div class="flex items-center gap-3">
@@ -195,11 +218,11 @@
                         <div class="space-y-3">
                             <label class="flex items-center justify-between cursor-pointer">
                                 <span class="text-slate-600">Kids</span>
-                                <input type="checkbox" id="kidFriendly" class="toggle-filter rounded text-fuchsia-600">
+                                <input type="checkbox" id="kidFriendly" class="toggle-filter rounded text-teal-600">
                             </label>
                             <label class="flex items-center justify-between cursor-pointer">
                                 <span class="text-slate-600">Dogs</span>
-                                <input type="checkbox" id="dogFriendly" class="toggle-filter rounded text-fuchsia-600">
+                                <input type="checkbox" id="dogFriendly" class="toggle-filter rounded text-teal-600">
                             </label>
                         </div>
                     </div>
@@ -209,23 +232,23 @@
                         <h3 class="font-medium text-slate-700 mb-3">Coat Type</h3>
                         <div class="space-y-2">
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="shorthair" class="coat-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="shorthair" class="coat-filter rounded text-teal-600">
                                 <span class="text-slate-600">Shorthair</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="longhair" class="coat-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="longhair" class="coat-filter rounded text-teal-600">
                                 <span class="text-slate-600">Longhair</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="semi-longhair" class="coat-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="semi-longhair" class="coat-filter rounded text-teal-600">
                                 <span class="text-slate-600">Semi-longhair</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="hairless" class="coat-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="hairless" class="coat-filter rounded text-teal-600">
                                 <span class="text-slate-600">Hairless</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="rex" class="coat-filter rounded text-fuchsia-600">
+                                <input type="checkbox" value="rex" class="coat-filter rounded text-teal-600">
                                 <span class="text-slate-600">Rex (curly)</span>
                             </label>
                         </div>
@@ -237,7 +260,7 @@
             <div class="flex-1">
                 <div class="flex items-center justify-between mb-4">
                     <p class="text-slate-600"><span id="resultCount">0</span> breeds found</p>
-                    <select id="sortBy" class="px-3 py-2 rounded-lg border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-fuchsia-500">
+                    <select id="sortBy" class="px-3 py-2 rounded-lg border border-cream-300 bg-white text-sm focus:ring-2 focus:ring-teal-500/20">
                         <option value="name">Sort by Name</option>
                         <option value="size">Sort by Size</option>
                         <option value="activity">Sort by Activity</option>
@@ -259,22 +282,24 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-600 py-12 mt-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-2">
-                    <svg class="w-6 h-6 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
-                    <span class="font-bold text-white">CatFinder</span>
-                </div>
-                <div class="flex gap-6 text-sm">
-                    <a href="/search/" class="hover:text-white">Breeds</a>
-                    <a href="/quiz/" class="hover:text-white">Quiz</a>
-                    <a href="/compare/" class="hover:text-white">Compare</a>
-                </div>
-                <p class="text-sm">&copy; 2026 CatFinder</p>
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                <span class="text-xl font-display">CatFinder</span>
+            </div>
+            <div class="flex gap-8 text-sm text-slate-400">
+                <a href="/search/" class="hover:text-white transition">Breeds</a>
+                <a href="/quiz/" class="hover:text-white transition">Quiz</a>
+                <a href="/compare/" class="hover:text-white transition">Compare</a>
             </div>
         </div>
-    </footer>
+        <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+            <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+        </div>
+    </div>
+</footer>
 
     <script>
         // State
@@ -303,10 +328,10 @@
             const imageUrl = `/images/breeds/${breed.id}.webp`;
             
             const sizeColors = {
-                small: 'bg-purple-100 text-purple-700',
-                medium: 'bg-fuchsia-100 text-fuchsia-700',
-                large: 'bg-pink-100 text-pink-700',
-                'extra-large': 'bg-rose-100 text-rose-700'
+                small: 'bg-teal-100 text-teal-700',
+                medium: 'bg-teal-50 text-teal-600',
+                large: 'bg-cream-200 text-slate-700',
+                'extra-large': 'bg-cream-300 text-slate-700'
             };
 
             const temperamentTags = breed.temperament.slice(0, 3).map(t => 
@@ -314,11 +339,11 @@
             ).join('');
 
             return `
-                <a href="/breeds/${breed.id}/" class="breed-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden block">
+                <a href="/breeds/${breed.id}/" class="breed-card bg-white rounded-xl shadow-sm border border-cream-300 overflow-hidden block">
                     <div class="aspect-[4/5] bg-slate-100 relative overflow-hidden">
                         <img src="${imageUrl}" alt="${breed.name}" 
                             class="w-full h-full object-cover object-top"
-                            onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-fuchsia-50 to-purple-50\\'><svg class=\\'w-16 h-16 text-fuchsia-200\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'2\\'><path d=\\'M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z\\'/></svg></div>'">
+                            onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-cream-200 to-teal-50\\'><svg class=\\'w-16 h-16 text-teal-200\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'2\\'><path d=\\'M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z\\'/></svg></div>'">
                         <span class="absolute top-2 right-2 tag ${sizeColors[breed.size.category] || 'bg-slate-100 text-slate-600'}">
                             ${breed.size.category}
                         </span>
