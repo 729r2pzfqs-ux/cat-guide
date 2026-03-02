@@ -109,51 +109,73 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'Georgia', 'serif']
+                    },
+                    colors: {
+                        cream: {
+                            50: '#faf9f6',
+                            100: '#f7f6f2',
+                            200: '#f3f0ec',
+                            300: '#edeae5',
+                            400: '#dcd9d5',
+                        },
+                        teal: {
+                            50: '#eef8f8',
+                            100: '#d5eded',
+                            200: '#aadada',
+                            300: '#6fbfc0',
+                            400: '#3da0a3',
+                            500: '#01696f',
+                            600: '#0c4e54',
+                            700: '#0f3638',
+                        }
+                    }
                 }
             }
         }
     </script>
     <style>
         .card-shadow {
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03);
         }
         .card-shadow:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(40,37,29,0.06), 0 8px 24px rgba(40,37,29,0.05);
         }
         .hero-gradient {
-            background: linear-gradient(135deg, #fdf4ff 0%, #faf5ff 50%, #f0fdf4 100%);
+            background: linear-gradient(135deg, #f7f6f2 0%, #f3f0ec 50%, #eef8f8 100%);
         }
     </style>
 </head>
-<body class="bg-white min-h-screen text-slate-800">
+<body class="bg-cream-100 min-h-screen text-slate-800">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="./" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="search/" class="text-slate-600 hover:text-fuchsia-600 transition ml-2 md:ml-0">Browse Breeds</a>
-                <a href="quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Take Quiz</a>
+                <a href="search/" class="text-slate-600 hover:text-teal-600 transition ml-2 md:ml-0">Browse Breeds</a>
+                <a href="quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-500/25 transition">Take Quiz</a>
                 <!-- Language selector -->
                 <div class="relative group">
-                    <button class="flex items-center gap-1 text-slate-600 hover:text-fuchsia-600 py-2">
+                    <button class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
                         <i data-lucide="globe" class="w-4 h-4"></i>
                         <span>EN</span>
                     </button>
-                    <div class="absolute right-0 top-full bg-white border border-slate-200 rounded-xl shadow-xl hidden group-hover:block min-w-[120px] py-2 z-50">
-                        <a href="./" class="block px-4 py-2 hover:bg-slate-100 font-semibold text-fuchsia-600">English</a>
-                        <a href="es/" class="block px-4 py-2 hover:bg-slate-100 text-slate-600">Español</a>
-                        <a href="de/" class="block px-4 py-2 hover:bg-slate-100 text-slate-600">Deutsch</a>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block min-w-[120px] py-2 z-50">
+                        <a href="./" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">English</a>
+                        <a href="es/" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="de/" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
                     </div>
                 </div>
             </nav>
@@ -164,14 +186,14 @@
         <!-- Hero -->
         <section class="hero-gradient py-20 px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-slate-600 mb-6 border border-slate-200/50">
-                    <i data-lucide="sparkles" class="w-4 h-4 text-fuchsia-500"></i>
+                <div class="inline-flex items-center gap-2 bg-teal-50 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-teal-700 mb-6 border border-teal-200/50">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-teal-500"></i>
                     Over 70 cat breeds to explore
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                <h1 class="font-display text-5xl md:text-7xl text-slate-900 mb-6 leading-[1.1]">
                     Find Your<br>
-                    <span class="bg-gradient-to-r from-fuchsia-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent">Purrfect Cat Breed</span>
+                    Purrfect Cat Breed
                 </h1>
                 
                 <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -181,22 +203,22 @@
                 <!-- Search -->
                 <div class="max-w-xl mx-auto mb-8">
                     <div class="relative">
-                        <input type="text" id="home-search" placeholder="Search breeds..." autocomplete="off" class="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500/20 focus:border-fuchsia-400 shadow-sm">
-                        <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-100 hover:bg-slate-200 p-3 rounded-xl transition">
+                        <input type="text" id="home-search" placeholder="Search breeds..." autocomplete="off" class="w-full bg-white border border-cream-400 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-400 shadow-sm">
+                        <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 bg-cream-200 hover:bg-cream-300 p-3 rounded-xl transition">
                             <i data-lucide="search" class="w-5 h-5 text-slate-600"></i>
                         </button>
                         <!-- Autocomplete dropdown -->
-                        <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
+                        <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-cream-400 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:-translate-y-0.5">
+                    <a href="quiz/" class="inline-flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-teal-600 hover:shadow-xl hover:shadow-teal-500/25 transition transform hover:-translate-y-0.5">
                         <i data-lucide="target" class="w-5 h-5"></i>
                         Take the Breed Quiz
                     </a>
-                    <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-slate-300 hover:shadow-lg transition transform hover:-translate-y-0.5">
+                    <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-cream-400 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-teal-300 hover:shadow-lg transition transform hover:-translate-y-0.5">
                         <i data-lucide="scale" class="w-5 h-5"></i>
                         Compare Breeds
                     </a>
@@ -207,70 +229,86 @@
         <!-- Popular Breeds -->
         <section class="py-16 px-4">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-2xl font-bold text-slate-900 mb-2">Popular Breeds</h2>
+                <h2 class="font-display text-3xl text-slate-900 mb-2">Popular Breeds</h2>
                 <p class="text-slate-600 mb-8">Most loved cat breeds worldwide</p>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                    <a href="breeds/persian/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/persian.webp" alt="Persian" class="w-full h-full object-cover object-top">
+                    <a href="breeds/persian/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/persian.webp" alt="Persian" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Persian</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Gentle • Calm • Fluffy</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Persian</div>
+                            <div class="text-sm text-slate-500 mt-1">Gentle · Calm · Fluffy</div>
+                        </div>
                     </a>
-                    <a href="breeds/maine-coon/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/maine-coon.webp" alt="Maine Coon" class="w-full h-full object-cover object-top">
+                    <a href="breeds/maine-coon/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/maine-coon.webp" alt="Maine Coon" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Maine Coon</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Gentle Giant • Friendly</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Maine Coon</div>
+                            <div class="text-sm text-slate-500 mt-1">Gentle Giant · Friendly</div>
+                        </div>
                     </a>
-                    <a href="breeds/ragdoll/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/ragdoll.webp" alt="Ragdoll" class="w-full h-full object-cover object-top">
+                    <a href="breeds/ragdoll/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/ragdoll.webp" alt="Ragdoll" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Ragdoll</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Docile • Affectionate</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Ragdoll</div>
+                            <div class="text-sm text-slate-500 mt-1">Docile · Affectionate</div>
+                        </div>
                     </a>
-                    <a href="breeds/british-shorthair/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/british-shorthair.webp" alt="British Shorthair" class="w-full h-full object-cover object-top">
+                    <a href="breeds/british-shorthair/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/british-shorthair.webp" alt="British Shorthair" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">British Shorthair</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Easygoing • Loyal</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">British Shorthair</div>
+                            <div class="text-sm text-slate-500 mt-1">Easygoing · Loyal</div>
+                        </div>
                     </a>
-                    <a href="breeds/siamese/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/siamese.webp" alt="Siamese" class="w-full h-full object-cover object-top">
+                    <a href="breeds/siamese/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/siamese.webp" alt="Siamese" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Siamese</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Vocal • Social • Smart</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Siamese</div>
+                            <div class="text-sm text-slate-500 mt-1">Vocal · Social · Smart</div>
+                        </div>
                     </a>
-                    <a href="breeds/bengal/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/bengal.webp" alt="Bengal" class="w-full h-full object-cover object-top">
+                    <a href="breeds/bengal/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/bengal.webp" alt="Bengal" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Bengal</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Athletic • Wild Look</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Bengal</div>
+                            <div class="text-sm text-slate-500 mt-1">Athletic · Wild Look</div>
+                        </div>
                     </a>
-                    <a href="breeds/sphynx/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/sphynx.webp" alt="Sphynx" class="w-full h-full object-cover object-top">
+                    <a href="breeds/sphynx/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/sphynx.webp" alt="Sphynx" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Sphynx</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Hairless • Cuddly</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Sphynx</div>
+                            <div class="text-sm text-slate-500 mt-1">Hairless · Cuddly</div>
+                        </div>
                     </a>
-                    <a href="breeds/russian-blue/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
-                            <img src="images/heads/russian-blue.webp" alt="Russian Blue" class="w-full h-full object-cover object-top">
+                    <a href="breeds/russian-blue/" class="bg-white rounded-2xl card-shadow border border-cream-300 hover:border-teal-300 transition group overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/breeds/russian-blue.webp" alt="Russian Blue" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" loading="lazy">
                         </div>
-                        <div class="font-semibold text-slate-800 text-center">Russian Blue</div>
-                        <div class="text-xs text-slate-600 text-center mt-1">Elegant • Shy • Loyal</div>
+                        <div class="p-4">
+                            <div class="font-semibold text-slate-800">Russian Blue</div>
+                            <div class="text-sm text-slate-500 mt-1">Elegant · Shy · Loyal</div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="text-center mt-8">
-                    <a href="search/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="search/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         View all 70+ breeds
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -279,78 +317,78 @@
         </section>
 
         <!-- Browse by Trait -->
-        <section class="py-16 px-4 bg-slate-50">
+        <section class="py-16 px-4 bg-cream-200/50">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-2xl font-bold text-slate-900 mb-2">Browse by Trait</h2>
+                <h2 class="font-display text-3xl text-slate-900 mb-2">Browse by Trait</h2>
                 <p class="text-slate-600 mb-8">Find cats that match your lifestyle</p>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <a href="search/?lap=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
-                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="heart" class="w-6 h-6 text-fuchsia-500"></i>
+                    <a href="search/?lap=1" class="bg-white hover:bg-teal-50 rounded-2xl p-6 text-center transition border border-cream-300 hover:border-teal-200 group">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
+                            <i data-lucide="heart" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Lap Cats</div>
-                        <div class="text-sm text-slate-600">Love to cuddle</div>
+                        <div class="text-sm text-slate-500">Love to cuddle</div>
                     </a>
-                    <a href="search/?shedding=low" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
-                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="sparkles" class="w-6 h-6 text-fuchsia-500"></i>
+                    <a href="search/?shedding=low" class="bg-white hover:bg-teal-50 rounded-2xl p-6 text-center transition border border-cream-300 hover:border-teal-200 group">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
+                            <i data-lucide="sparkles" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Low Shedding</div>
-                        <div class="text-sm text-slate-600">Less fur, less mess</div>
+                        <div class="text-sm text-slate-500">Less fur, less mess</div>
                     </a>
-                    <a href="search/?quiet=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
-                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="volume-x" class="w-6 h-6 text-fuchsia-500"></i>
+                    <a href="search/?quiet=1" class="bg-white hover:bg-teal-50 rounded-2xl p-6 text-center transition border border-cream-300 hover:border-teal-200 group">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
+                            <i data-lucide="volume-x" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Quiet Breeds</div>
-                        <div class="text-sm text-slate-600">Not too talkative</div>
+                        <div class="text-sm text-slate-500">Not too talkative</div>
                     </a>
-                    <a href="search/?independent=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
-                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="sun" class="w-6 h-6 text-fuchsia-500"></i>
+                    <a href="search/?independent=1" class="bg-white hover:bg-teal-50 rounded-2xl p-6 text-center transition border border-cream-300 hover:border-teal-200 group">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
+                            <i data-lucide="sun" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Independent</div>
-                        <div class="text-sm text-slate-600">Okay alone</div>
+                        <div class="text-sm text-slate-500">Okay alone</div>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Expert Guides -->
-        <section class="py-16 px-4 bg-slate-50">
+        <section class="py-16 px-4 bg-cream-200/50">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-10">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-2">Expert Guides</h2>
+                    <h2 class="font-display text-3xl text-slate-900 mb-2">Expert Guides</h2>
                     <p class="text-slate-600">In-depth articles to help you choose the perfect cat</p>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-6">
-                    <a href="articles/best-cats-for-apartments/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-12 h-12 bg-fuchsia-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                    <a href="articles/best-cats-for-apartments/" class="bg-white rounded-2xl p-6 card-shadow border border-cream-300 hover:border-teal-300 transition group">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">🏢</span>
                         </div>
                         <h3 class="font-bold text-slate-800 mb-2">Best Cats for Apartments</h3>
-                        <p class="text-sm text-slate-600">Calm, quiet breeds that thrive in smaller spaces</p>
+                        <p class="text-sm text-slate-500">Calm, quiet breeds that thrive in smaller spaces</p>
                     </a>
-                    <a href="articles/best-cats-for-families/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                    <a href="articles/best-cats-for-families/" class="bg-white rounded-2xl p-6 card-shadow border border-cream-300 hover:border-teal-300 transition group">
+                        <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">👨‍👩‍👧‍👦</span>
                         </div>
                         <h3 class="font-bold text-slate-800 mb-2">Best Cats for Families</h3>
-                        <p class="text-sm text-slate-600">Patient, playful breeds great with children</p>
+                        <p class="text-sm text-slate-500">Patient, playful breeds great with children</p>
                     </a>
-                    <a href="articles/hypoallergenic-cats/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                    <a href="articles/hypoallergenic-cats/" class="bg-white rounded-2xl p-6 card-shadow border border-cream-300 hover:border-teal-300 transition group">
+                        <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">🌿</span>
                         </div>
                         <h3 class="font-bold text-slate-800 mb-2">Hypoallergenic Cats</h3>
-                        <p class="text-sm text-slate-600">Low-allergen options for allergy sufferers</p>
+                        <p class="text-sm text-slate-500">Low-allergen options for allergy sufferers</p>
                     </a>
                 </div>
                 
                 <div class="text-center mt-8">
-                    <a href="articles/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="articles/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         View all guides
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -361,31 +399,31 @@
         <!-- FAQ Section -->
         <section class="py-16 px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
+                <h2 class="font-display text-3xl text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
                 <div class="space-y-4">
-                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                         <h3 class="font-semibold text-slate-900 text-lg">How do I choose the right cat breed for my lifestyle?</h3>
-                        <p class="text-slate-600 mt-2">Consider your living space, activity level, time for grooming, and family situation. Our <a href="quiz/" class="text-fuchsia-600 underline">Breed Quiz</a> asks these questions and matches you with compatible breeds based on your answers.</p>
+                        <p class="text-slate-600 mt-2">Consider your living space, activity level, time for grooming, and family situation. Our <a href="quiz/" class="text-teal-600 underline">Breed Quiz</a> asks these questions and matches you with compatible breeds based on your answers.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                         <h3 class="font-semibold text-slate-900 text-lg">What are the best cat breeds for apartments?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/persian/" class="text-fuchsia-600 underline">Persian</a>, <a href="breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="breeds/british-shorthair/" class="text-fuchsia-600 underline">British Shorthair</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 underline">Russian Blue</a>, and <a href="breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> are excellent apartment cats. They're calm, quiet, and adapt well to smaller spaces.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/persian/" class="text-teal-600 underline">Persian</a>, <a href="breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="breeds/british-shorthair/" class="text-teal-600 underline">British Shorthair</a>, <a href="breeds/russian-blue/" class="text-teal-600 underline">Russian Blue</a>, and <a href="breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> are excellent apartment cats. They're calm, quiet, and adapt well to smaller spaces.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                         <h3 class="font-semibold text-slate-900 text-lg">Are there hypoallergenic cat breeds?</h3>
-                        <p class="text-slate-600 mt-2">No cat is 100% hypoallergenic, but some produce less of the Fel d 1 protein that causes allergies. <a href="breeds/siberian/" class="text-fuchsia-600 underline">Siberian</a>, <a href="breeds/balinese/" class="text-fuchsia-600 underline">Balinese</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 underline">Russian Blue</a>, and <a href="breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> are often recommended for allergy sufferers.</p>
+                        <p class="text-slate-600 mt-2">No cat is 100% hypoallergenic, but some produce less of the Fel d 1 protein that causes allergies. <a href="breeds/siberian/" class="text-teal-600 underline">Siberian</a>, <a href="breeds/balinese/" class="text-teal-600 underline">Balinese</a>, <a href="breeds/russian-blue/" class="text-teal-600 underline">Russian Blue</a>, and <a href="breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> are often recommended for allergy sufferers.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                         <h3 class="font-semibold text-slate-900 text-lg">Which cat breeds are best for families with children?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a>, <a href="breeds/birman/" class="text-fuchsia-600 underline">Birman</a>, and <a href="breeds/burmese/" class="text-fuchsia-600 underline">Burmese</a> are great family cats. They're patient, playful, and typically good with kids.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a>, <a href="breeds/birman/" class="text-teal-600 underline">Birman</a>, and <a href="breeds/burmese/" class="text-teal-600 underline">Burmese</a> are great family cats. They're patient, playful, and typically good with kids.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                         <h3 class="font-semibold text-slate-900 text-lg">What cats shed the least?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> (hairless), <a href="breeds/cornish-rex/" class="text-fuchsia-600 underline">Cornish Rex</a>, <a href="breeds/devon-rex/" class="text-fuchsia-600 underline">Devon Rex</a>, <a href="breeds/siamese/" class="text-fuchsia-600 underline">Siamese</a>, and <a href="breeds/bengal/" class="text-fuchsia-600 underline">Bengal</a> are low-shedding breeds. Regular brushing helps reduce shedding in all breeds.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> (hairless), <a href="breeds/cornish-rex/" class="text-teal-600 underline">Cornish Rex</a>, <a href="breeds/devon-rex/" class="text-teal-600 underline">Devon Rex</a>, <a href="breeds/siamese/" class="text-teal-600 underline">Siamese</a>, and <a href="breeds/bengal/" class="text-teal-600 underline">Bengal</a> are low-shedding breeds. Regular brushing helps reduce shedding in all breeds.</p>
                     </div>
                 </div>
                 <div class="text-center mt-8">
-                    <a href="faq/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="faq/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         View all FAQs
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -399,8 +437,8 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-2">
-                    <svg class="w-8 h-8 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
-                    <span class="text-xl font-bold">CatFinder</span>
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="text-xl font-display">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">
                     <a href="quiz/" class="hover:text-white transition">Breed Quiz</a>
@@ -450,7 +488,7 @@
                 }
                 
                 dropdown.innerHTML = matches.map(b => `
-                    <a href="breeds/${b.slug}/" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition first:rounded-t-2xl last:rounded-b-2xl">
+                    <a href="breeds/${b.slug}/" class="flex items-center gap-3 px-4 py-3 hover:bg-cream-100 transition first:rounded-t-2xl last:rounded-b-2xl">
                         <img src="images/heads/${b.slug}.webp" alt="${b.name}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
                         <span class="font-medium text-slate-800">${b.name}</span>
                     </a>
