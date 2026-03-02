@@ -1,1 +1,333 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8IS0tIEdvb2dsZSBBbmFseXRpY3MgLS0+CiAgICA8c2NyaXB0IGFzeW5jIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1HLThKVkZRSE1GRDMiPjwvc2NyaXB0PgogICAgPHNjcmlwdD4KICAgICAgd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107CiAgICAgIGZ1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO30KICAgICAgZ3RhZygnanMnLCBuZXcgRGF0ZSgpKTsKICAgICAgZ3RhZygnY29uZmlnJywgJ0ctOEpWRlFITUZEMycpOwogICAgPC9zY3JpcHQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgICA8dGl0bGU+Q2F0IEJyZWVkIFF1aXog4oCUIEZpbmQgWW91ciBQZXJmZWN0IE1hdGNoIHwgQ2F0RmluZGVyPC90aXRsZT4KICAgIDxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PSJUYWtlIG91ciBxdWljayBxdWl6IHRvIGZpbmQgdGhlIHBlcmZlY3QgY2F0IGJyZWVkIGZvciB5b3VyIGxpZmVzdHlsZS4gQW5zd2VyIGEgZmV3IHF1ZXN0aW9ucyBhbmQgZGlzY292ZXIgeW91ciBpZGVhbCBmZWxpbmUgY29tcGFuaW9uLiI+CiAgICA8bGluayByZWw9ImNhbm9uaWNhbCIgaHJlZj0iaHR0cHM6Ly9jYXRmaW5kZXIuYXBwL3F1aXovIj4KICAgIDxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vY2F0ZmluZGVyLmFwcC9xdWl6LyI+CiAgICA8bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVzIiBocmVmPSJodHRwczovL2NhdGZpbmRlci5hcHAvZXMvcXVpei8iPgogICAgPGxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJkZSIgaHJlZj0iaHR0cHM6Ly9jYXRmaW5kZXIuYXBwL2RlL3F1aXovIj4KICAgIDxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2NhdGZpbmRlci5hcHAvcXVpei8iPgogICAgCiAgICA8bGluayByZWw9Imljb24iIGhyZWY9Ii4uL2Zhdmljb24uaWNvIiB0eXBlPSJpbWFnZS94LWljb24iPgogICAgPGxpbmsgcmVsPSJpY29uIiB0eXBlPSJpbWFnZS9wbmciIHNpemVzPSIzMngzMiIgaHJlZj0iLi4vZmF2aWNvbi0zMi5wbmciPgogICAgPGxpbmsgcmVsPSJhcHBsZS10b3VjaC1pY29uIiBzaXplcz0iMTgweDE4MCIgaHJlZj0iLi4vZmF2aWNvbi0xOTIucG5nIj4KICAgIAogICAgPG1ldGEgcHJvcGVydHk9Im9nOnR5cGUiIGNvbnRlbnQ9IndlYnNpdGUiPgogICAgPG1ldGEgcHJvcGVydHk9Im9nOnVybCIgY29udGVudD0iaHR0cHM6Ly9jYXRmaW5kZXIuYXBwL3F1aXovIj4KICAgIDxtZXRhIHByb3BlcnR5PSJvZzp0aXRsZSIgY29udGVudD0iQ2F0IEJyZWVkIFF1aXog4oCUIEZpbmQgWW91ciBQZXJmZWN0IE1hdGNoIj4KICAgIDxtZXRhIHByb3BlcnR5PSJvZzpkZXNjcmlwdGlvbiIgY29udGVudD0iVGFrZSBvdXIgcXVpY2sgcXVpeiB0byBmaW5kIHRoZSBwZXJmZWN0IGNhdCBicmVlZCBmb3IgeW91ciBsaWZlc3R5bGUuIj4KICAgIDxtZXRhIHByb3BlcnR5PSJvZzpzaXRlX25hbWUiIGNvbnRlbnQ9IkNhdEZpbmRlciI+CiAgICAKICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi50YWlsd2luZGNzcy5jb20iPjwvc2NyaXB0PgogICAgPHNjcmlwdD4KICAgICAgICB0YWlsd2luZC5jb25maWcgPSB7CiAgICAgICAgICAgIHRoZW1lOiB7CiAgICAgICAgICAgICAgICBleHRlbmQ6IHsKICAgICAgICAgICAgICAgICAgICBmb250RmFtaWx5OiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHNhbnM6IFsnSW50ZXInLCAnc2Fucy1zZXJpZiddLAogICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBbJ0luc3RydW1lbnQgU2VyaWYnLCAnR2VvcmdpYScsICdzZXJpZiddCiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICBjb2xvcnM6IHsKICAgICAgICAgICAgICAgICAgICAgICAgY3JlYW06IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDUwOiAnI2ZhZjlmNicsIDEwMDogJyNmN2Y2ZjInLCAyMDA6ICcjZjNmMGVjJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDMwMDogJyNlZGVhZTUnLCA0MDA6ICcjZGNkOWQ1JywKICAgICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgICAgdGVhbDogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgNTA6ICcjZWVmOGY4JywgMTAwOiAnI2Q1ZWRlZCcsIDIwMDogJyNhYWRhZGEnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgMzAwOiAnIzZmYmZjMCcsIDQwMDogJyMzZGEwYTMnLCA1MDA6ICcjMDE2OTZmJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDYwMDogJyMwYzRlNTQnLCA3MDA6ICcjMGYzNjM4JywKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIDwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIj4KICAgIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW5zdHJ1bWVudCtTZXJpZjppdGFsQDA7MSZmYW1pbHk9SW50ZXI6d2dodEA0MDA7NTAwOzYwMDs3MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgogICAgPHN0eWxlPgogICAgICAgICogeyBmb250LWZhbWlseTogJ0ludGVyJywgc2Fucy1zZXJpZjsgfQogICAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iYmctY3JlYW0tMTAwIG1pbi1oLXNjcmVlbiB0ZXh0LXNsYXRlLTgwMCI+CiAgICA8IS0tIEhlYWRlciAtLT4KICAgIDxoZWFkZXIgY2xhc3M9ImJnLWNyZWFtLTEwMC84MCBiYWNrZHJvcC1ibHVyLW1kIGJvcmRlci1iIGJvcmRlci1jcmVhbS00MDAvNTAgc3RpY2t5IHRvcC0wIHotNTAiPgogICAgICAgIDxkaXYgY2xhc3M9Im1heC13LTZ4bCBteC1hdXRvIHB4LTQgcHktNCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgICAgICA8YSBocmVmPSIvIiBjbGFzcz0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMCBoLTEwIGJnLXRlYWwtNTAwIHJvdW5kZWQteGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdGV4dC13aGl0ZSBzaGFkb3ctbGcgc2hhZG93LXRlYWwtNTAwLzIwIj4KICAgICAgICAgICAgICAgICAgICA8aSBkYXRhLWx1Y2lkZT0iY2F0IiBjbGFzcz0idy02IGgtNiI+PC9pPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idGV4dC14bCBmb250LWRpc3BsYXkgdGV4dC1zbGF0ZS05MDAiPkNhdEZpbmRlcjwvc3Bhbj4KICAgICAgICAgICAgPC9hPgogICAgICAgICAgICA8bmF2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCBtZDpnYXAtNiB0ZXh0LXNtIGZvbnQtbWVkaXVtIj4KICAgICAgICAgICAgICAgIDxhIGhyZWY9Ii9zZWFyY2gvIiBjbGFzcz0idGV4dC1zbGF0ZS02MDAgaG92ZXI6dGV4dC10ZWFsLTYwMCB0cmFuc2l0aW9uIj5Ccm93c2UgQnJlZWRzPC9hPgogICAgICAgICAgICAgICAgPGEgaHJlZj0iL3F1aXovIiBjbGFzcz0iYmctdGVhbC01MDAgdGV4dC13aGl0ZSBweC01IHB5LTIuNSByb3VuZGVkLXhsIGZvbnQtc2VtaWJvbGQgaG92ZXI6YmctdGVhbC02MDAgdHJhbnNpdGlvbiI+VGFrZSBRdWl6PC9hPgogICAgICAgICAgICA8L25hdj4KICAgICAgICA8L2Rpdj4KICAgIDwvaGVhZGVyPgoKICAgIDxtYWluIGNsYXNzPSJtYXgtdy0yeGwgbXgtYXV0byBweC00IHB5LTEyIj4KICAgICAgICA8IS0tIFF1aXogQ29udGFpbmVyIC0tPgogICAgICAgIDxkaXYgaWQ9InF1aXotY29udGFpbmVyIj4KICAgICAgICAgICAgPCEtLSBJbnRybyAtLT4KICAgICAgICAgICAgPGRpdiBpZD0icXVpei1pbnRybyIgY2xhc3M9InRleHQtY2VudGVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBiZy13aGl0ZSBweC00IHB5LTIgcm91bmRlZC1mdWxsIHNoYWRvdy1zbSBib3JkZXIgYm9yZGVyLWNyZWFtLTMwMCB0ZXh0LXNtIHRleHQtc2xhdGUtNjAwIG1iLTYiPgogICAgICAgICAgICAgICAgICAgIDxzcGFuPvCfjq88L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4+NiBxdWljayBxdWVzdGlvbnM8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxoMSBjbGFzcz0idGV4dC00eGwgbWQ6dGV4dC01eGwgZm9udC1leHRyYWJvbGQgZm9udC1kaXNwbGF5IG1iLTQiPgogICAgICAgICAgICAgICAgICAgIEZpbmQgWW91cgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LXRlYWwtNTAwIj5QdXJyZmVjdCBDYXQ8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2gxPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtbGcgdGV4dC1zbGF0ZS02MDAgbWItOCI+QW5zd2VyIGEgZmV3IHF1ZXN0aW9ucyBhYm91dCB5b3VyIGxpZmVzdHlsZSBhbmQgd2UnbGwgbWF0Y2ggeW91IHdpdGggaWRlYWwgYnJlZWRzLjwvcD4KICAgICAgICAgICAgICAgIDxidXR0b24gb25jbGljaz0ic3RhcnRRdWl6KCkiIGNsYXNzPSJiZy10ZWFsLTUwMCBob3ZlcjpiZy10ZWFsLTYwMCB0ZXh0LXdoaXRlIHB4LTggcHktNCByb3VuZGVkLTJ4bCBmb250LWJvbGQgdGV4dC1sZyBob3ZlcjpzaGFkb3cteGwgdHJhbnNpdGlvbiB0cmFuc2Zvcm0gaG92ZXI6c2NhbGUtMTA1Ij4KICAgICAgICAgICAgICAgICAgICBTdGFydCBRdWl6IOKGkgogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPCEtLSBRdWVzdGlvbnMgLS0+CiAgICAgICAgICAgIDxkaXYgaWQ9InF1aXotcXVlc3Rpb25zIiBjbGFzcz0iaGlkZGVuIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQtM3hsIHNoYWRvdy14bCBzaGFkb3ctc2xhdGUtMjAwLzUwIHAtOCI+CiAgICAgICAgICAgICAgICAgICAgPCEtLSBQcm9ncmVzcyAtLT4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtYi04Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbSB0ZXh0LXNsYXRlLTYwMCBtYi0yIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPlF1ZXN0aW9uIDxzcGFuIGlkPSJjdXJyZW50LXEiPjE8L3NwYW4+IG9mIDY8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBpZD0icHJvZ3Jlc3MtcGN0Ij4xNyU8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJoLTIgYmctY3JlYW0tMzAwIHJvdW5kZWQtZnVsbCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBpZD0icHJvZ3Jlc3MtYmFyIiBjbGFzcz0iaC1mdWxsIGJnLXRlYWwtNTAwIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTMwMCIgc3R5bGU9IndpZHRoOiAxNyUiPjwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICAgICAgPCEtLSBRdWVzdGlvbiAtLT4KICAgICAgICAgICAgICAgICAgICA8aDIgaWQ9InF1ZXN0aW9uLXRleHQiIGNsYXNzPSJ0ZXh0LTJ4bCBmb250LWJvbGQgZm9udC1kaXNwbGF5IG1iLTYiPjwvaDI+CiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPCEtLSBPcHRpb25zIC0tPgogICAgICAgICAgICAgICAgICAgIDxkaXYgaWQ9Im9wdGlvbnMtY29udGFpbmVyIiBjbGFzcz0ic3BhY2UteS0zIj48L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDwhLS0gUmVzdWx0cyAtLT4KICAgICAgICAgICAgPGRpdiBpZD0icXVpei1yZXN1bHRzIiBjbGFzcz0iaGlkZGVuIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRleHQtY2VudGVyIG1iLTgiPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LTZ4bCBtYi00IGJsb2NrIj7wn5i7PC9zcGFuPgogICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz0idGV4dC0zeGwgZm9udC1ib2xkIGZvbnQtZGlzcGxheSBtYi0yIj5Zb3VyIFB1cnJmZWN0IE1hdGNoZXMhPC9oMj4KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1zbGF0ZS02MDAiPkJhc2VkIG9uIHlvdXIgYW5zd2VycywgdGhlc2UgYnJlZWRzIGFyZSBpZGVhbCBmb3IgeW91OjwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBpZD0icmVzdWx0cy1jb250YWluZXIiIGNsYXNzPSJzcGFjZS15LTQiPjwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1jZW50ZXIgbXQtOCI+CiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJyZXN0YXJ0UXVpeigpIiBjbGFzcz0idGV4dC10ZWFsLTYwMCBmb250LXNlbWlib2xkIGhvdmVyOnRleHQtdGVhbC03MDAiPuKGkCBUYWtlIFF1aXogQWdhaW48L2J1dHRvbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgIDwvbWFpbj4KCiAgICA8IS0tIEZvb3RlciAtLT4KICAgIDxmb290ZXIgY2xhc3M9ImJnLXNsYXRlLTkwMCB0ZXh0LXNsYXRlLTMwMCBweS0xMiBweC00Ij4KICAgICAgICA8ZGl2IGNsYXNzPSJtYXgtdy02eGwgbXgtYXV0byI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggZmxleC1jb2wgbWQ6ZmxleC1yb3cgaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNiI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgICAgICAgPHN2ZyBjbGFzcz0idy04IGgtOCB0ZXh0LXRlYWwtNDAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDVjLjY3IDAgMS4zNS4wOSAyIC4yNiAxLjc4LTIgNS4wMy0yLjg0IDYuNDItMi4yNiAxLjQuNTgtLjQyIDctLjQyIDcgLjU3IDEuMDcgMSAyLjI0IDEgMy40NEMyMSAxNy45IDE2Ljk3IDIxIDEyIDIxcy05LTMtOS03LjU2YzAtMS4yNS41LTIuNCAxLTMuNDQgMCAwLTEuODktNi40Mi0uNS03IDEuMzktLjU4IDQuNzIuMjMgNi41IDIuMjNBOS4wNCA5LjA0IDAgMCAxIDEyIDVaIi8+PHBhdGggZD0iTTggMTR2LjUiLz48cGF0aCBkPSJNMTYgMTR2LjUiLz48cGF0aCBkPSJNMTEuMjUgMTYuMjVoMS41TDEyIDE3bC0uNzUtLjc1WiIvPjwvc3ZnPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtZGlzcGxheSI+Q2F0RmluZGVyPC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGdhcC04IHRleHQtc20gdGV4dC1zbGF0ZS00MDAiPgogICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Ii9xdWl6LyIgY2xhc3M9ImhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbiI+QnJlZWQgUXVpejwvYT4KICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSIvY29tcGFyZS8iIGNsYXNzPSJob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24iPkNvbXBhcmU8L2E+CiAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iL2FydGljbGVzLyIgY2xhc3M9ImhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbiI+R3VpZGVzPC9hPgogICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Ii9hYm91dC8iIGNsYXNzPSJob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24iPkFib3V0PC9hPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJib3JkZXItdCBib3JkZXItc2xhdGUtODAwIG10LTggcHQtOCB0ZXh0LWNlbnRlciB0ZXh0LXNtIHRleHQtc2xhdGUtNDAwIj4KICAgICAgICAgICAgICAgIDxwPsKpIDIwMjYgQ2F0RmluZGVyLiBNYWRlIHdpdGgg8J+YuyBmb3IgY2F0IGxvdmVycyBldmVyeXdoZXJlLjwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0PgogICAgICAgIGNvbnN0IHF1ZXN0aW9ucyA9IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgcTogIkhvdyBhY3RpdmUgaXMgeW91ciBob3VzZWhvbGQ/IiwKICAgICAgICAgICAgICAgIG9wdGlvbnM6IFsKICAgICAgICAgICAgICAgICAgICB7IHRleHQ6ICLwn4+DIFZlcnkgYWN0aXZlIOKAlCBXZSBsb3ZlIHBsYXl0aW1lISIsIGNyaXRlcmlhOiB7IGFjdGl2aXR5OiA1IH0gfSwKICAgICAgICAgICAgICAgICAgICB7IHRleHQ6ICLwn5q2IE1vZGVyYXRlbHkgYWN0aXZlIOKAlCBTb21lIHBsYXkgZGFpbHkiLCBjcml0ZXJpYTogeyBhY3Rpdml0eTogMyB9IH0sCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi8J+bi++4jyBSZWxheGVkIOKAlCBXZSBwcmVmZXIgY2FsbSBldmVuaW5ncyIsIGNyaXRlcmlhOiB7IGFjdGl2aXR5OiAxIH0gfQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBxOiAiSG93IGRvIHlvdSBmZWVsIGFib3V0IGdyb29taW5nPyIsCiAgICAgICAgICAgICAgICBvcHRpb25zOiBbCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi4pyC77iPIEhhcHB5IHRvIGJydXNoIGRhaWx5IiwgY3JpdGVyaWE6IHsgZ3Jvb21pbmc6IDUgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfp7kgV2Vla2x5IGJydXNoaW5nIGlzIGZpbmUiLCBjcml0ZXJpYTogeyBncm9vbWluZzogMyB9IH0sCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi4pqhIE1pbmltYWwgZ3Jvb21pbmcgcGxlYXNlISIsIGNyaXRlcmlhOiB7IGdyb29taW5nOiAxIH0gfQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBxOiAiSG93IGRvIHlvdSBmZWVsIGFib3V0IGEgY2hhdHR5IGNhdD8iLAogICAgICAgICAgICAgICAgb3B0aW9uczogWwogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfl6PvuI8gTG92ZSBpdCEgSSB3YW50IGNvbnZlcnNhdGlvbnMiLCBjcml0ZXJpYTogeyB2b2NhbGl0eTogNSB9IH0sCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi8J+SrCBTb21lIG1lb3dpbmcgaXMgbmljZSIsIGNyaXRlcmlhOiB7IHZvY2FsaXR5OiAzIH0gfSwKICAgICAgICAgICAgICAgICAgICB7IHRleHQ6ICLwn6SrIFByZWZlciBhIHF1aWV0IGNvbXBhbmlvbiIsIGNyaXRlcmlhOiB7IHZvY2FsaXR5OiAxIH0gfQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBxOiAiRG8geW91IHdhbnQgYSBsYXAgY2F0PyIsCiAgICAgICAgICAgICAgICBvcHRpb25zOiBbCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi8J+nuCBZZXMhIENvbnN0YW50IGN1ZGRsZXMgcGxlYXNlIiwgY3JpdGVyaWE6IHsgYWZmZWN0aW9uOiA1LCBpbmRlcGVuZGVuY2U6IDEgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfpJ0gQWZmZWN0aW9uYXRlIGJ1dCBub3QgY2xpbmd5IiwgY3JpdGVyaWE6IHsgYWZmZWN0aW9uOiAzLCBpbmRlcGVuZGVuY2U6IDMgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfkLEgSW5kZXBlbmRlbnQgaXMgZmluZSIsIGNyaXRlcmlhOiB7IGFmZmVjdGlvbjogMiwgaW5kZXBlbmRlbmNlOiA1IH0gfQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBxOiAiRG8geW91IGhhdmUgY2hpbGRyZW4gb3Igb3RoZXIgcGV0cz8iLAogICAgICAgICAgICAgICAgb3B0aW9uczogWwogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfkbYgWWVzLCB5b3VuZyBjaGlsZHJlbiIsIGNyaXRlcmlhOiB7IGtpZF9mcmllbmRseTogNSB9IH0sCiAgICAgICAgICAgICAgICAgICAgeyB0ZXh0OiAi8J+QlSBZZXMsIGRvZ3Mgb3Igb3RoZXIgY2F0cyIsIGNyaXRlcmlhOiB7IGRvZ19mcmllbmRseTogNSwga2lkX2ZyaWVuZGx5OiA0IH0gfSwKICAgICAgICAgICAgICAgICAgICB7IHRleHQ6ICLwn4+gIE5vLCBqdXN0IGFkdWx0cyIsIGNyaXRlcmlhOiB7IGtpZF9mcmllbmRseTogMywgZG9nX2ZyaWVuZGx5OiAzIH0gfQogICAgICAgICAgICAgICAgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBxOiAiV2hhdCdzIG1vc3QgaW1wb3J0YW50IHRvIHlvdT8iLAogICAgICAgICAgICAgICAgb3B0aW9uczogWwogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfp6AgU21hcnQgJiB0cmFpbmFibGUiLCBjcml0ZXJpYTogeyBpbnRlbGxpZ2VuY2U6IDUgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfkpYgU3dlZXQgJiBhZmZlY3Rpb25hdGUiLCBjcml0ZXJpYTogeyBhZmZlY3Rpb246IDUgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfmI4gRWFzeSAmIGxvdy1tYWludGVuYW5jZSIsIGNyaXRlcmlhOiB7IGdyb29taW5nOiAxLCBpbmRlcGVuZGVuY2U6IDQgfSB9LAogICAgICAgICAgICAgICAgICAgIHsgdGV4dDogIvCfjq0gUGxheWZ1bCAmIGVudGVydGFpbmluZyIsIGNyaXRlcmlhOiB7IGFjdGl2aXR5OiA1LCBpbnRlbGxpZ2VuY2U6IDQgfSB9CiAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICBdOwoKICAgICAgICBsZXQgYnJlZWRzID0gW107CiAgICAgICAgbGV0IGN1cnJlbnRRdWVzdGlvbiA9IDA7CiAgICAgICAgbGV0IHNlbGVjdGVkQ3JpdGVyaWEgPSB7fTsKCiAgICAgICAgLy8gTG9hZCBicmVlZHMgZnJvbSBKU09OCiAgICAgICAgZmV0Y2goJy4uL2RhdGEvYnJlZWRzLmpzb24nKQogICAgICAgICAgICAudGhlbihyID0+IHIuanNvbigpKQogICAgICAgICAgICAudGhlbihkYXRhID0+IHsKICAgICAgICAgICAgICAgIGJyZWVkcyA9IGRhdGE7CiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhgTG9hZGVkICR7YnJlZWRzLmxlbmd0aH0gYnJlZWRzYCk7CiAgICAgICAgICAgIH0pCiAgICAgICAgICAgIC5jYXRjaChlID0+IGNvbnNvbGUuZXJyb3IoJ0ZhaWxlZCB0byBsb2FkIGJyZWVkczonLCBlKSk7CgogICAgICAgIGZ1bmN0aW9uIHN0YXJ0UXVpeigpIHsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1aXotaW50cm8nKS5jbGFzc0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1aXotcXVlc3Rpb25zJykuY2xhc3NMaXN0LnJlbW92ZSgnaGlkZGVuJyk7CiAgICAgICAgICAgIHNob3dRdWVzdGlvbigwKTsKICAgICAgICB9CgogICAgICAgIGZ1bmN0aW9uIHNob3dRdWVzdGlvbihpbmRleCkgewogICAgICAgICAgICBjb25zdCBxID0gcXVlc3Rpb25zW2luZGV4XTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1ZXN0aW9uLXRleHQnKS50ZXh0Q29udGVudCA9IHEucTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N1cnJlbnQtcScpLnRleHRDb250ZW50ID0gaW5kZXggKyAxOwogICAgICAgICAgICBjb25zdCBwY3QgPSBNYXRoLnJvdW5kKCgoaW5kZXggKyAxKSAvIHF1ZXN0aW9ucy5sZW5ndGgpICogMTAwKTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Byb2dyZXNzLXBjdCcpLnRleHRDb250ZW50ID0gcGN0ICsgJyUnOwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHJvZ3Jlc3MtYmFyJykuc3R5bGUud2lkdGggPSBwY3QgKyAnJSc7CgogICAgICAgICAgICBjb25zdCBjb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnb3B0aW9ucy1jb250YWluZXInKTsKICAgICAgICAgICAgY29udGFpbmVyLmlubmVySFRNTCA9ICcnOwogICAgICAgICAgICAKICAgICAgICAgICAgcS5vcHRpb25zLmZvckVhY2goKG9wdCwgaSkgPT4gewogICAgICAgICAgICAgICAgY29uc3QgYnRuID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYnV0dG9uJyk7CiAgICAgICAgICAgICAgICBidG4uY2xhc3NOYW1lID0gJ3ctZnVsbCB0ZXh0LWxlZnQgcC00IHJvdW5kZWQteGwgYm9yZGVyLTIgYm9yZGVyLWNyZWFtLTMwMCBob3Zlcjpib3JkZXItdGVhbC00MDAgaG92ZXI6YmctdGVhbC01MCB0cmFuc2l0aW9uIGZvbnQtbWVkaXVtJzsKICAgICAgICAgICAgICAgIGJ0bi50ZXh0Q29udGVudCA9IG9wdC50ZXh0OwogICAgICAgICAgICAgICAgYnRuLm9uY2xpY2sgPSAoKSA9PiBzZWxlY3RPcHRpb24ob3B0LmNyaXRlcmlhKTsKICAgICAgICAgICAgICAgIGNvbnRhaW5lci5hcHBlbmRDaGlsZChidG4pOwogICAgICAgICAgICB9KTsKICAgICAgICB9CgogICAgICAgIGZ1bmN0aW9uIHNlbGVjdE9wdGlvbihjcml0ZXJpYSkgewogICAgICAgICAgICAvLyBNZXJnZSBjcml0ZXJpYQogICAgICAgICAgICBmb3IgKGNvbnN0IFtrZXksIHZhbHVlXSBvZiBPYmplY3QuZW50cmllcyhjcml0ZXJpYSkpIHsKICAgICAgICAgICAgICAgIGlmICghc2VsZWN0ZWRDcml0ZXJpYVtrZXldKSBzZWxlY3RlZENyaXRlcmlhW2tleV0gPSBbXTsKICAgICAgICAgICAgICAgIHNlbGVjdGVkQ3JpdGVyaWFba2V5XS5wdXNoKHZhbHVlKTsKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgY3VycmVudFF1ZXN0aW9uKys7CiAgICAgICAgICAgIAogICAgICAgICAgICBpZiAoY3VycmVudFF1ZXN0aW9uIDwgcXVlc3Rpb25zLmxlbmd0aCkgewogICAgICAgICAgICAgICAgc2hvd1F1ZXN0aW9uKGN1cnJlbnRRdWVzdGlvbik7CiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBzaG93UmVzdWx0cygpOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICBmdW5jdGlvbiBzaG93UmVzdWx0cygpIHsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1aXotcXVlc3Rpb25zJykuY2xhc3NMaXN0LmFkZCgnaGlkZGVuJyk7CiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxdWl6LXJlc3VsdHMnKS5jbGFzc0xpc3QucmVtb3ZlKCdoaWRkZW4nKTsKCiAgICAgICAgICAgIC8vIEF2ZXJhZ2UgdGhlIGNyaXRlcmlhCiAgICAgICAgICAgIGNvbnN0IGF2Z0NyaXRlcmlhID0ge307CiAgICAgICAgICAgIGZvciAoY29uc3QgW2tleSwgdmFsdWVzXSBvZiBPYmplY3QuZW50cmllcyhzZWxlY3RlZENyaXRlcmlhKSkgewogICAgICAgICAgICAgICAgYXZnQ3JpdGVyaWFba2V5XSA9IHZhbHVlcy5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiLCAwKSAvIHZhbHVlcy5sZW5ndGg7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIC8vIFNjb3JlIGJyZWVkcyBiYXNlZCBvbiBob3cgY2xvc2UgdGhleSBtYXRjaAogICAgICAgICAgICBjb25zdCBzY29yZWQgPSBicmVlZHMubWFwKGJyZWVkID0+IHsKICAgICAgICAgICAgICAgIGxldCBzY29yZSA9IDA7CiAgICAgICAgICAgICAgICBsZXQgZmFjdG9ycyA9IDA7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGZvciAoY29uc3QgW2tleSwgdGFyZ2V0VmFsdWVdIG9mIE9iamVjdC5lbnRyaWVzKGF2Z0NyaXRlcmlhKSkgewogICAgICAgICAgICAgICAgICAgIGlmIChicmVlZC5yYXRpbmdzICYmIGJyZWVkLnJhdGluZ3Nba2V5XSAhPT0gdW5kZWZpbmVkKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vIEhpZ2hlciBzY29yZSBmb3IgY2xvc2VyIG1hdGNoZXMKICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgYnJlZWRWYWx1ZSA9IGJyZWVkLnJhdGluZ3Nba2V5XTsKICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgZGlmZiA9IE1hdGguYWJzKGJyZWVkVmFsdWUgLSB0YXJnZXRWYWx1ZSk7CiAgICAgICAgICAgICAgICAgICAgICAgIHNjb3JlICs9ICg1IC0gZGlmZik7IC8vIE1heCA1IHBvaW50cyBwZXIgY3JpdGVyaWEKICAgICAgICAgICAgICAgICAgICAgICAgZmFjdG9ycysrOwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgcmV0dXJuIHsgCiAgICAgICAgICAgICAgICAgICAgLi4uYnJlZWQsIAogICAgICAgICAgICAgICAgICAgIHNjb3JlOiBmYWN0b3JzID4gMCA/IHNjb3JlIC8gZmFjdG9ycyA6IDAgCiAgICAgICAgICAgICAgICB9OwogICAgICAgICAgICB9KTsKCiAgICAgICAgICAgIC8vIFNvcnQgYW5kIGdldCB0b3AgNQogICAgICAgICAgICBzY29yZWQuc29ydCgoYSwgYikgPT4gYi5zY29yZSAtIGEuc2NvcmUpOwogICAgICAgICAgICBjb25zdCB0b3A1ID0gc2NvcmVkLnNsaWNlKDAsIDUpOwoKICAgICAgICAgICAgY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jlc3VsdHMtY29udGFpbmVyJyk7CiAgICAgICAgICAgIGNvbnRhaW5lci5pbm5lckhUTUwgPSAnJzsKCiAgICAgICAgICAgIHRvcDUuZm9yRWFjaCgoYnJlZWQsIGkpID0+IHsKICAgICAgICAgICAgICAgIGNvbnN0IG1hdGNoID0gTWF0aC5taW4oMTAwLCBNYXRoLnJvdW5kKChicmVlZC5zY29yZSAvIDUpICogMTAwKSk7CiAgICAgICAgICAgICAgICBjb25zdCBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdhJyk7CiAgICAgICAgICAgICAgICBkaXYuaHJlZiA9ICcuLi9icmVlZHMvJyArIGJyZWVkLmlkICsgJy8nOwogICAgICAgICAgICAgICAgZGl2LmNsYXNzTmFtZSA9ICdibG9jayBiZy13aGl0ZSByb3VuZGVkLTJ4bCBwLTYgc2hhZG93LWxnIHNoYWRvdy1zbGF0ZS0yMDAvNTAgaG92ZXI6c2hhZG93LXhsIHRyYW5zaXRpb24nOwogICAgICAgICAgICAgICAgZGl2LmlubmVySFRNTCA9IGAKICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ3LTEyIGgtMTIgYmctdGVhbC0xMDAgcm91bmRlZC14bCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC10ZWFsLTYwMCI+JHtpICsgMX08L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtYm9sZCBmb250LWRpc3BsYXkiPiR7YnJlZWQubmFtZX08L2gzPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXNsYXRlLTYwMCB0ZXh0LXNtIj4ke21hdGNofSUgbWF0Y2g8L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRleHQtdGVhbC02MDAgZm9udC1zZW1pYm9sZCI+VmlldyDihpI8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIGA7CiAgICAgICAgICAgICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQoZGl2KTsKICAgICAgICAgICAgfSk7CiAgICAgICAgfQoKICAgICAgICBmdW5jdGlvbiByZXN0YXJ0UXVpeigpIHsKICAgICAgICAgICAgY3VycmVudFF1ZXN0aW9uID0gMDsKICAgICAgICAgICAgc2VsZWN0ZWRDcml0ZXJpYSA9IHt9OwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncXVpei1yZXN1bHRzJykuY2xhc3NMaXN0LmFkZCgnaGlkZGVuJyk7CiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxdWl6LWludHJvJykuY2xhc3NMaXN0LnJlbW92ZSgnaGlkZGVuJyk7CiAgICAgICAgfQogICAgPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL3VucGtnLmNvbS9sdWNpZGVAbGF0ZXN0Ij48L3NjcmlwdD4KICAgIDxzY3JpcHQ+bHVjaWRlLmNyZWF0ZUljb25zKCk7PC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgo=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JVFQHMFD3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JVFQHMFD3');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breed Quiz — Find Your Perfect Match | CatFinder</title>
+    <meta name="description" content="Take our quick quiz to find the perfect cat breed for your lifestyle. Answer a few questions and discover your ideal feline companion.">
+    <link rel="canonical" href="https://catfinder.app/quiz/">
+    <link rel="alternate" hreflang="en" href="https://catfinder.app/quiz/">
+    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/quiz/">
+    <link rel="alternate" hreflang="de" href="https://catfinder.app/de/quiz/">
+    <link rel="alternate" hreflang="x-default" href="https://catfinder.app/quiz/">
+    
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon-192.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://catfinder.app/quiz/">
+    <meta property="og:title" content="Cat Breed Quiz — Find Your Perfect Match">
+    <meta property="og:description" content="Take our quick quiz to find the perfect cat breed for your lifestyle.">
+    <meta property="og:site_name" content="CatFinder">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'Georgia', 'serif']
+                    },
+                    colors: {
+                        cream: {
+                            50: '#faf9f6', 100: '#f7f6f2', 200: '#f3f0ec',
+                            300: '#edeae5', 400: '#dcd9d5',
+                        },
+                        teal: {
+                            50: '#eef8f8', 100: '#d5eded', 200: '#aadada',
+                            300: '#6fbfc0', 400: '#3da0a3', 500: '#01696f',
+                            600: '#0c4e54', 700: '#0f3638',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-cream-100 min-h-screen text-slate-800">
+    <!-- Header -->
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
+                    <i data-lucide="cat" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
+            </a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/search/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 py-12">
+        <!-- Quiz Container -->
+        <div id="quiz-container">
+            <!-- Intro -->
+            <div id="quiz-intro" class="text-center">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-cream-300 text-sm text-slate-600 mb-6">
+                    <span>🎯</span>
+                    <span>6 quick questions</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold font-display mb-4">
+                    Find Your
+                    <span class="text-teal-500">Purrfect Cat</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8">Answer a few questions about your lifestyle and we'll match you with ideal breeds.</p>
+                <button onclick="startQuiz()" class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105">
+                    Start Quiz →
+                </button>
+            </div>
+
+            <!-- Questions -->
+            <div id="quiz-questions" class="hidden">
+                <div class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 p-8">
+                    <!-- Progress -->
+                    <div class="mb-8">
+                        <div class="flex justify-between text-sm text-slate-600 mb-2">
+                            <span>Question <span id="current-q">1</span> of 6</span>
+                            <span id="progress-pct">17%</span>
+                        </div>
+                        <div class="h-2 bg-cream-300 rounded-full overflow-hidden">
+                            <div id="progress-bar" class="h-full bg-teal-500 transition-all duration-300" style="width: 17%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question -->
+                    <h2 id="question-text" class="text-2xl font-bold font-display mb-6"></h2>
+                    
+                    <!-- Options -->
+                    <div id="options-container" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div id="quiz-results" class="hidden">
+                <div class="text-center mb-8">
+                    <span class="text-6xl mb-4 block">😻</span>
+                    <h2 class="text-3xl font-bold font-display mb-2">Your Purrfect Matches!</h2>
+                    <p class="text-slate-600">Based on your answers, these breeds are ideal for you:</p>
+                </div>
+                <div id="results-container" class="space-y-4"></div>
+                <div class="text-center mt-8">
+                    <button onclick="restartQuiz()" class="text-teal-600 font-semibold hover:text-teal-700">← Take Quiz Again</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="text-xl font-display">CatFinder</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a href="/quiz/" class="hover:text-white transition">Breed Quiz</a>
+                    <a href="/compare/" class="hover:text-white transition">Compare</a>
+                    <a href="/articles/" class="hover:text-white transition">Guides</a>
+                    <a href="/about/" class="hover:text-white transition">About</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+                <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const questions = [
+            {
+                q: "How active is your household?",
+                options: [
+                    { text: "🏃 Very active — We love playtime!", criteria: { activity: 5 } },
+                    { text: "🚶 Moderately active — Some play daily", criteria: { activity: 3 } },
+                    { text: "🛋️ Relaxed — We prefer calm evenings", criteria: { activity: 1 } }
+                ]
+            },
+            {
+                q: "How do you feel about grooming?",
+                options: [
+                    { text: "✂️ Happy to brush daily", criteria: { grooming: 5 } },
+                    { text: "🧹 Weekly brushing is fine", criteria: { grooming: 3 } },
+                    { text: "⚡ Minimal grooming please!", criteria: { grooming: 1 } }
+                ]
+            },
+            {
+                q: "How do you feel about a chatty cat?",
+                options: [
+                    { text: "🗣️ Love it! I want conversations", criteria: { vocality: 5 } },
+                    { text: "💬 Some meowing is nice", criteria: { vocality: 3 } },
+                    { text: "🤫 Prefer a quiet companion", criteria: { vocality: 1 } }
+                ]
+            },
+            {
+                q: "Do you want a lap cat?",
+                options: [
+                    { text: "🧸 Yes! Constant cuddles please", criteria: { affection: 5, independence: 1 } },
+                    { text: "🤝 Affectionate but not clingy", criteria: { affection: 3, independence: 3 } },
+                    { text: "🐱 Independent is fine", criteria: { affection: 2, independence: 5 } }
+                ]
+            },
+            {
+                q: "Do you have children or other pets?",
+                options: [
+                    { text: "👶 Yes, young children", criteria: { kid_friendly: 5 } },
+                    { text: "🐕 Yes, dogs or other cats", criteria: { dog_friendly: 5, kid_friendly: 4 } },
+                    { text: "🏠 No, just adults", criteria: { kid_friendly: 3, dog_friendly: 3 } }
+                ]
+            },
+            {
+                q: "What's most important to you?",
+                options: [
+                    { text: "🧠 Smart & trainable", criteria: { intelligence: 5 } },
+                    { text: "💖 Sweet & affectionate", criteria: { affection: 5 } },
+                    { text: "😎 Easy & low-maintenance", criteria: { grooming: 1, independence: 4 } },
+                    { text: "🎭 Playful & entertaining", criteria: { activity: 5, intelligence: 4 } }
+                ]
+            }
+        ];
+
+        let breeds = [];
+        let currentQuestion = 0;
+        let selectedCriteria = {};
+
+        // Load breeds from JSON
+        fetch('../data/breeds.json')
+            .then(r => r.json())
+            .then(data => {
+                breeds = data;
+                console.log(`Loaded ${breeds.length} breeds`);
+            })
+            .catch(e => console.error('Failed to load breeds:', e));
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-questions').classList.remove('hidden');
+            showQuestion(0);
+        }
+
+        function showQuestion(index) {
+            const q = questions[index];
+            document.getElementById('question-text').textContent = q.q;
+            document.getElementById('current-q').textContent = index + 1;
+            const pct = Math.round(((index + 1) / questions.length) * 100);
+            document.getElementById('progress-pct').textContent = pct + '%';
+            document.getElementById('progress-bar').style.width = pct + '%';
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left p-4 rounded-xl border-2 border-cream-300 hover:border-teal-400 hover:bg-teal-50 transition font-medium';
+                btn.textContent = opt.text;
+                btn.onclick = () => selectOption(opt.criteria);
+                container.appendChild(btn);
+            });
+        }
+
+        function selectOption(criteria) {
+            // Merge criteria
+            for (const [key, value] of Object.entries(criteria)) {
+                if (!selectedCriteria[key]) selectedCriteria[key] = [];
+                selectedCriteria[key].push(value);
+            }
+            
+            currentQuestion++;
+            
+            if (currentQuestion < questions.length) {
+                showQuestion(currentQuestion);
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-questions').classList.add('hidden');
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+            // Average the criteria
+            const avgCriteria = {};
+            for (const [key, values] of Object.entries(selectedCriteria)) {
+                avgCriteria[key] = values.reduce((a, b) => a + b, 0) / values.length;
+            }
+
+            // Score breeds based on how close they match
+            const scored = breeds.map(breed => {
+                let score = 0;
+                let factors = 0;
+                
+                for (const [key, targetValue] of Object.entries(avgCriteria)) {
+                    if (breed.ratings && breed.ratings[key] !== undefined) {
+                        // Higher score for closer matches
+                        const breedValue = breed.ratings[key];
+                        const diff = Math.abs(breedValue - targetValue);
+                        score += (5 - diff); // Max 5 points per criteria
+                        factors++;
+                    }
+                }
+                
+                return { 
+                    ...breed, 
+                    score: factors > 0 ? score / factors : 0 
+                };
+            });
+
+            // Sort and get top 5
+            scored.sort((a, b) => b.score - a.score);
+            const top5 = scored.slice(0, 5);
+
+            const container = document.getElementById('results-container');
+            container.innerHTML = '';
+
+            top5.forEach((breed, i) => {
+                const match = Math.min(100, Math.round((breed.score / 5) * 100));
+                const div = document.createElement('a');
+                div.href = '../breeds/' + breed.id + '/';
+                div.className = 'block bg-white rounded-2xl p-6 shadow-lg shadow-slate-200/50 hover:shadow-xl transition';
+                div.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center text-2xl font-bold text-teal-600">${i + 1}</div>
+                            <div>
+                                <h3 class="text-xl font-bold font-display">${breed.name}</h3>
+                                <p class="text-slate-600 text-sm">${match}% match</p>
+                            </div>
+                        </div>
+                        <div class="text-teal-600 font-semibold">View →</div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            selectedCriteria = {};
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-intro').classList.remove('hidden');
+        }
+    </script>
+<script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
