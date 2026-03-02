@@ -19,32 +19,67 @@
     <link rel="icon" href="/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    display: ['Instrument Serif', 'Georgia', 'serif']
+                },
+                colors: {
+                    cream: {
+                        50: '#faf9f6',
+                        100: '#f7f6f2',
+                        200: '#f3f0ec',
+                        300: '#edeae5',
+                        400: '#dcd9d5',
+                    },
+                    teal: {
+                        50: '#eef8f8',
+                        100: '#d5eded',
+                        200: '#aadada',
+                        300: '#6fbfc0',
+                        400: '#3da0a3',
+                        500: '#01696f',
+                        600: '#0c4e54',
+                        700: '#0f3638',
+                    }
+                }
+            }
+        }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }
         .rating-bar { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
         .rating-bar::after { content: ''; display: block; height: 100%; border-radius: 4px; }
-        .rating-1::after { width: 20%; background: linear-gradient(90deg, #f472b6, #c084fc); }
-        .rating-2::after { width: 40%; background: linear-gradient(90deg, #f472b6, #c084fc); }
-        .rating-3::after { width: 60%; background: linear-gradient(90deg, #f472b6, #c084fc); }
-        .rating-4::after { width: 80%; background: linear-gradient(90deg, #f472b6, #c084fc); }
-        .rating-5::after { width: 100%; background: linear-gradient(90deg, #f472b6, #c084fc); }
+        .rating-1::after { width: 20%; background: linear-gradient(90deg, #3da0a3, #01696f); }
+        .rating-2::after { width: 40%; background: linear-gradient(90deg, #3da0a3, #01696f); }
+        .rating-3::after { width: 60%; background: linear-gradient(90deg, #3da0a3, #01696f); }
+        .rating-4::after { width: 80%; background: linear-gradient(90deg, #3da0a3, #01696f); }
+        .rating-5::after { width: 100%; background: linear-gradient(90deg, #3da0a3, #01696f); }
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03);
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JVFQHMFD3"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8JVFQHMFD3');</script>
 </head>
-<body class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 min-h-screen">
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+<body class="bg-cream-100 min-h-screen">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="/de/" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white">
+            <a href="/de/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold text-slate-800">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
-            <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="/de/search/" class="text-slate-600 hover:text-fuchsia-600">Rassen</a>
-                <a href="/de/quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold">Quiz</a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/de/search/" class="text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
+                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Quiz starten</a>
             </nav>
         </div>
     </header>
@@ -52,15 +87,15 @@
     <main class="max-w-4xl mx-auto px-4 py-8">
         <nav class="text-sm mb-6">
             <ol class="flex items-center gap-2 text-slate-600">
-                <li><a href="/de/" class="hover:text-fuchsia-600">Startseite</a></li>
+                <li><a href="/de/" class="hover:text-teal-600">Startseite</a></li>
                 <li>/</li>
-                <li><a href="/de/search/" class="hover:text-fuchsia-600">Rassen</a></li>
+                <li><a href="/de/search/" class="hover:text-teal-600">Rassen</a></li>
                 <li>/</li>
                 <li class="text-slate-900 font-medium">Somalikatze</li>
             </ol>
         </nav>
 
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-8">
+        <div class="bg-white rounded-3xl card-shadow overflow-hidden mb-8">
             <div class="md:flex">
                 <div class="md:w-2/5">
                     <img src="/images/breeds/somali.webp" alt="Somalikatze" class="w-full h-80 md:h-full object-cover object-top" onerror="this.src='/images/breeds/placeholder.webp'">
@@ -68,20 +103,20 @@
                 <div class="p-6 md:p-8 md:w-3/5">
                     <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Somalikatze</h1>
                     <div class="grid grid-cols-2 gap-3 mt-4">
-                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                        <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
+                            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
                             <div><p class="text-xs text-slate-500">Herkunft</p><p class="font-semibold text-slate-700">USA</p></div>
                         </div>
-                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
+                            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <div><p class="text-xs text-slate-500">Lebenserwartung</p><p class="font-semibold text-slate-700">12-16 years</p></div>
                         </div>
-                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
+                            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
                             <div><p class="text-xs text-slate-500">Größe</p><p class="font-semibold text-slate-700">Mittel</p></div>
                         </div>
-                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                        <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
+                            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
                             <div><p class="text-xs text-slate-500">Fell</p><p class="font-semibold text-slate-700">Halblanghaar</p></div>
                         </div>
                     </div>
@@ -90,7 +125,7 @@
             </div>
         </div>
 
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+        <section class="bg-white rounded-2xl card-shadow border border-cream-300 p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Rassenbewertungen</h2>
             <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
                 <div><div class="flex justify-between mb-2"><span class="text-slate-600">Zuneigung</span><span class="font-medium">4/5</span></div><div class="rating-bar rating-4"></div></div>
@@ -102,17 +137,17 @@
             </div>
         </section>
 
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+        <section class="bg-white rounded-2xl card-shadow border border-cream-300 p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-4">Temperament</h2>
-            <div class="flex flex-wrap gap-2"><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Aktiv</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Verspielt</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Intelligent</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Neugierig</span></div>
+            <div class="flex flex-wrap gap-2"><span class="bg-teal-50 border border-teal-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Aktiv</span><span class="bg-teal-50 border border-teal-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Verspielt</span><span class="bg-teal-50 border border-teal-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Intelligent</span><span class="bg-teal-50 border border-teal-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Neugierig</span></div>
         </section>
 
         <!-- Accordion Sections -->
         <div class="space-y-4 mb-8">
-            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group" open>
+            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
-                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                         Übersicht
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -120,10 +155,10 @@
                 <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">The Somali is a long-haired Abyssinian, with the same ticked coat and fox-like appearance but with a flowing mane and bushy tail. They're incredibly active, curious, and playful—often called 'fox cats' for their appearance and clever personality.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
-                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                         Gesundheit
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -131,10 +166,10 @@
                 <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Somalis share Abyssinian health concerns: Pyruvate Kinase Deficiency, Progressive Retinal Atrophy (PRA), and renal amyloidosis. Dental issues are also common. Genetic testing is available for many conditions. Lifespan is 12-16 years.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
-                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                        <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
                         Pflege & Haltung
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -143,7 +178,7 @@
             </details>
         </div>
 
-        <section class="bg-gradient-to-br from-fuchsia-50 via-purple-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-8">
+        <section class="bg-gradient-to-br from-teal-50 via-cream-100 to-teal-50 rounded-2xl p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Ist diese Rasse die richtige für Sie?</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-xl p-5 shadow-sm">
@@ -164,16 +199,23 @@
         </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-2"><i data-lucide="cat" class="w-6 h-6 text-fuchsia-400"></i><span class="font-bold text-white">CatFinder</span></div>
-            <div class="flex gap-6 text-sm">
-                <a href="/de/search/" class="hover:text-white">Rassen</a>
-                <a href="/de/quiz/" class="hover:text-white">Quiz</a>
-                <a href="/de/compare/" class="hover:text-white">Vergleichen</a>
-                <a href="/de/about/" class="hover:text-white">Über uns</a>
+    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="text-xl font-display">CatFinder</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a href="/de/search/" class="hover:text-white">Rassen</a>
+                    <a href="/de/quiz/" class="hover:text-white">Quiz</a>
+                    <a href="/de/compare/" class="hover:text-white">Vergleichen</a>
+                    <a href="/de/about/" class="hover:text-white">Über uns</a>
+                </div>
             </div>
-            <p class="text-sm">&copy; 2026 CatFinder</p>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+                <p>&copy; 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+            </div>
         </div>
     </footer>
     <script>lucide.createIcons();</script>
