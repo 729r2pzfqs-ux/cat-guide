@@ -19,16 +19,50 @@
     <meta property="og:description" content="Wir helfen Katzenliebhabern, ihren perfekten felinen Begleiter zu finden.">
     <meta property="og:site_name" content="CatFinder">
     
-    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
-            theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } }
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'Georgia', 'serif']
+                    },
+                    colors: {
+                        cream: {
+                            50: '#faf9f6',
+                            100: '#f7f6f2',
+                            200: '#f3f0ec',
+                            300: '#edeae5',
+                            400: '#dcd9d5',
+                        },
+                        teal: {
+                            50: '#eef8f8',
+                            100: '#d5eded',
+                            200: '#aadada',
+                            300: '#6fbfc0',
+                            400: '#3da0a3',
+                            500: '#01696f',
+                            600: '#0c4e54',
+                            700: '#0f3638',
+                        }
+                    }
+                }
+            }
         }
     </script>
-    <style>.card-shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03); }</style>
+    <style>
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 4px 12px rgba(40,37,29,0.06), 0 8px 24px rgba(40,37,29,0.05);
+        }
+    </style>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JVFQHMFD3"></script>
     <script>
@@ -38,18 +72,18 @@
         gtag('config', 'G-8JVFQHMFD3');
     </script>
 </head>
-<body class="bg-white min-h-screen text-slate-800">
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+<body class="bg-cream-100 min-h-screen text-slate-800">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="/de/" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
                 <span class="text-xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">CatFinder</span>
             </a>
             <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="/de/search/" class="text-slate-600 hover:text-fuchsia-600 transition hidden sm:block">Rassen durchsuchen</a>
-                <a href="/de/quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Quiz starten</a>
+                <a href="/de/search/" class="text-slate-600 hover:text-teal-600 transition hidden sm:block">Rassen durchsuchen</a>
+                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition">Quiz starten</a>
             </nav>
         </div>
     </header>
@@ -61,7 +95,7 @@
         </div>
 
         <section class="mb-12">
-            <div class="bg-gradient-to-br from-fuchsia-50 to-purple-50 rounded-3xl p-8 border border-fuchsia-100">
+            <div class="bg-gradient-to-br from-teal-50 to-teal-50 rounded-3xl p-8 border border-teal-100">
                 <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
                     <i data-lucide="heart" class="w-6 h-6 text-rose-500"></i>
                     Unsere Geschichte
@@ -78,10 +112,10 @@
         <section class="mb-12">
             <h2 class="text-2xl font-bold text-slate-900 mb-6">Was wir bieten</h2>
             <div class="grid gap-4">
-                <div class="bg-white rounded-2xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-2xl p-6 card-shadow border border-cream-300">
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-fuchsia-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="book-open" class="w-6 h-6 text-fuchsia-600"></i>
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="book-open" class="w-6 h-6 text-teal-600"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-slate-900 mb-1">Über 70 Katzenrassen-Profile</h3>
@@ -89,10 +123,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-2xl p-6 card-shadow border border-cream-300">
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-fuchsia-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="target" class="w-6 h-6 text-fuchsia-600"></i>
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="target" class="w-6 h-6 text-teal-600"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-slate-900 mb-1">Rassen-Quiz</h3>
@@ -100,10 +134,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-2xl p-6 card-shadow border border-cream-300">
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="scale" class="w-6 h-6 text-purple-600"></i>
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="scale" class="w-6 h-6 text-teal-600"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-slate-900 mb-1">Direktvergleich</h3>
@@ -115,12 +149,12 @@
         </section>
 
         <section class="mb-12">
-            <div class="bg-slate-900 rounded-3xl p-8 text-white">
+            <div class="bg-teal-700 rounded-3xl p-8 text-white">
                 <h2 class="text-2xl font-bold mb-4 flex items-center gap-3">
-                    <i data-lucide="mail" class="w-6 h-6 text-fuchsia-400"></i>
+                    <i data-lucide="mail" class="w-6 h-6 text-teal-400"></i>
                     Kontakt
                 </h2>
-                <p class="text-slate-300 mb-6">
+                <p class="text-cream-200 mb-6">
                     Hast du eine Frage, einen Vorschlag oder einen Fehler gefunden? Wir freuen uns auf deine Nachricht.
                 </p>
                 <div class="flex items-center gap-3">
@@ -129,7 +163,7 @@
                         hello@catfinder.app
                     </a>
                 </div>
-                <p class="text-slate-400 text-sm mt-4">
+                <p class="text-teal-200 text-sm mt-4">
                     Wir antworten normalerweise innerhalb weniger Tage. Für Rassenvorschläge, bitte einen Quellenlink beifügen.
                 </p>
             </div>
@@ -138,19 +172,19 @@
         <section>
             <h2 class="text-2xl font-bold text-slate-900 mb-6">Häufig gestellte Fragen</h2>
             <div class="space-y-4">
-                <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                     <h3 class="font-semibold text-slate-900">Kann ich eine Rasse vorschlagen?</h3>
                     <p class="text-slate-600 mt-2">Auf jeden Fall! Schicke uns eine E-Mail mit dem Rassennamen und wir werden es in Betracht ziehen, sie in unsere Datenbank aufzunehmen.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                     <h3 class="font-semibold text-slate-900">Ist CatFinder kostenlos?</h3>
                     <p class="text-slate-600 mt-2">Ja, komplett kostenlos. Wir glauben, dass jeder Zugang zu qualitativ hochwertigen Rasseninformationen verdient.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                     <h3 class="font-semibold text-slate-900">Woher stammen eure Rassendaten?</h3>
                     <p class="text-slate-600 mt-2">Unsere Informationen werden aus Katzenregistern (CFA, TICA, GCCF), veterinärmedizinischen Quellen und rassenspezifischen Organisationen zusammengestellt.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                <div class="bg-white rounded-xl p-6 card-shadow border border-cream-300">
                     <h3 class="font-semibold text-slate-900">Habt ihr Informationen in anderen Sprachen?</h3>
                     <p class="text-slate-600 mt-2">Ja! CatFinder ist auf Englisch, Spanisch und Deutsch verfügbar — weitere Sprachen folgen in Kürze.</p>
                 </div>
@@ -158,23 +192,23 @@
         </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+    <footer class="bg-teal-700 text-cream-200 py-12 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center">
                         <i data-lucide="cat" class="w-6 h-6"></i>
                     </div>
                     <span class="text-xl font-bold">CatFinder</span>
                 </div>
-                <div class="flex gap-8 text-sm text-slate-400">
+                <div class="flex gap-8 text-sm text-teal-200">
                     <a href="/de/quiz/" class="hover:text-white transition">Rassen-Quiz</a>
                     <a href="/de/compare/" class="hover:text-white transition">Vergleichen</a>
                     <a href="/de/articles/" class="hover:text-white transition">Ratgeber</a>
                     <a href="/de/about/" class="hover:text-white transition">Über uns</a>
                 </div>
             </div>
-            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+            <div class="border-t border-teal-600 mt-8 pt-8 text-center text-sm text-teal-200">
                 <p>© 2026 CatFinder. Mit 🐱 für Katzenliebhaber überall gemacht.</p>
             </div>
         </div>
