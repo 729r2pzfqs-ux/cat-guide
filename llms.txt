@@ -1,0 +1,7 @@
+# catfinder.app
+
+## About
+CatFinder helps you identify and learn about cat breeds. Browse 70+ cat breeds with photos, characteristics, temperament, and care information.
+
+## URLs
+- Homepage: https://catfinder.app/
