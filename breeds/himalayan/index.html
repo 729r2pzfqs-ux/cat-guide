@@ -86,6 +86,48 @@
   "mainEntityOfPage": "https://catfinder.app/breeds/himalayan/"
 }
 </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is the temperament of a Himalayan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Himalayan is known for being calm, gentle, sweet, quiet. Himalayans combine Persian features with Siamese colorpoints. They're sweet, calm cats that love peaceful environments."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long do Himalayan cats live?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Himalayan has an average lifespan of 9-15 years."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much grooming does a Himalayan need?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Himalayan has a longhair coat and requires high grooming maintenance."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are Himalayan cats good with children?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Himalayan has good compatibility with children (rated 3/5 for kid-friendliness)."
+            }
+        }
+    ]
+}
+    </script>
 </head>
 <body class="bg-cream-100 text-slate-800">
     <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
@@ -269,7 +311,69 @@
                 </div>
             </div>
         </section>
-    </main>
+    
+    <!-- Related Breeds Section -->
+    <section class="mt-12 mb-8">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">Similar Breeds You Might Like</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            
+            <a href="/breeds/persian/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">Persian</h3>
+                <p class="text-sm text-slate-500">calm, gentle, affectionate</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">longhair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">12-17 years</span>
+                </div>
+            </a>
+            <a href="/breeds/british-longhair/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">British Longhair</h3>
+                <p class="text-sm text-slate-500">calm, easygoing, affectionate</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">longhair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">12-15 years</span>
+                </div>
+            </a>
+            <a href="/breeds/cymric/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">Cymric</h3>
+                <p class="text-sm text-slate-500">gentle, playful, intelligent</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">longhair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">8-14 years</span>
+                </div>
+            </a>
+            <a href="/breeds/nebelung/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">Nebelung</h3>
+                <p class="text-sm text-slate-500">shy, gentle, loyal</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">longhair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">15-18 years</span>
+                </div>
+            </a>
+            <a href="/breeds/scottish-fold/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">Scottish Fold</h3>
+                <p class="text-sm text-slate-500">sweet, calm, adaptable</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">shorthair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">11-14 years</span>
+                </div>
+            </a>
+            <a href="/breeds/birman/" class="block bg-white rounded-lg border border-slate-200 p-4 hover:shadow-md transition">
+                <h3 class="font-bold text-slate-900">Birman</h3>
+                <p class="text-sm text-slate-500">gentle, affectionate, social</p>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded">medium</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">semi-longhair</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">12-16 years</span>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
 
     <footer class="bg-slate-900 text-slate-300 py-12 px-4">
         <div class="max-w-6xl mx-auto">
