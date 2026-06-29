@@ -155,9 +155,9 @@ def process_images(source_dir, dest_breeds_dir, dest_heads_dir):
 if __name__ == '__main__':
     import sys
     
-    source = sys.argv[1] if len(sys.argv) > 1 else "/Users/juhaporraskorpi/Downloads/catfinder-images/Catfinder"
-    breeds_dir = "/Users/juhaporraskorpi/clawd/cat-finder/images/breeds"
-    heads_dir = "/Users/juhaporraskorpi/clawd/cat-finder/images/heads"
+    source = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser("~/Downloads/catfinder-images/Catfinder")
+    breeds_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../cat-finder/images/breeds")
+    heads_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../cat-finder/images/heads")
     
     print(f"Processing cat images from: {source}")
     print(f"Breeds output: {breeds_dir}")

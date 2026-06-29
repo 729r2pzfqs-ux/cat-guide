@@ -4,8 +4,8 @@
 from PIL import Image
 import os
 
-INPUT_DIR = "/Users/juhaporraskorpi/clawd/catfinder.app/images/breeds"
-OUTPUT_DIR = "/Users/juhaporraskorpi/clawd/catfinder.app/images/heads"
+INPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../catfinder.app/images/breeds")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../catfinder.app/images/heads")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
