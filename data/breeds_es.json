@@ -67,7 +67,7 @@
  },
  "burmese": {
   "overview": "El Burmés es un gato compacto y musculoso con un pelaje sedoso y expresivos ojos dorados. Originario de Birmania (Myanmar), son conocidos por su personalidad similar a un perro y devoción inquebrantable a sus humanos. A menudo se les llama \"gatos velcro\" por lo cerca que se pegan a sus dueños.",
-  "health": "Los Burmeses pueden ser propensos a la Diabetes Mellitus, hipopotasemia (bajo potasio) y deformidades craneofaciales en algunas líneas. También pueden desarrollar condiciones oculares. Los chequeos veterinarios regulares son importantes. Con buen cuidado, viven 15-18 años.",
+  "health": "Los Burmeses pueden ser propensos a la Diabetes Mellitus, hipopotasemia (bajo potasio) y deformidades craneofaciales en algunas líneas. También pueden desarrollar condiciones oculares. Los chequeos veterinarios regulares son importantes. Con buen cuidado, viven 16-18 años.",
   "care": "Su pelaje corto y satinado necesita un cuidado mínimo: el cepillado semanal es suficiente. Son muy sociales y no les va bien solos; considera tener dos. Permanecen juguetones hasta bien entrada la edad adulta y necesitan juego interactivo diario. Controla su dieta ya que pueden ganar peso.",
   "description": "Los Burmeses son conocidos por su personalidad parecida a la de un perro: siguen a sus dueños a todas partes y son extremadamente sociables."
  },
@@ -115,7 +115,7 @@
  },
  "tonkinese": {
   "overview": "El Tonkinés es un cruce entre Siamés y Burmés, combinando lo mejor de ambas razas. Tienen ojos aguamarina, una constitución media y un pelaje sedoso. Juguetones, sociales y habladores (pero menos que los Siameses), son el punto medio perfecto.",
-  "health": "Los Tonkineses pueden heredar problemas de salud de ambas razas parentales: infecciones respiratorias, problemas dentales y ojos cruzados (raro). También pueden ser propensos a enfermedad inflamatoria intestinal. Generalmente saludables con esperanza de vida de 12-16 años.",
+  "health": "Los Tonkineses pueden heredar problemas de salud de ambas razas parentales: infecciones respiratorias, problemas dentales y ojos cruzados (raro). También pueden ser propensos a enfermedad inflamatoria intestinal. Generalmente saludables con esperanza de vida de 15-18 años.",
   "care": "Su pelaje sedoso solo necesita cepillado semanal. Son muy sociales y necesitan compañía: no les va bien solos. Proporciona muchos juguetes interactivos y oportunidades para trepar. Permanecen juguetones y curiosos durante toda la vida.",
   "description": "Los Tonkineses son un cruce entre Siamés y Burmés que combina lo mejor de ambos: sociables, juguetones y cariñosos."
  },
@@ -175,7 +175,7 @@
  },
  "singapura": {
   "overview": "El Singapura es una de las razas de gatos más pequeñas, pesando solo 2-4 kg. A pesar de su pequeño tamaño, tienen personalidades enormes: curiosos, juguetones y siempre presentes. Sus grandes ojos y pelaje ticked les dan una apariencia de eterno gatito.",
-  "health": "Los Singapura pueden ser propensos a la Deficiencia de Piruvato Quinasa (PKD), inercia uterina en hembras (dificultad para dar a luz) y pueden tener un pool genético más pequeño. Algunos pueden desarrollar distrofia muscular. Generalmente saludables con esperanza de vida de 12-15 años.",
+  "health": "Los Singapura pueden ser propensos a la Deficiencia de Piruvato Quinasa (PKD), inercia uterina en hembras (dificultad para dar a luz) y pueden tener un pool genético más pequeño. Algunos pueden desarrollar distrofia muscular. Generalmente saludables con esperanza de vida de 11-15 años.",
   "care": "Su pelaje corto y fino necesita un aseo mínimo: el cepillado semanal es suficiente. Son buscadores de calor que aman los lugares cálidos. Proporciona muchas oportunidades para trepar y juego interactivo. Permanecen juguetones y similares a gatitos durante toda la vida.",
   "description": "Los Singapura son la raza de gato más pequeña, pero tienen una personalidad enorme. Les encanta participar en todo."
  },
@@ -229,7 +229,7 @@
  },
  "burmilla": {
   "overview": "El Burmilla se originó de un apareamiento accidental entre un Burmés y un Persa Chinchilla en 1981. Tienen un pelaje plateado brillante con sombreado sutil. Juguetones pero menos exigentes que los Burmeses, son afectuosos sin ser pegajosos.",
-  "health": "Los Burmilla pueden heredar problemas de salud de ambas razas parentales: Enfermedad Renal Poliquística del lado Persa y alergias. Algunos pueden desarrollar problemas dentales. Los chequeos veterinarios regulares son importantes. La esperanza de vida es típicamente 12-15 años.",
+  "health": "Los Burmilla pueden heredar problemas de salud de ambas razas parentales: Enfermedad Renal Poliquística del lado Persa y alergias. Algunos pueden desarrollar problemas dentales. Los chequeos veterinarios regulares son importantes. La esperanza de vida es típicamente 10-15 años.",
   "care": "Su pelaje corto y sedoso necesita cepillado semanal. Son gatos adaptables que les va bien con familias y otras mascotas. Moderadamente activos: disfrutan del juego pero también felices de relajarse. Son sociales pero pueden manejar algo de tiempo solos.",
   "description": "Los Burmilla son un cruce entre Burmés y Persa Chinchilla que combina lo mejor de ambos: un carácter dulce y un hermoso pelaje plateado."
  },
@@ -277,7 +277,7 @@
  },
  "cymric": {
   "overview": "El Cymric (pronunciado KIM-rick) es la versión de pelo largo del Manx, compartiendo el mismo gen sin cola y apariencia redondeada. Son gatos inteligentes y juguetones que a menudo actúan más como perros: aprendiendo trucos y jugando a buscar.",
-  "health": "Como los Manx, los Cymric pueden desarrollar Síndrome Manx: problemas espinales del gen sin cola. Nunca cruces dos gatos completamente sin cola. Examina para problemas espinales. La esperanza de vida es 9-13 años, menos si hay problemas de salud.",
+  "health": "Como los Manx, los Cymric pueden desarrollar Síndrome Manx: problemas espinales del gen sin cola. Nunca cruces dos gatos completamente sin cola. Examina para problemas espinales. La esperanza de vida es 8-14 años, menos si hay problemas de salud.",
   "care": "Su pelaje doble largo necesita cepillado regular para prevenir enredos. Observa cualquier signo de problemas de movilidad o baño que podrían indicar problemas espinales. Son gatos activos e inteligentes que necesitan estimulación mental y juego.",
   "description": "Los Cymric son gatos Manx de pelo largo que comparten el mismo gen de la falta de cola. Son dulces, juguetones y crean fuertes lazos con su familia."
  },
@@ -295,7 +295,7 @@
  },
  "australian-mist": {
   "overview": "El Australian Mist (anteriormente Spotted Mist) es la primera raza de gato pedigrí de Australia. Tienen un distintivo pelaje manchado/marmolado con una apariencia nebulosa. Desarrollados de Abisinio, Burmés y tabbys domésticos, son amigables, adaptables y geniales con familias.",
-  "health": "Los Australian Mist son generalmente muy saludables con pocos problemas específicos de la raza. Algunos pueden desarrollar alergias de la piel. Raza robusta con esperanza de vida de 14-19 años. Uno de los gatos de raza pura más saludables debido a un fondo genético diverso.",
+  "health": "Los Australian Mist son generalmente muy saludables con pocos problemas específicos de la raza. Algunos pueden desarrollar alergias de la piel. Raza robusta con esperanza de vida de 15-18 años. Uno de los gatos de raza pura más saludables debido a un fondo genético diverso.",
   "care": "Su pelaje corto necesita un aseo mínimo. Son gatos adaptables y tolerantes que les va bien con niños y otras mascotas. Nivel de actividad moderado: disfrutan del juego pero también felices de relajarse. Pueden ser gatos solo de interior bastante felices.",
   "description": "Los Australian Mist son la primera raza con pedigrí de Australia, desarrollada para ser el compañero de interior perfecto: tolerante, dulce y de bajo mantenimiento."
  },
@@ -331,7 +331,7 @@
  },
  "khao-manee": {
   "overview": "El Khao Manee es una raza tailandesa rara conocida por su pelaje blanco puro y ojos impresionantes, a menudo de colores diferentes, con un ojo azul y uno dorado. En Tailandia, son considerados de buena suerte. Son juguetones, inteligentes y orientados a las personas.",
-  "health": "Los Khao Manee blancos con ojos azules pueden ser sordos: haz una prueba de audición. Pueden ser propensos al cáncer de piel por exposición al sol. De otro modo generalmente saludables con esperanza de vida de 12-16 años. Mantén fuera de la luz solar directa.",
+  "health": "Los Khao Manee blancos con ojos azules pueden ser sordos: haz una prueba de audición. Pueden ser propensos al cáncer de piel por exposición al sol. De otro modo generalmente saludables con esperanza de vida de 10-12 años. Mantén fuera de la luz solar directa.",
   "care": "Su pelaje corto necesita un aseo mínimo. Si tiene ojos azules, aprende a comunicarte visualmente con un gato sordo. Mantén en interiores para prevenir quemaduras solares. Son gatos sociales y juguetones que necesitan interacción.",
   "description": "Los Khao Manee son gatos tailandeses ancestrales, conocidos como «Gema Blanca». Muchos tienen ojos de distinto color (uno azul y uno dorado)."
  },
@@ -343,13 +343,13 @@
  },
  "serengeti": {
   "overview": "El Serengeti fue criado para parecerse al Serval africano sin ninguna sangre salvaje, creado de cruces de Bengalí y Oriental de Pelo Corto. Tienen patas largas, orejas grandes y un pelaje manchado. Activos y seguros, son muy orientados a las personas.",
-  "health": "Los Serengeti son generalmente saludables pero pueden heredar problemas de las razas parentales. Algunos pueden desarrollar cálculos en la vejiga o condiciones cardíacas. Como raza en desarrollo, los datos de salud aún se están acumulando. La esperanza de vida es 12-15 años.",
+  "health": "Los Serengeti son generalmente saludables pero pueden heredar problemas de las razas parentales. Algunos pueden desarrollar cálculos en la vejiga o condiciones cardíacas. Como raza en desarrollo, los datos de salud aún se están acumulando. La esperanza de vida es 10-15 años.",
   "care": "Su pelaje corto necesita un aseo mínimo. Gatos muy activos que necesitan mucho juego y espacio para trepar. Son sociales y no les gusta estar solos. Muchos pueden ser entrenados para caminar con correa.",
   "description": "Los Serengeti fueron criados para parecerse a los servales salvajes, pero son completamente domésticos. Son altos, moteados y muy activos."
  },
  "thai": {
   "overview": "El gato Thai es el Siamés tradicional de tipo moderado, antes de que la cría moderna hiciera al Siamés más extremo. También llamado \"Siamés de estilo antiguo\" o \"Wichien Maat\", tienen los colorpoints clásicos pero una forma corporal más natural.",
-  "health": "Los Thai pueden ser propensos a algunos problemas de salud del Siamés: problemas dentales, problemas respiratorios y condiciones oculares. Generalmente más saludables que los Siameses modernos extremos. La esperanza de vida es 15-20 años.",
+  "health": "Los Thai pueden ser propensos a algunos problemas de salud del Siamés: problemas dentales, problemas respiratorios y condiciones oculares. Generalmente más saludables que los Siameses modernos extremos. La esperanza de vida es 12-16 años.",
   "care": "Su pelaje corto necesita un aseo mínimo. Menos vocales que los Siameses modernos pero aún habladores. Gatos sociales que necesitan compañía. Inteligentes y entrenables. Les va bien con otras mascotas.",
   "description": "Los gatos Thai son los Siameses tradicionales de tipo antiguo, con un cuerpo menos extremo. Son sociables, vocales y cariñosos."
  },
@@ -361,7 +361,7 @@
  },
  "javanese": {
   "overview": "El Javanés es un Colorpoint de Pelo Corto de pelo largo (o Balinés en colores no tradicionales). Combinan la personalidad Siamesa con un pelaje sedoso y fluido en colores como rojo, crema y tortie point. Inteligentes, vocales y devotos.",
-  "health": "Los Javaneses pueden desarrollar problemas cardíacos, problemas oculares y condiciones dentales como sus parientes Siameses. Algunos pueden ser propensos a amiloidosis hepática. Los chequeos veterinarios regulares son importantes. La esperanza de vida es 12-15 años.",
+  "health": "Los Javaneses pueden desarrollar problemas cardíacos, problemas oculares y condiciones dentales como sus parientes Siameses. Algunos pueden ser propensos a amiloidosis hepática. Los chequeos veterinarios regulares son importantes. La esperanza de vida es 10-15 años.",
   "care": "Su pelaje de una sola capa no se enreda fácilmente: el cepillado semanal es suficiente. Muy sociales y necesitan mucha interacción. Muy vocales. Proporciona juguetes de rompecabezas y espacios para trepar. No les va bien solos.",
   "description": "Los Javaneses son Colorpoint de Pelo Corto de pelo largo: la misma personalidad siamesa con un pelaje sedoso en diversos colores de puntos."
  },
@@ -385,7 +385,7 @@
  },
  "cyprus": {
   "overview": "El gato de Chipre es una de las razas de gatos domesticados más antiguas del mundo, con evidencia de gatos en Chipre que data de hace 9,500 años. Son una raza natural adaptada al clima mediterráneo. Amigables, inteligentes y excelentes cazadores.",
-  "health": "Los gatos de Chipre son extremadamente saludables sin problemas específicos de la raza. Miles de años de selección natural los han hecho robustos. Uno de los gatos más saludables con esperanza de vida de 15-20 años.",
+  "health": "Los gatos de Chipre son extremadamente saludables sin problemas específicos de la raza. Miles de años de selección natural los han hecho robustos. Uno de los gatos más saludables con esperanza de vida de 12-15 años.",
   "care": "Su pelaje corto necesita un aseo mínimo. Son gatos adaptables e independientes que son buenos cazadores. Sociales con familias pero autosuficientes. Les va bien en varios climas.",
   "description": "Los gatos de Chipre son los gatos domésticos nativos de la isla de Chipre, con una historia que se remonta a miles de años."
  },
@@ -397,7 +397,7 @@
  },
  "chantilly-tiffany": {
   "overview": "El Chantilly-Tiffany (o Chantilly) es un gato semilargo de color chocolate conocido por su pelaje sedoso y personalidad devota. Una vez se creyó extinto, siguen siendo raros. Son gatos moderados y leales que siguen a sus dueños a todas partes.",
-  "health": "Los Chantilly-Tiffany pueden desarrollar acumulación de cera en las orejas y sensibilidades digestivas. De otro modo generalmente saludables. Su rareza significa preocupaciones de diversidad genética. La esperanza de vida es 12-15 años.",
+  "health": "Los Chantilly-Tiffany pueden desarrollar acumulación de cera en las orejas y sensibilidades digestivas. De otro modo generalmente saludables. Su rareza significa preocupaciones de diversidad genética. La esperanza de vida es 14-16 años.",
   "care": "Su pelaje sedoso necesita cepillado regular para prevenir enredos. Limpia las orejas frecuentemente. Son gatos devotos de energía moderada. No les gusta estar solos por largos períodos. Buenos con niños y otras mascotas.",
   "description": "Los Chantilly-Tiffany tienen un precioso pelaje sedoso y una personalidad devota. Son de energía moderada y muy leales."
  },
@@ -409,13 +409,13 @@
  },
  "asian": {
   "overview": "El grupo de gatos Asiáticos incluye variedades como el Burmilla, Asian Smoke y Asian Tabby. Combinan la personalidad Burmesa con diferentes patrones y colores de pelaje. Juguetones, sociales y afectuosos sin ser demasiado exigentes.",
-  "health": "Los gatos Asiáticos pueden heredar problemas de salud del Burmés: diabetes, problemas renales y condiciones dentales. Generalmente saludables con esperanza de vida de 12-15 años. Los chequeos veterinarios regulares son importantes.",
+  "health": "Los gatos Asiáticos pueden heredar problemas de salud del Burmés: diabetes, problemas renales y condiciones dentales. Generalmente saludables con esperanza de vida de 12-18 años. Los chequeos veterinarios regulares son importantes.",
   "care": "Su pelaje corto necesita un aseo mínimo. Son gatos sociales que disfrutan la interacción familiar pero pueden manejar algo de tiempo solos. Nivel de actividad moderado. Buenos con niños y otras mascotas.",
   "description": "Los gatos Asiáticos son gatos de tipo Burmés en colores y patrones no tradicionales. Comparten la cariñosa personalidad del Burmés."
  },
  "tiffanie": {
   "overview": "El Tiffanie es un gato Asiático semilargo, similar al Burmilla pero con un pelaje fluido. Desarrollado en el Reino Unido, no están relacionados con el Chantilly-Tiffany americano a pesar del nombre similar. Juguetones, afectuosos e inteligentes.",
-  "health": "Los Tiffanie pueden heredar preocupaciones de salud del Asiático/Burmés. Algunos pueden desarrollar problemas renales o alergias. El cuidado veterinario regular es importante. La esperanza de vida es 12-15 años.",
+  "health": "Los Tiffanie pueden heredar preocupaciones de salud del Asiático/Burmés. Algunos pueden desarrollar problemas renales o alergias. El cuidado veterinario regular es importante. La esperanza de vida es 12-16 años.",
   "care": "Su pelaje sedoso necesita cepillado regular para prevenir enredos. Gatos sociales y juguetones que disfrutan la interacción. Nivel de energía moderado: juguetones pero no hiperactivos. Buenos con familias.",
   "description": "Los Tiffanie son la versión de pelo semilargo del Burmilla, que combina el hermoso pelaje plateado con un carácter dulce."
  },
@@ -427,7 +427,7 @@
  },
  "suphalak": {
   "overview": "El Suphalak es una antigua raza tailandesa, descrita en los Poemas del Libro del Gato escritos hace más de 300 años. Tienen un rico pelaje marrón rojizo y ojos dorados. Extremadamente raros, son afectuosos, juguetones y se vinculan fuertemente con sus familias.",
-  "health": "Los Suphalak son generalmente saludables pero tienen un pool genético muy pequeño. Los datos de salud limitados están disponibles debido a la rareza. El cuidado veterinario regular es importante. La esperanza de vida se estima en 12-15 años.",
+  "health": "Los Suphalak son generalmente saludables pero tienen un pool genético muy pequeño. Los datos de salud limitados están disponibles debido a la rareza. El cuidado veterinario regular es importante. La esperanza de vida se estima en 12-16 años.",
   "care": "Su pelaje corto necesita un aseo mínimo. Gatos sociales que disfrutan la compañía humana. Moderadamente activos con personalidades juguetones. Muy raros: encontrar criadores es difícil.",
   "description": "Los Suphalak son gatos tailandeses ancestrales, mencionados en los Poemas del Libro de los Gatos. Tienen un singular pelaje cobrizo y una naturaleza cariñosa."
  },

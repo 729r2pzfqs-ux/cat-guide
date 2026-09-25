@@ -27,9 +27,9 @@
     <meta property="og:description" content="Estas razas de gatos tranquilas y silenciosas prosperan en espacios pequeños. Encuentra tu compañero ideal para apartamento.">
     <meta property="og:site_name" content="CatFinder">
     
-    <meta property="og:image" content="https://catfinder.app/images/og-default.jpg">
+    <meta property="og:image" content="https://catfinder.app/images/breeds/persian.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
+    <meta name="twitter:image" content="https://catfinder.app/images/breeds/persian.webp">
     <meta name="twitter:title" content="Mejores Razas de Gatos para Apartamentos en 2026">
     <meta name="twitter:description" content="Estas razas de gatos tranquilas y silenciosas prosperan en espacios pequeños.">
     
@@ -38,9 +38,11 @@
     </script>
     
     <link rel="stylesheet" href="/css/tailwind.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }
+        .card-shadow { box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03); }
         .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #0f172a; }
         .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #334155; }
         .prose p { margin-bottom: 1rem; color: #475569; line-height: 1.8; }
@@ -48,21 +50,39 @@
         .prose li { margin-bottom: 0.5rem; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <header class="bg-white border-b border-slate-200 py-4 px-4">
-        <div class="max-w-4xl mx-auto flex items-center justify-between">
-            <a href="../../../es/" class="flex items-center gap-2">
-                <svg class="w-10 h-10 text-fuchsia-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+<body class="bg-cream-100 min-h-screen text-slate-800">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/es/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
+                    <i data-lucide="cat" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
-            <a href="../" class="text-slate-600 hover:text-fuchsia-600 text-sm">← Todas las Guías</a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/es/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Buscar Razas</a>
+                <a href="/es/compare/" class="hidden md:inline text-slate-600 hover:text-teal-600 transition">Comparar</a>
+                <a href="/es/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Hacer el Test</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>ES</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/articles/best-cats-for-apartments/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/articles/best-cats-for-apartments/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Español</a>
+                        <a href="/de/articles/best-cats-for-apartments/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main class="px-4 py-12">
         <article class="max-w-3xl mx-auto">
             <div class="mb-8">
-                <span class="text-fuchsia-600 font-medium text-sm">GUÍA DE VIVIENDA</span>
+                <span class="text-teal-600 font-medium text-sm">GUÍA DE VIVIENDA</span>
                 <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Mejores Razas de Gatos para Apartamentos en 2026</h1>
                 <p class="text-slate-600 text-lg">¿Vives en un espacio pequeño? Estas razas tranquilas y adaptables son compañeros perfectos para apartamentos.</p>
             </div>
@@ -70,42 +90,42 @@
             <div class="prose max-w-none">
                 <p class="text-lg">Los gatos a menudo se consideran mascotas ideales para apartamentos, y con buena razón. Son independientes, no necesitan paseos al aire libre y la mayoría está contenta en espacios acogedores. Pero no todos los gatos son igualmente adecuados para la vida en apartamento. Los factores clave son <strong>nivel de energía, vocalización y adaptabilidad</strong>.</p>
 
-                <div class="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-4 rounded-r-xl my-6">
-                    <p class="text-fuchsia-900 mb-0"><strong>Buenas noticias:</strong> A diferencia de los perros, la mayoría de los gatos se adaptan bien a los apartamentos. Las razas a continuación son especialmente adecuadas debido a sus temperamentos tranquilos y su naturaleza silenciosa.</p>
+                <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-xl my-6">
+                    <p class="text-teal-900 mb-0"><strong>Buenas noticias:</strong> A diferencia de los perros, la mayoría de los gatos se adaptan bien a los apartamentos. Las razas a continuación son especialmente adecuadas debido a sus temperamentos tranquilos y su naturaleza silenciosa.</p>
                 </div>
 
                 <h2>🏆 Los 5 Mejores Gatos para Apartamentos</h2>
 
                 <h3>1. Persa</h3>
-                <p>El gato de apartamento por excelencia. Los Persas son tranquilos, silenciosos y están contentos de descansar en un alféizar soleado todo el día. Tienen niveles de energía bajos y rara vez vocalizan. Su lujoso pelaje requiere cepillado diario, pero su comportamiento pacífico los hace ideales para espacios pequeños. <a href="../../../es/breeds/persian/" class="text-fuchsia-600 underline">Ver perfil de la raza →</a></p>
+                <p>El gato de apartamento por excelencia. Los Persas son tranquilos, silenciosos y están contentos de descansar en un alféizar soleado todo el día. Tienen niveles de energía bajos y rara vez vocalizan. Su lujoso pelaje requiere cepillado diario, pero su comportamiento pacífico los hace ideales para espacios pequeños. <a href="../../../es/breeds/persian/" class="text-teal-600 underline">Ver perfil de la raza →</a></p>
                 <ul>
                     <li><strong>Pros:</strong> Extremadamente tranquilo, silencioso, ama descansar, temperamento gentil</li>
                     <li><strong>Contras:</strong> Alto mantenimiento del pelaje, puede ser propenso a problemas de salud</li>
                 </ul>
 
                 <h3>2. Ragdoll</h3>
-                <p>Llamados así por su tendencia a quedarse laxos cuando los cargan, los Ragdolls son dóciles, cariñosos y adaptables. Son relativamente silenciosos y les encanta seguir a sus dueños por el apartamento. A pesar de su gran tamaño, tienen poca energía y están contentos en interiores. <a href="../../../es/breeds/ragdoll/" class="text-fuchsia-600 underline">Ver perfil de la raza →</a></p>
+                <p>Llamados así por su tendencia a quedarse laxos cuando los cargan, los Ragdolls son dóciles, cariñosos y adaptables. Son relativamente silenciosos y les encanta seguir a sus dueños por el apartamento. A pesar de su gran tamaño, tienen poca energía y están contentos en interiores. <a href="../../../es/breeds/ragdoll/" class="text-teal-600 underline">Ver perfil de la raza →</a></p>
                 <ul>
                     <li><strong>Pros:</strong> Dócil, cariñoso, bueno con otras mascotas, silencioso</li>
                     <li><strong>Contras:</strong> Tamaño grande, necesita compañía, mantenimiento moderado del pelaje</li>
                 </ul>
 
                 <h3>3. British Shorthair</h3>
-                <p>El gato "fácil" por excelencia. Los British Shorthairs son independientes, tranquilos y no demasiado exigentes. Están felices de entretenerse solos y no requieren atención constante. Su naturaleza silenciosa y energía moderada los hacen perfectos para quienes viven en apartamentos. <a href="../../../es/breeds/british-shorthair/" class="text-fuchsia-600 underline">Ver perfil de la raza →</a></p>
+                <p>El gato "fácil" por excelencia. Los British Shorthairs son independientes, tranquilos y no demasiado exigentes. Están felices de entretenerse solos y no requieren atención constante. Su naturaleza silenciosa y energía moderada los hacen perfectos para quienes viven en apartamentos. <a href="../../../es/breeds/british-shorthair/" class="text-teal-600 underline">Ver perfil de la raza →</a></p>
                 <ul>
                     <li><strong>Pros:</strong> Independiente, silencioso, bajo mantenimiento, adaptable</li>
                     <li><strong>Contras:</strong> Puede ser distante, propenso al aumento de peso</li>
                 </ul>
 
                 <h3>4. Azul Ruso</h3>
-                <p>Elegante, silencioso y leal. Los Azules Rusos son conocidos por sus voces suaves, casi silenciosas, y su naturaleza reservada. Se vinculan profundamente con sus dueños pero no son exigentes. También son gatos naturalmente limpios que se adaptan bien a las rutinas. <a href="../../../es/breeds/russian-blue/" class="text-fuchsia-600 underline">Ver perfil de la raza →</a></p>
+                <p>Elegante, silencioso y leal. Los Azules Rusos son conocidos por sus voces suaves, casi silenciosas, y su naturaleza reservada. Se vinculan profundamente con sus dueños pero no son exigentes. También son gatos naturalmente limpios que se adaptan bien a las rutinas. <a href="../../../es/breeds/russian-blue/" class="text-teal-600 underline">Ver perfil de la raza →</a></p>
                 <ul>
                     <li><strong>Pros:</strong> Muy silencioso, cualidades hipoalergénicas, leal, poca muda de pelo</li>
                     <li><strong>Contras:</strong> Tímido con extraños, necesita rutina</li>
                 </ul>
 
                 <h3>5. Scottish Fold</h3>
-                <p>Dulce, tranquilo y adaptable. Los Scottish Folds son conocidos por sus orejas dobladas únicas y su apariencia de búho. Son gatos silenciosos con niveles de energía moderados y se adaptan bien a diversas situaciones de vida. Disfrutan de la compañía pero no son pegajosos. <a href="../../../es/breeds/scottish-fold/" class="text-fuchsia-600 underline">Ver perfil de la raza →</a></p>
+                <p>Dulce, tranquilo y adaptable. Los Scottish Folds son conocidos por sus orejas dobladas únicas y su apariencia de búho. Son gatos silenciosos con niveles de energía moderados y se adaptan bien a diversas situaciones de vida. Disfrutan de la compañía pero no son pegajosos. <a href="../../../es/breeds/scottish-fold/" class="text-teal-600 underline">Ver perfil de la raza →</a></p>
                 <ul>
                     <li><strong>Pros:</strong> Tranquilo, adaptable, temperamento dulce, bueno con otras mascotas</li>
                     <li><strong>Contras:</strong> Posibles problemas articulares, no muy juguetón</li>
@@ -187,7 +207,7 @@
                 <p>¿No estás seguro de qué gato de apartamento es el adecuado para ti? Haz nuestro quiz para encontrar razas que coincidan con tu estilo de vida, nivel de actividad y situación de vivienda.</p>
 
                 <div class="flex flex-wrap gap-4 mt-6">
-                    <a href="../../../es/quiz/" class="inline-block bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white font-semibold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Haz el Quiz de Razas →</a>
+                    <a href="../../../es/quiz/" class="inline-block bg-teal-500 text-white font-semibold px-6 py-3 rounded-xl hover:shadow-lg hover: transition">Haz el Quiz de Razas →</a>
                     <a href="../../../es/compare/" class="inline-block bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold px-6 py-3 rounded-xl transition">Comparar Razas</a>
                 </div>
             </div>

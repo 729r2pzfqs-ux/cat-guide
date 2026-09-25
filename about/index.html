@@ -23,7 +23,7 @@
     
     <meta property="og:image" content="https://catfinder.app/images/og-default.jpg">
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <meta name="twitter:title" content="About CatFinder">
     <meta name="twitter:description" content="Helping cat lovers find their perfect feline companion.">
@@ -62,8 +62,20 @@
                 <span class="text-xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">CatFinder</span>
             </a>
             <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="/search/" class="text-slate-600 hover:text-teal-600 transition hidden sm:block">Browse Breeds</a>
-                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition">Take Quiz</a>
+                <a href="/breeds/" class="text-slate-600 hover:text-teal-600 transition hidden sm:block">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:shadow-lg hover:shadow-teal-500/25 transition">Take Quiz</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>EN</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/about/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">English</a>
+                        <a href="/es/about/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/about/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -142,9 +154,9 @@
                     Have a question, suggestion, or spotted an error? We'd love to hear from you.
                 </p>
                 <div class="flex items-center gap-3">
-                    <a href="mailto:hello@catfinder.app" class="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition">
+                    <a href="mailto:info@catfinder.app" class="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition">
                         <i data-lucide="send" class="w-5 h-5"></i>
-                        hello@catfinder.app
+                        info@catfinder.app
                     </a>
                 </div>
                 <p class="text-slate-600 text-sm mt-4">

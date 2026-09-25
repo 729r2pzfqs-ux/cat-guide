@@ -17,7 +17,7 @@
     <meta property="og:description" content="Cómo CatFinder trata tus datos: analítica, cookies, servicios de terceros y tus derechos.">
     <meta property="og:site_name" content="CatFinder">
     <meta property="og:image" content="https://catfinder.app/images/og-default.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <link rel="stylesheet" href="/css/tailwind.css">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -47,8 +47,20 @@
                 <span class="text-xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">CatFinder</span>
             </a>
             <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="/es/search/" class="text-slate-600 hover:text-teal-600 transition hidden sm:block">Ver razas</a>
-                <a href="/es/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition">Hacer el test</a>
+                <a href="/es/breeds/" class="text-slate-600 hover:text-teal-600 transition hidden sm:block">Ver razas</a>
+                <a href="/es/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:shadow-lg hover:shadow-teal-500/25 transition">Hacer el test</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>ES</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/privacy/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/privacy/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Español</a>
+                        <a href="/de/privacy/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -56,7 +68,7 @@
     <main class="max-w-3xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
             <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Política de Privacidad</h1>
-            <p class="text-slate-500">Última actualización: 6 de julio de 2026</p>
+            <p class="text-slate-500">Última actualización: 25 de septiembre de 2026</p>
         </div>
         <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Resumen</h2>
@@ -68,11 +80,15 @@
         </section>
         <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Cookies</h2>
-            <p class="text-slate-600 leading-relaxed">Google Analytics establece cookies para distinguir visitantes y sesiones. Estas cookies no te identifican personalmente. Puedes bloquear o eliminar las cookies en cualquier momento desde la configuración de tu navegador; el sitio funciona completamente sin ellas.</p>
+            <p class="text-slate-600 leading-relaxed">Google Analytics establece cookies para distinguir visitantes y sesiones, y Google AdSense y sus socios publicitarios establecen cookies para mostrar y medir anuncios (ver «Publicidad» más abajo). Estas cookies no te identifican por tu nombre. Puedes bloquear o eliminar las cookies en cualquier momento desde la configuración de tu navegador; el sitio funciona perfectamente sin ellas.</p>
+        </section>
+        <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
+            <h2 class="text-xl font-bold text-slate-900 mb-3">Publicidad</h2>
+            <p class="text-slate-600 leading-relaxed">Utilizamos Google AdSense, un servicio de publicidad de Google, para mostrar anuncios en este sitio. Google y sus socios usan cookies (como la cookie de DoubleClick) y tecnologías similares para mostrar anuncios basados en tus visitas anteriores a este y otros sitios web, limitar cuántas veces ves un anuncio y medir su rendimiento. Puedes desactivar la publicidad personalizada en la <a href="https://adssettings.google.com/?hl=es" class="text-teal-600 hover:underline" rel="noopener" target="_blank">Configuración de anuncios de Google</a>, u oponerte al uso de cookies de terceros para publicidad personalizada en <a href="https://www.youronlinechoices.com/es/" class="text-teal-600 hover:underline" rel="noopener" target="_blank">youronlinechoices.com</a>. Más información en <a href="https://policies.google.com/technologies/ads?hl=es" class="text-teal-600 hover:underline" rel="noopener" target="_blank">Cómo utiliza Google las cookies en la publicidad</a>.</p>
         </section>
         <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Servicios de terceros</h2>
-            <p class="text-slate-600 leading-relaxed">Algunos recursos de este sitio se cargan desde servidores de terceros: Google Fonts (tipografía), Tailwind CSS e iconos Lucide (estilos, vía CDN) y Google Analytics (ver arriba). Cuando tu navegador solicita estos recursos, los proveedores reciben tu dirección IP como parte de la solicitud web normal. El sitio está alojado en GitHub Pages, que puede mantener registros estándar del servidor. Consulta la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" class="text-teal-600 hover:underline" rel="noopener" target="_blank">Declaración de Privacidad de GitHub</a>.</p>
+            <p class="text-slate-600 leading-relaxed">Algunos recursos de este sitio se cargan desde servidores de terceros: Google Fonts (tipografía), iconos Lucide (a través del CDN unpkg), Google Analytics y Google AdSense (ver arriba). Cuando tu navegador solicita estos recursos, los proveedores reciben tu dirección IP como parte de la solicitud web normal. El sitio está alojado en GitHub Pages, que puede mantener registros estándar del servidor. Consulta la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" class="text-teal-600 hover:underline" rel="noopener" target="_blank">Declaración de Privacidad de GitHub</a>.</p>
         </section>
         <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Tus derechos</h2>
@@ -80,7 +96,7 @@
         </section>
         <section class="bg-white rounded-xl p-6 card-shadow border border-cream-300 mb-4">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Contacto</h2>
-            <p class="text-slate-600 leading-relaxed">¿Preguntas sobre esta política? Escríbenos a <a href="mailto:hello@catfinder.app" class="text-teal-600 hover:underline">hello@catfinder.app</a>.</p>
+            <p class="text-slate-600 leading-relaxed">¿Preguntas sobre esta política? Escríbenos a <a href="mailto:info@catfinder.app" class="text-teal-600 hover:underline">info@catfinder.app</a>.</p>
         </section>
     </main>
 

@@ -2,37 +2,111 @@
 <html lang="en">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JVFQHMFD3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8JVFQHMFD3");</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>Page Not Found | CatFinder</title>
-  <meta name="description" content="This page could not be found. Browse 70+ cat breeds, take the breed quiz, or compare breeds on CatFinder.">
-  <link rel="icon" href="/favicon.ico">
-  <style>
-    :root { --primary: #f97316; --bg: #fefce8; --text: #1c1917; --muted: #78716c; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; }
-    h1 { font-size: 6rem; color: var(--primary); margin-bottom: 1rem; }
-    h2 { font-size: 1.5rem; margin-bottom: 1rem; }
-    p { color: var(--muted); margin-bottom: 2rem; max-width: 400px; }
-    .redirect-info { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 1rem; margin: 1rem auto; max-width: 400px; font-size: 0.9rem; color: #c2410c; display: none; }
-    a { color: var(--primary); text-decoration: none; font-weight: 600; }
-    a:hover { text-decoration: underline; }
-    .links { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
-    .btn { background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; }
-    .btn:hover { background: #ea580c; text-decoration: none; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Page Not Found | CatFinder</title>
+    <meta name="description" content="This page could not be found. Browse all 74 cat breeds A-Z, take the breed quiz, or compare breeds side by side on CatFinder.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }
+        .card-shadow { box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03); }
+    </style>
 </head>
-<body>
-  <h1>🐱</h1>
-  <h2>Page Not Found</h2>
-  <p>Sorry, the page you're looking for doesn't exist or has been moved. Our cats are working hard to find it!</p>
-  <div class="redirect-info" id="redirectInfo"></div>
-  <div class="links">
-    <a href="/" class="btn">Go Home</a>
-    <a href="/quiz/">Take the Quiz</a>
-    <a href="/search/">Search Breeds</a>
-  </div>
+<body class="bg-cream-100 min-h-screen text-slate-800 flex flex-col">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
+                    <i data-lucide="cat" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
+            </a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/breeds/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-16 text-center">
+        <div class="w-16 h-16 mx-auto mb-6 bg-teal-50 border border-teal-200 rounded-2xl flex items-center justify-center text-teal-500">
+            <i data-lucide="search-x" class="w-8 h-8"></i>
+        </div>
+        <p class="text-sm font-semibold text-teal-600 tracking-wide mb-2">404</p>
+        <h1 class="text-4xl md:text-5xl font-display text-slate-900 mb-4">We couldn&rsquo;t find that page</h1>
+        <p class="text-slate-600 max-w-xl mx-auto mb-6">The page may have moved or the link may be mistyped. Try one of these instead, or browse the full breed list.</p>
+        <div id="redirectInfo" class="hidden max-w-md mx-auto mb-6 bg-teal-50 border border-teal-200 text-teal-700 rounded-xl p-4 text-sm"></div>
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <a href="/breeds/" class="inline-flex items-center gap-2 bg-teal-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition"><i data-lucide="list" class="w-4 h-4"></i>All 74 breeds</a>
+            <a href="/quiz/" class="inline-flex items-center gap-2 bg-white border border-cream-400 text-slate-700 px-6 py-3 rounded-xl font-semibold hover:border-teal-300 transition"><i data-lucide="target" class="w-4 h-4"></i>Breed quiz</a>
+            <a href="/compare/" class="inline-flex items-center gap-2 bg-white border border-cream-400 text-slate-700 px-6 py-3 rounded-xl font-semibold hover:border-teal-300 transition"><i data-lucide="scale" class="w-4 h-4"></i>Compare breeds</a>
+            <a href="/" class="inline-flex items-center gap-2 bg-white border border-cream-400 text-slate-700 px-6 py-3 rounded-xl font-semibold hover:border-teal-300 transition"><i data-lucide="home" class="w-4 h-4"></i>Home</a>
+        </div>
+        <h2 class="text-2xl font-display text-slate-900 mb-4">Popular breeds</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+                <a href="/breeds/persian/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/persian.webp" alt="Persian" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Persian</span>
+                </a>
+                <a href="/breeds/maine-coon/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/maine-coon.webp" alt="Maine Coon" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Maine Coon</span>
+                </a>
+                <a href="/breeds/ragdoll/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/ragdoll.webp" alt="Ragdoll" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Ragdoll</span>
+                </a>
+                <a href="/breeds/british-shorthair/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/british-shorthair.webp" alt="British Shorthair" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">British Shorthair</span>
+                </a>
+                <a href="/breeds/siamese/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/siamese.webp" alt="Siamese" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Siamese</span>
+                </a>
+                <a href="/breeds/bengal/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/bengal.webp" alt="Bengal" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Bengal</span>
+                </a>
+                <a href="/breeds/sphynx/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/sphynx.webp" alt="Sphynx" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Sphynx</span>
+                </a>
+                <a href="/breeds/scottish-fold/" class="group bg-white rounded-2xl card-shadow border border-cream-300 p-3 flex items-center gap-3 hover:border-teal-300 transition">
+                    <img src="/images/heads/scottish-fold.webp" alt="Scottish Fold" width="48" height="48" class="w-12 h-12 rounded-xl object-cover object-top bg-cream-200">
+                    <span class="font-medium text-slate-800 group-hover:text-teal-600 text-left">Scottish Fold</span>
+                </a>
+        </div>
+        <p class="text-sm text-slate-500">Looking for advice? Read our guides to <a href="/articles/hypoallergenic-cats/" class="text-teal-600 hover:underline">hypoallergenic cats</a>, <a href="/articles/best-cats-for-apartments/" class="text-teal-600 hover:underline">apartment cats</a> and <a href="/articles/best-cats-for-families/" class="text-teal-600 hover:underline">family cats</a>.</p>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="text-xl font-display">CatFinder</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a href="/breeds/" class="hover:text-white">Breeds</a>
+                    <a href="/quiz/" class="hover:text-white">Quiz</a>
+                    <a href="/compare/" class="hover:text-white">Compare</a>
+                    <a href="/about/" class="hover:text-white">About</a>
+                    <a href="/privacy/" class="hover:text-white">Privacy</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+                <p>&copy; 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
   <script>
   (function() {
     var pathname = window.location.pathname;
@@ -82,13 +156,11 @@
 
     if (redirectUrl && redirectUrl !== pathname) {
       var el = document.getElementById('redirectInfo');
-      el.innerHTML = '<strong>' + reason + '</strong><br>Redirecting to <a href="' + redirectUrl + '" style="color:#c2410c;text-decoration:underline">' + redirectUrl + '</a>...';
-      el.style.display = 'block';
+      el.innerHTML = '<strong>' + reason + '</strong><br>Redirecting to <a href="' + redirectUrl + '" class="underline">' + redirectUrl + '</a>...';
+      el.classList.remove('hidden');
       setTimeout(function(){ window.location.href = redirectUrl; }, 2000);
     }
   })();
   </script>
-  </div>
-  </div>
-  </body>
+</body>
 </html>

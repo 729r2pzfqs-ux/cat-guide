@@ -50,8 +50,20 @@
                 <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="/search/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
-                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
+                <a href="/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Take Quiz</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>EN</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/compare/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">English</a>
+                        <a href="/es/compare/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/compare/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -120,27 +132,27 @@
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('persian', 'ragdoll')" class="font-semibold hover:text-teal-600">Persian vs Ragdoll</button>
                     <p class="text-sm text-slate-600">Fluffy lap cat showdown</p>
-                    <a href="comparisons/persian-vs-ragdoll.html" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
+                    <a href="/compare/comparisons/persian-vs-ragdoll/" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('maine-coon', 'norwegian-forest-cat')" class="font-semibold hover:text-teal-600">Maine Coon vs Norwegian Forest</button>
                     <p class="text-sm text-slate-600">Gentle giants compared</p>
-                    <a href="comparisons/maine-coon-vs-norwegian-forest-cat.html" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
+                    <a href="/compare/comparisons/maine-coon-vs-norwegian-forest-cat/" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('siamese', 'bengal')" class="font-semibold hover:text-teal-600">Siamese vs Bengal</button>
                     <p class="text-sm text-slate-600">Active & intelligent</p>
-                    <a href="comparisons/siamese-vs-bengal.html" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
+                    <a href="/compare/comparisons/siamese-vs-bengal/" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('british-shorthair', 'scottish-fold')" class="font-semibold hover:text-teal-600">British Shorthair vs Scottish Fold</button>
                     <p class="text-sm text-slate-600">Calm UK companions</p>
-                    <a href="comparisons/british-shorthair-vs-scottish-fold.html" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
+                    <a href="/compare/comparisons/british-shorthair-vs-scottish-fold/" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('sphynx', 'devon-rex')" class="font-semibold hover:text-teal-600">Sphynx vs Devon Rex</button>
                     <p class="text-sm text-slate-600">Unique and playful</p>
-                    <a href="comparisons/sphynx-vs-devon-rex.html" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
+                    <a href="/compare/comparisons/sphynx-vs-devon-rex/" class="text-xs text-teal-500 hover:underline">Read full comparison →</a>
                 </div>
                 <button onclick="setBreeds('bengal', 'abyssinian')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Bengal vs Abyssinian</span>
@@ -173,11 +185,13 @@
     </footer>
 
     <script>
+        // Shared breed data loader: one network request per browser session
+        function loadBreedData(){if(window.__cfBreeds)return window.__cfBreeds;var k='cf-breeds-20260925';try{var c=sessionStorage.getItem(k);if(c)return window.__cfBreeds=Promise.resolve(JSON.parse(c));}catch(e){}return window.__cfBreeds=fetch('/data/breeds.json').then(function(r){return r.json();}).then(function(d){try{sessionStorage.setItem(k,JSON.stringify(d));}catch(e){}return d;});}
+
         let breeds = [];
 
         // Load breeds from JSON
-        fetch('../data/breeds.json')
-            .then(r => r.json())
+        loadBreedData()
             .then(data => {
                 breeds = data;
                 populateSelects();

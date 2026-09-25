@@ -5,9 +5,11 @@ CatFinder helps you identify and learn about cat breeds. Browse 74 cat breeds wi
 
 ## URLs
 - Homepage: https://catfinder.app/
-- Browse all breeds: https://catfinder.app/search/
+- All breeds A-Z: https://catfinder.app/breeds/
+- Search & filter breeds: https://catfinder.app/search/
 - Breed quiz: https://catfinder.app/quiz/
 - Compare breeds: https://catfinder.app/compare/
+- Breed comparisons: https://catfinder.app/compare/comparisons/
 - Guides: https://catfinder.app/articles/
 - FAQ: https://catfinder.app/faq/
 - Breed pages: https://catfinder.app/breeds/<breed-slug>/ (e.g. https://catfinder.app/breeds/maine-coon/)

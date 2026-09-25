@@ -577,7 +577,7 @@
       ]
     },
     "overview": "The Burmese is a compact, muscular cat with a silky coat and expressive golden eyes. Originally from Burma (Myanmar), they're known for their dog-like personality and unwavering devotion to their humans. They're often called 'velcro cats' for how closely they stick to their owners.",
-    "health": "Burmese can be prone to Diabetes Mellitus, Hypokalemia (low potassium), and cranial deformities in some lines. They may also develop eye conditions. Regular vet checkups are important. With good care, they live 15-18 years.",
+    "health": "Burmese can be prone to Diabetes Mellitus, Hypokalemia (low potassium), and cranial deformities in some lines. They may also develop eye conditions. Regular vet checkups are important. With good care, they live 16-18 years.",
     "care": "Their short, satin coat needs minimal grooming\u2014weekly brushing is enough. They're highly social and don't do well alone; consider getting two. They remain playful well into adulthood and need daily interactive play. Watch their diet as they can gain weight."
   },
   {
@@ -1766,7 +1766,7 @@
       ]
     },
     "overview": "The Burmilla originated from an accidental mating between a Burmese and a Chinchilla Persian in 1981. They have a shimmering silver coat with subtle shading. Playful but less demanding than Burmese, they're affectionate without being clingy.",
-    "health": "Burmillas can inherit health issues from both parent breeds: Polycystic Kidney Disease from Persian side and allergies. Some may develop dental issues. Regular vet checkups are important. Lifespan is typically 12-15 years.",
+    "health": "Burmillas can inherit health issues from both parent breeds: Polycystic Kidney Disease from Persian side and allergies. Some may develop dental issues. Regular vet checkups are important. Lifespan is typically 10-15 years.",
     "care": "Their short, silky coat needs weekly brushing. They're adaptable cats who do well with families and other pets. Moderately active\u2014enjoy play but also happy to relax. They're social but can handle some alone time."
   },
   {
@@ -1897,7 +1897,7 @@
       ]
     },
     "overview": "The Cymric (pronounced KIM-rick) is the longhaired version of the Manx, sharing the same tailless gene and rounded appearance. They're intelligent, playful cats who often act more like dogs\u2014learning tricks and playing fetch.",
-    "health": "Like Manx, Cymrics can develop Manx Syndrome\u2014spinal issues from the tailless gene. Never breed two completely tailless cats together. Screen for spinal problems. Lifespan is 9-13 years, less if health issues present.",
+    "health": "Like Manx, Cymrics can develop Manx Syndrome\u2014spinal issues from the tailless gene. Never breed two completely tailless cats together. Screen for spinal problems. Lifespan is 8-14 years, less if health issues present.",
     "care": "Their long double coat needs regular brushing to prevent matting. Watch for any signs of mobility or bathroom issues that could indicate spinal problems. They're active, intelligent cats who need mental stimulation and play."
   },
   {
@@ -2089,7 +2089,7 @@
       "type": "shorthair",
       "pattern": "tabby"
     },
-    "lifespan": "15-20 years",
+    "lifespan": "12-15 years",
     "temperament": [
       "active",
       "intelligent",
@@ -2641,7 +2641,7 @@
       ]
     },
     "overview": "The Serengeti was bred to resemble the African Serval without any wild blood\u2014created from Bengal and Oriental Shorthair crosses. They have long legs, large ears, and a spotted coat. Active and confident, they're very people-oriented.",
-    "health": "Serengetis are generally healthy but may inherit issues from parent breeds. Some may develop bladder stones or heart conditions. As a developing breed, health data is still accumulating. Lifespan is 12-15 years.",
+    "health": "Serengetis are generally healthy but may inherit issues from parent breeds. Some may develop bladder stones or heart conditions. As a developing breed, health data is still accumulating. Lifespan is 10-15 years.",
     "care": "Their short coat needs minimal grooming. Very active cats who need lots of play and climbing space. They're social and don't like being alone. Many can be trained to walk on a leash."
   },
   {
@@ -2684,7 +2684,7 @@
       ]
     },
     "overview": "The Thai cat is the traditional, moderate-type Siamese\u2014before modern breeding made Siamese more extreme. Also called 'Old-Style Siamese' or 'Wichien Maat,' they have the classic colorpoints but a more natural body shape.",
-    "health": "Thais may be prone to some Siamese health issues: dental problems, respiratory issues, and eye conditions. Generally healthier than modern extreme Siamese. Lifespan is 15-20 years.",
+    "health": "Thais may be prone to some Siamese health issues: dental problems, respiratory issues, and eye conditions. Generally healthier than modern extreme Siamese. Lifespan is 12-16 years.",
     "care": "Their short coat needs minimal grooming. Less vocal than modern Siamese but still talkative. Social cats who need companionship. Intelligent and trainable. They do well with other pets."
   },
   {
@@ -2727,7 +2727,7 @@
       ]
     },
     "overview": "The Chantilly-Tiffany (or Chantilly) is a semi-longhaired chocolate-colored cat known for their silky coat and devoted personality. Once thought extinct, they're still rare. They're moderate, loyal cats who follow their owners everywhere.",
-    "health": "Chantilly-Tiffanies may develop ear wax buildup and digestive sensitivities. Otherwise generally healthy. Their rarity means genetic diversity concerns. Lifespan is 12-15 years.",
+    "health": "Chantilly-Tiffanies may develop ear wax buildup and digestive sensitivities. Otherwise generally healthy. Their rarity means genetic diversity concerns. Lifespan is 14-16 years.",
     "care": "Their silky coat needs regular brushing to prevent matting. Clean ears frequently. They're devoted, moderate-energy cats. Don't like being alone for long periods. Good with children and other pets."
   },
   {
@@ -2857,7 +2857,7 @@
       ]
     },
     "overview": "The Javanese is a longhaired Colorpoint Shorthair (or Balinese in non-traditional colors). They combine Siamese personality with a silky flowing coat in colors like red, cream, and tortie point. Intelligent, vocal, and devoted.",
-    "health": "Javanese may develop heart issues, eye problems, and dental conditions like their Siamese relatives. Some may be prone to liver amyloidosis. Regular vet checkups are important. Lifespan is 12-15 years.",
+    "health": "Javanese may develop heart issues, eye problems, and dental conditions like their Siamese relatives. Some may be prone to liver amyloidosis. Regular vet checkups are important. Lifespan is 10-15 years.",
     "care": "Their single-layer coat doesn't mat easily\u2014weekly brushing is enough. Very social and need lots of interaction. Highly vocal. Provide puzzle toys and climbing spaces. Don't do well alone."
   },
   {
@@ -3029,7 +3029,7 @@
       ]
     },
     "overview": "The Tiffanie is a semi-longhaired Asian cat, similar to the Burmilla but with a flowing coat. Developed in the UK, they're not related to the American Chantilly-Tiffany despite the similar name. Playful, affectionate, and intelligent.",
-    "health": "Tiffanies may inherit Asian/Burmese health concerns. Some may develop kidney issues or allergies. Regular vet care is important. Lifespan is 12-15 years.",
+    "health": "Tiffanies may inherit Asian/Burmese health concerns. Some may develop kidney issues or allergies. Regular vet care is important. Lifespan is 12-16 years.",
     "care": "Their silky coat needs regular brushing to prevent matting. Social, playful cats who enjoy interaction. Moderate energy level\u2014playful but not hyperactive. Good with families."
   },
   {
@@ -3158,7 +3158,7 @@
       ]
     },
     "overview": "The Suphalak is an ancient Thai breed, described in the Cat-Book Poems written 300+ years ago. They have a rich reddish-brown coat and golden eyes. Extremely rare, they're affectionate, playful, and bond strongly with their families.",
-    "health": "Suphalaks are generally healthy but have a very small gene pool. Limited health data is available due to rarity. Regular vet care is important. Lifespan is estimated at 12-15 years.",
+    "health": "Suphalaks are generally healthy but have a very small gene pool. Limited health data is available due to rarity. Regular vet care is important. Lifespan is estimated at 12-16 years.",
     "care": "Their short coat needs minimal grooming. Social cats who enjoy human company. Moderately active with playful personalities. Very rare\u2014finding breeders is difficult."
   },
   {

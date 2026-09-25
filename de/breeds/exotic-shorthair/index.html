@@ -76,6 +76,12 @@
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Rassen",
+      "item": "https://catfinder.app/de/breeds/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Exotisch Kurzhaar",
       "item": "https://catfinder.app/de/breeds/exotic-shorthair/"
     }
@@ -93,8 +99,20 @@
                 <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="/de/search/" class="text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
-                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Quiz starten</a>
+                <a href="/de/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
+                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Quiz starten</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>DE</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/breeds/exotic-shorthair/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/breeds/exotic-shorthair/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/breeds/exotic-shorthair/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -104,7 +122,7 @@
             <ol class="flex items-center gap-2 text-slate-600">
                 <li><a href="/de/" class="hover:text-teal-600">Startseite</a></li>
                 <li>/</li>
-                <li><a href="/de/search/" class="hover:text-teal-600">Rassen</a></li>
+                <li><a href="/de/breeds/" class="hover:text-teal-600">Rassen</a></li>
                 <li>/</li>
                 <li class="text-slate-900 font-medium">Exotisch Kurzhaar</li>
             </ol>
@@ -159,7 +177,7 @@
 
         <!-- Accordion Sections -->
         <div class="space-y-4 mb-8">
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -167,10 +185,10 @@
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
-                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Die Exotic Shorthair ist im Grunde eine kurzhaarige Perserkatze — dasselbe süße Gesicht und ruhige Wesen, aber mit pflegeleichterem Fell. Oft 'die Perserkatze für Bequeme' genannt, verbindet sie das sanfte Naturell der Perser mit geringerem Pflegeaufwand.</p></div>
+                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Die Exotic Shorthair ist im Grunde eine kurzhaarige <a href="/de/breeds/persian/" class="text-teal-600 hover:underline">Perserkatze</a> — dasselbe süße Gesicht und ruhige Wesen, aber mit pflegeleichterem Fell. Oft 'die Perserkatze für Bequeme' genannt, verbindet sie das sanfte Naturell der Perser mit geringerem Pflegeaufwand.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -181,7 +199,7 @@
                 <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Exotics teilen die Gesundheitsprobleme der Perser: Polyzystische Nierenerkrankung (PKD), Atemprobleme durch das flache Gesicht und Augenerkrankungen. Auch Hypertrophe Kardiomyopathie (HCM) kann auftreten. Regelmäßige Tierarztkontrollen und ein PKD-Screening sind wichtig.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
@@ -189,9 +207,10 @@
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
-                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Ihr dichtes Fell sollte 2–3 Mal pro Woche gebürstet werden. Wegen des flachen Gesichts müssen die Augen täglich gereinigt werden, um Verfärbungen vorzubeugen. Halten Sie sie im Sommer kühl, da sie leicht überhitzen. Sie sind mit mäßigem Spiel und viel Schmusezeit auf dem Schoß zufrieden.</p></div>
+                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Ihr dichtes Fell sollte 2–3 Mal pro Woche gebürstet werden. Wegen des flachen Gesichts müssen die Augen täglich gereinigt werden, um Verfärbungen vorzubeugen. Halten Sie sie im Sommer kühl, da sie leicht überhitzen. Sie sind mit mäßigem Spiel und viel Schmusezeit auf dem Schoß zufrieden. Wenn Ihnen die Rasse Exotisch Kurzhaar gefällt, sehen Sie sich auch <a href="/de/breeds/burmilla/" class="text-teal-600 hover:underline">Burmilla</a> und <a href="/de/breeds/australian-mist/" class="text-teal-600 hover:underline">Australian Mist</a> an oder <a href="/de/compare/" class="text-teal-600 hover:underline">vergleichen Sie Rassen direkt</a>.</p></div>
             </details>
         </div>
+        <script>if(window.matchMedia&&window.matchMedia('(min-width: 768px)').matches){document.querySelectorAll('details[data-acc]').forEach(function(d){d.open=true;});}</script>
 
         <section class="bg-gradient-to-br from-teal-50 via-cream-100 to-teal-50 rounded-2xl p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Ist diese Rasse die richtige für Sie?</h2>
@@ -222,7 +241,7 @@
                     <span class="text-xl font-display">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">
-                    <a href="/de/search/" class="hover:text-white">Rassen</a>
+                    <a href="/de/breeds/" class="hover:text-white">Rassen</a>
                     <a href="/de/quiz/" class="hover:text-white">Quiz</a>
                     <a href="/de/compare/" class="hover:text-white">Vergleichen</a>
                     <a href="/de/about/" class="hover:text-white">Über uns</a>

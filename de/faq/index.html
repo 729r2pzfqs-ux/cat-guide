@@ -28,7 +28,7 @@
     <meta property="og:site_name" content="CatFinder">
     
     <meta property="og:image" content="https://catfinder.app/images/og-default.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <meta name="twitter:title" content="Katzenrassen FAQ — Häufige Fragen beantwortet">
     <meta name="twitter:description" content="Antworten auf häufig gestellte Fragen zu Katzenrassen.">
@@ -140,11 +140,11 @@
     </script>
     
     <link rel="stylesheet" href="/css/tailwind.css">
-    <style>html { font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; }</style>
+    <style>html { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; } h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }</style>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .card-shadow {
             box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
@@ -153,23 +153,36 @@
             transform: rotate(180deg);
         }
         .faq-item[open] summary {
-            color: #a21caf;
+            color: #0c4e54;
         }
     </style>
 </head>
-<body class="bg-white min-h-screen text-slate-800">
+<body class="bg-cream-100 min-h-screen text-slate-800">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../../de/" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+            <a href="/de/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="../search/" class="text-slate-600 hover:text-fuchsia-600 transition ml-2 md:ml-0">Rassen durchsuchen</a>
-                <a href="../quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Quiz starten</a>
+                <a href="/de/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
+                <a href="/de/compare/" class="hidden md:inline text-slate-600 hover:text-teal-600 transition">Vergleichen</a>
+                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Quiz starten</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>DE</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/faq/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/faq/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/faq/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -178,11 +191,11 @@
         <div class="max-w-3xl mx-auto">
             <!-- Page Header -->
             <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-fuchsia-50 px-4 py-2 rounded-full text-sm font-medium text-fuchsia-600 mb-4">
+                <div class="inline-flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full text-sm font-medium text-teal-600 mb-4">
                     <i data-lucide="help-circle" class="w-4 h-4"></i>
                     Häufig gestellte Fragen
                 </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Katzenrassen FAQ</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Katzenrassen FAQ</h1>
                 <p class="text-lg text-slate-600 max-w-xl mx-auto">Häufige Fragen zur Auswahl, Pflege und zum Verständnis verschiedener Katzenrassen.</p>
             </div>
 
@@ -192,15 +205,15 @@
                 <!-- Choosing a Cat -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-fuchsia-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="search" class="w-4 h-4 text-fuchsia-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="search" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Eine Katze auswählen
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Wie wähle ich die richtige Katzenrasse für mich aus?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -212,12 +225,12 @@
                                     <li><strong>Wohnsituation</strong> — Wohnungsbewohner brauchen ruhigere Rassen</li>
                                     <li><strong>Familie</strong> — Haben Sie Kinder oder andere Haustiere?</li>
                                 </ul>
-                                <p class="mt-3"><a href="../quiz/" class="text-fuchsia-600 underline font-medium">Machen Sie unser Rassen-Quiz →</a> für personalisierte Empfehlungen.</p>
+                                <p class="mt-3"><a href="../quiz/" class="text-teal-600 underline font-medium">Machen Sie unser Rassen-Quiz →</a> für personalisierte Empfehlungen.</p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Sollte ich ein Kätzchen oder eine erwachsene Katze adoptieren?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -229,7 +242,7 @@
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Was ist der Unterschied zwischen Rassekatzen und Mischlingen?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -245,74 +258,74 @@
                 <!-- Lifestyle Fit -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="home" class="w-4 h-4 text-purple-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="home" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Lebensstil & Wohnen
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen eignen sich am besten für Wohnungen?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Die besten Wohnungskatzen sind ruhig, leise und anpassungsfähig. Top-Auswahl sind:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Perser</a> — Die ultimative Schoßkatze, extrem ruhig</li>
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Sanftmütig und anhänglich</li>
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">Britisch Kurzhaar</a> — Unabhängig und leise</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> — Fast lautlos</li>
-                                    <li><a href="../breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> — Süß und anpassungsfähig</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Perser</a> — Die ultimative Schoßkatze, extrem ruhig</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Sanftmütig und anhänglich</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">Britisch Kurzhaar</a> — Unabhängig und leise</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> — Fast lautlos</li>
+                                    <li><a href="../breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> — Süß und anpassungsfähig</li>
                                 </ul>
                                 <p class="mt-3">Vermeiden Sie energiereiche Rassen wie Bengalen oder gesprächige Rassen wie Siamesen in einer Wohnung.</p>
-                                <p class="mt-2"><a href="../articles/best-cats-for-apartments/" class="text-fuchsia-600 underline font-medium">Lesen Sie unseren vollständigen Wohnungskatzen-Ratgeber →</a></p>
+                                <p class="mt-2"><a href="../articles/best-cats-for-apartments/" class="text-teal-600 underline font-medium">Lesen Sie unseren vollständigen Wohnungskatzen-Ratgeber →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen eignen sich am besten für Familien mit Kindern?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Suchen Sie nach geduldigen, verspielten Rassen, die Anfassen tolerieren:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Sanft und liebt es, gehalten zu werden</li>
-                                    <li><a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a> — Freundlicher "sanfter Riese"</li>
-                                    <li><a href="../breeds/birman/" class="text-fuchsia-600 underline">Birma</a> — Süß und geduldig</li>
-                                    <li><a href="../breeds/abyssinian/" class="text-fuchsia-600 underline">Abessinier</a> — Verspielt und sozial</li>
-                                    <li><a href="../breeds/burmese/" class="text-fuchsia-600 underline">Burma</a> — Menschenorientiert</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Sanft und liebt es, gehalten zu werden</li>
+                                    <li><a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a> — Freundlicher "sanfter Riese"</li>
+                                    <li><a href="../breeds/birman/" class="text-teal-600 underline">Birma</a> — Süß und geduldig</li>
+                                    <li><a href="../breeds/abyssinian/" class="text-teal-600 underline">Abessinier</a> — Verspielt und sozial</li>
+                                    <li><a href="../breeds/burmese/" class="text-teal-600 underline">Burma</a> — Menschenorientiert</li>
                                 </ul>
                                 <p class="mt-3">Bringen Sie Kindern immer bei, Katzen sanft zu behandeln und ihre Grenzen zu respektieren.</p>
-                                <p class="mt-2"><a href="../articles/best-cats-for-families/" class="text-fuchsia-600 underline font-medium">Lesen Sie unseren Familienkatzen-Ratgeber →</a></p>
+                                <p class="mt-2"><a href="../articles/best-cats-for-families/" class="text-teal-600 underline font-medium">Lesen Sie unseren Familienkatzen-Ratgeber →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Können Katzen mit Hunden auskommen?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
-                                <p>Ja! Viele Katzen leben glücklich mit Hunden zusammen. Rassen, die als hundefreundlich bekannt sind, sind <a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a>, <a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="../breeds/birman/" class="text-fuchsia-600 underline">Birma</a>, <a href="../breeds/abyssinian/" class="text-fuchsia-600 underline">Abessinier</a> und <a href="../breeds/american-shorthair/" class="text-fuchsia-600 underline">Amerikanisch Kurzhaar</a>.</p>
+                                <p>Ja! Viele Katzen leben glücklich mit Hunden zusammen. Rassen, die als hundefreundlich bekannt sind, sind <a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a>, <a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="../breeds/birman/" class="text-teal-600 underline">Birma</a>, <a href="../breeds/abyssinian/" class="text-teal-600 underline">Abessinier</a> und <a href="../breeds/american-shorthair/" class="text-teal-600 underline">Amerikanisch Kurzhaar</a>.</p>
                                 <p class="mt-2">Der Erfolg hängt von den Persönlichkeiten beider Tiere und einer ordnungsgemäßen Einführung ab. Katzen, die von klein auf mit Hunden aufgewachsen sind, passen sich typischerweise am besten an. Beaufsichtigen Sie immer die ersten Interaktionen und bieten Sie der Katze Fluchtwege und erhöhte Plätze.</p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen sind am pflegeleichtesten?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Pflegeleichte Rassen sind selbstständig, haben kurzes Fell und verlangen keine ständige Aufmerksamkeit:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">Britisch Kurzhaar</a> — Unabhängig und ruhig</li>
-                                    <li><a href="../breeds/american-shorthair/" class="text-fuchsia-600 underline">Amerikanisch Kurzhaar</a> — Unkompliziert, gesund</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> — Selbstständig</li>
-                                    <li><a href="../breeds/chartreux/" class="text-fuchsia-600 underline">Chartreux</a> — Leise und anpassungsfähig</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">Britisch Kurzhaar</a> — Unabhängig und ruhig</li>
+                                    <li><a href="../breeds/american-shorthair/" class="text-teal-600 underline">Amerikanisch Kurzhaar</a> — Unkompliziert, gesund</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> — Selbstständig</li>
+                                    <li><a href="../breeds/chartreux/" class="text-teal-600 underline">Chartreux</a> — Leise und anpassungsfähig</li>
                                 </ul>
                                 <p class="mt-3">Diese Katzen sind ideal für beschäftigte Besitzer, die nicht stundenlang pflegen oder spielen können.</p>
                             </div>
@@ -331,26 +344,26 @@
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Gibt es wirklich hypoallergene Katzenrassen?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Keine Katze ist zu 100% hypoallergen.</strong> Alle Katzen produzieren das Fel d 1 Protein, das Allergien auslöst. Einige Rassen produzieren jedoch weniger von diesem Protein oder haaren weniger:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/siberian/" class="text-fuchsia-600 underline">Sibirische</a> — Produziert weniger Fel d 1</li>
-                                    <li><a href="../breeds/balinese/" class="text-fuchsia-600 underline">Balinese</a> — Weniger allergene Langhaarkatze</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> — Dichtes Fell fängt Allergene ein</li>
-                                    <li><a href="../breeds/bengal/" class="text-fuchsia-600 underline">Bengal</a> — Weniger Pflege, weniger Speichelverteilung</li>
-                                    <li><a href="../breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> — Kein Fell, das Allergene einfängt</li>
+                                    <li><a href="../breeds/siberian/" class="text-teal-600 underline">Sibirische</a> — Produziert weniger Fel d 1</li>
+                                    <li><a href="../breeds/balinese/" class="text-teal-600 underline">Balinese</a> — Weniger allergene Langhaarkatze</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> — Dichtes Fell fängt Allergene ein</li>
+                                    <li><a href="../breeds/bengal/" class="text-teal-600 underline">Bengal</a> — Weniger Pflege, weniger Speichelverteilung</li>
+                                    <li><a href="../breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> — Kein Fell, das Allergene einfängt</li>
                                 </ul>
                                 <p class="mt-3">Zeit mit einer Rasse zu verbringen, bevor Sie adoptieren, ist der beste Weg, Ihre Reaktion zu testen.</p>
-                                <p class="mt-2"><a href="../articles/hypoallergenic-cats/" class="text-fuchsia-600 underline font-medium">Lesen Sie unseren Ratgeber zu hypoallergenen Katzen →</a></p>
+                                <p class="mt-2"><a href="../articles/hypoallergenic-cats/" class="text-teal-600 underline font-medium">Lesen Sie unseren Ratgeber zu hypoallergenen Katzen →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Wie lange leben Katzen normalerweise?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -366,21 +379,21 @@
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen haaren am wenigsten?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Wenig haarende Rassen sind:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> — Haarlos (braucht stattdessen Hautpflege)</li>
-                                    <li><a href="../breeds/cornish-rex/" class="text-fuchsia-600 underline">Cornish Rex</a> — Kurzes, lockiges Fell</li>
-                                    <li><a href="../breeds/devon-rex/" class="text-fuchsia-600 underline">Devon Rex</a> — Minimales Haaren</li>
-                                    <li><a href="../breeds/siamese/" class="text-fuchsia-600 underline">Siamesen</a> — Kurzes, feines Fell</li>
-                                    <li><a href="../breeds/bengal/" class="text-fuchsia-600 underline">Bengal</a> — Pelzartiges Fell</li>
+                                    <li><a href="../breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> — Haarlos (braucht stattdessen Hautpflege)</li>
+                                    <li><a href="../breeds/cornish-rex/" class="text-teal-600 underline">Cornish Rex</a> — Kurzes, lockiges Fell</li>
+                                    <li><a href="../breeds/devon-rex/" class="text-teal-600 underline">Devon Rex</a> — Minimales Haaren</li>
+                                    <li><a href="../breeds/siamese/" class="text-teal-600 underline">Siamesen</a> — Kurzes, feines Fell</li>
+                                    <li><a href="../breeds/bengal/" class="text-teal-600 underline">Bengal</a> — Pelzartiges Fell</li>
                                 </ul>
                                 <p class="mt-3">Regelmäßiges Bürsten hilft bei allen Rassen. Kurzhaarkatzen haaren im Allgemeinen weniger als Langhaarkatzen.</p>
-                                <p class="mt-2"><a href="../search/?shedding=low" class="text-fuchsia-600 underline font-medium">Wenig haarende Rassen durchsuchen →</a></p>
+                                <p class="mt-2"><a href="../search/?shedding=low" class="text-teal-600 underline font-medium">Wenig haarende Rassen durchsuchen →</a></p>
                             </div>
                         </details>
                     </div>
@@ -389,48 +402,48 @@
                 <!-- Personality -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="heart" class="w-4 h-4 text-pink-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Persönlichkeit & Eigenschaften
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen sind am anhänglichsten?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Die anhänglichsten Rassen suchen aktiv menschliche Gesellschaft:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Bekannt für Sanftmut, liebt es gehalten zu werden</li>
-                                    <li><a href="../breeds/siamese/" class="text-fuchsia-600 underline">Siamesen</a> — Bindet sich tief an Besitzer</li>
-                                    <li><a href="../breeds/burmese/" class="text-fuchsia-600 underline">Burma</a> — Extrem menschenorientiert</li>
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Perser</a> — Sanfte Schoßkatzen</li>
-                                    <li><a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a> — Freundliche Riesen</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Bekannt für Sanftmut, liebt es gehalten zu werden</li>
+                                    <li><a href="../breeds/siamese/" class="text-teal-600 underline">Siamesen</a> — Bindet sich tief an Besitzer</li>
+                                    <li><a href="../breeds/burmese/" class="text-teal-600 underline">Burma</a> — Extrem menschenorientiert</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Perser</a> — Sanfte Schoßkatzen</li>
+                                    <li><a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a> — Freundliche Riesen</li>
                                 </ul>
                                 <p class="mt-3">Diese Rassen folgen oft ihren Besitzern durch das Haus wie "Klettenkatzen".</p>
-                                <p class="mt-2"><a href="../search/?lap=1" class="text-fuchsia-600 underline font-medium">Schoßkatzen durchsuchen →</a></p>
+                                <p class="mt-2"><a href="../search/?lap=1" class="text-teal-600 underline font-medium">Schoßkatzen durchsuchen →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 Welche Katzenrassen sind am leisesten?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Die leisesten Rassen miauen selten:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> — Fast lautlos</li>
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">Britisch Kurzhaar</a> — Miaut selten</li>
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Perser</a> — Leise und ruhig</li>
-                                    <li><a href="../breeds/chartreux/" class="text-fuchsia-600 underline">Chartreux</a> — Bekannt für Stille</li>
-                                    <li><a href="../breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> — Sanftes, leises Miauen</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> — Fast lautlos</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">Britisch Kurzhaar</a> — Miaut selten</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Perser</a> — Leise und ruhig</li>
+                                    <li><a href="../breeds/chartreux/" class="text-teal-600 underline">Chartreux</a> — Bekannt für Stille</li>
+                                    <li><a href="../breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> — Sanftes, leises Miauen</li>
                                 </ul>
                                 <p class="mt-3"><strong>Vermeiden Sie, wenn Sie Ruhe wollen:</strong> Siamesen, Orientalen und Burma sind sehr gesprächig.</p>
-                                <p class="mt-2"><a href="../search/?quiet=1" class="text-fuchsia-600 underline font-medium">Leise Rassen durchsuchen →</a></p>
+                                <p class="mt-2"><a href="../search/?quiet=1" class="text-teal-600 underline font-medium">Leise Rassen durchsuchen →</a></p>
                             </div>
                         </details>
                     </div>
@@ -438,11 +451,11 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="mt-16 bg-gradient-to-br from-fuchsia-50 to-purple-50 rounded-3xl p-8 text-center border border-fuchsia-100">
+            <div class="mt-16 bg-teal-50 rounded-3xl p-8 text-center border border-teal-100">
                 <h2 class="text-2xl font-bold text-slate-900 mb-3">Immer noch unsicher, welche Rasse die richtige für Sie ist?</h2>
                 <p class="text-slate-600 mb-6">Machen Sie unser kurzes Quiz, um personalisierte Rassenempfehlungen basierend auf Ihrem Lebensstil zu erhalten.</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="../quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition">
+                    <a href="../quiz/" class="inline-flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover: transition">
                         <i data-lucide="target" class="w-5 h-5"></i>
                         Rassen-Quiz starten
                     </a>
@@ -460,7 +473,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-2">
-                    <svg class="w-8 h-8 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
                     <span class="text-xl font-bold">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">

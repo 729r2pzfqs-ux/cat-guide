@@ -50,8 +50,20 @@
                 <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="/search/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
-                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
+                <a href="/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Take Quiz</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>EN</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/quiz/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">English</a>
+                        <a href="/es/quiz/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/quiz/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -135,6 +147,9 @@
     </footer>
 
     <script>
+        // Shared breed data loader: one network request per browser session
+        function loadBreedData(){if(window.__cfBreeds)return window.__cfBreeds;var k='cf-breeds-20260925';try{var c=sessionStorage.getItem(k);if(c)return window.__cfBreeds=Promise.resolve(JSON.parse(c));}catch(e){}return window.__cfBreeds=fetch('/data/breeds.json').then(function(r){return r.json();}).then(function(d){try{sessionStorage.setItem(k,JSON.stringify(d));}catch(e){}return d;});}
+
         const questions = [
             {
                 q: "How active is your household?",
@@ -192,8 +207,7 @@
         let selectedCriteria = {};
 
         // Load breeds from JSON
-        fetch('../data/breeds.json')
-            .then(r => r.json())
+        loadBreedData()
             .then(data => {
                 breeds = data;
                 console.log(`Loaded ${breeds.length} breeds`);

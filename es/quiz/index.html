@@ -34,24 +34,39 @@
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }
+        .card-shadow { box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03); }
     </style>
 </head>
-<body class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 min-h-screen text-slate-800">
+<body class="bg-cream-100 min-h-screen text-slate-800">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+            <a href="/es/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
-            <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="../search/" class="text-slate-600 hover:text-fuchsia-600 transition">Todas las Razas</a>
-                <a href="./" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-fuchsia-500/25">Hacer el Quiz</a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/es/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Buscar Razas</a>
+                <a href="/es/compare/" class="hidden md:inline text-slate-600 hover:text-teal-600 transition">Comparar</a>
+                <a href="/es/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Hacer el Test</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>ES</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/quiz/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/quiz/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Español</a>
+                        <a href="/de/quiz/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -65,19 +80,19 @@
                     <span>🎯</span>
                     <span>6 preguntas rápidas</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
                     Encuentra tu
-                    <span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Gato Purrfecto</span>
+                    <span class="text-teal-500">Gato Purrfecto</span>
                 </h1>
                 <p class="text-lg text-slate-600 mb-8">Responde unas preguntas sobre tu estilo de vida y te emparejaremos con las razas ideales.</p>
-                <button onclick="startQuiz()" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:scale-105">
+                <button onclick="startQuiz()" class="bg-teal-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl hover: transition transform hover:scale-105">
                     Comenzar Quiz →
                 </button>
             </div>
 
             <!-- Questions -->
             <div id="quiz-questions" class="hidden">
-                <div class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 p-8">
+                <div class="bg-white rounded-2xl card-shadow border border-cream-300 p-8">
                     <!-- Progress -->
                     <div class="mb-8">
                         <div class="flex justify-between text-sm text-slate-600 mb-2">
@@ -85,7 +100,7 @@
                             <span id="progress-pct">17%</span>
                         </div>
                         <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
-                            <div id="progress-bar" class="h-full bg-gradient-to-r from-fuchsia-500 to-purple-600 transition-all duration-300" style="width: 17%"></div>
+                            <div id="progress-bar" class="h-full bg-teal-500 transition-all duration-300" style="width: 17%"></div>
                         </div>
                     </div>
 
@@ -106,7 +121,7 @@
                 </div>
                 <div id="results-container" class="space-y-4"></div>
                 <div class="text-center mt-8">
-                    <button onclick="restartQuiz()" class="text-fuchsia-600 font-semibold hover:text-fuchsia-700">← Hacer el Quiz de Nuevo</button>
+                    <button onclick="restartQuiz()" class="text-teal-600 font-semibold hover:text-teal-700">← Hacer el Quiz de Nuevo</button>
                 </div>
             </div>
         </div>
@@ -120,6 +135,9 @@
     </footer>
 
     <script>
+        // Shared breed data loader: one network request per browser session
+        function loadBreedData(){if(window.__cfBreeds)return window.__cfBreeds;var k='cf-breeds-20260925';try{var c=sessionStorage.getItem(k);if(c)return window.__cfBreeds=Promise.resolve(JSON.parse(c));}catch(e){}return window.__cfBreeds=fetch('/data/breeds.json').then(function(r){return r.json();}).then(function(d){try{sessionStorage.setItem(k,JSON.stringify(d));}catch(e){}return d;});}
+
         const questions = [
             {
                 q: "¿Qué tan activo es tu hogar?",
@@ -177,8 +195,7 @@
         let selectedCriteria = {};
 
         // Load breeds from JSON
-        fetch('../../data/breeds.json')
-            .then(r => r.json())
+        loadBreedData()
             .then(data => {
                 breeds = data;
                 console.log(`Loaded ${breeds.length} breeds`);
@@ -204,7 +221,7 @@
             
             q.options.forEach((opt, i) => {
                 const btn = document.createElement('button');
-                btn.className = 'w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-fuchsia-400 hover:bg-fuchsia-50 transition font-medium';
+                btn.className = 'w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-teal-400 hover:bg-teal-50 transition font-medium';
                 btn.textContent = opt.text;
                 btn.onclick = () => selectOption(opt.criteria);
                 container.appendChild(btn);
@@ -273,13 +290,13 @@
                 div.innerHTML = `
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-100 to-purple-100 rounded-xl flex items-center justify-center text-2xl font-bold text-fuchsia-600">${i + 1}</div>
+                            <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-2xl font-bold text-teal-600">${i + 1}</div>
                             <div>
                                 <h3 class="text-xl font-bold">${breed.name}</h3>
                                 <p class="text-slate-600 text-sm">${match}% coincidencia</p>
                             </div>
                         </div>
-                        <div class="text-fuchsia-600 font-semibold">Ver →</div>
+                        <div class="text-teal-600 font-semibold">Ver →</div>
                     </div>
                 `;
                 container.appendChild(div);

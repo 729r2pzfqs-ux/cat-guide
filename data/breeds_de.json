@@ -26,7 +26,7 @@
  "siamese": {
   "description": "Siamkatzen gehören mit ihren leuchtend blauen Augen und ihrem Colorpoint-Fell zu den bekanntesten Rassen. Sie sind äußerst gesprächig und gesellig.",
   "overview": "Die Siamkatze ist eine der ältesten und bekanntesten Katzenrassen, berühmt für ihre auffälligen blauen Augen, ihr Points-Muster und ihre gesprächige Natur. Sie sind äußerst sozial und bilden starke Bindungen zu ihren Menschen.",
-  "health": "Siamesen können anfällig für Amyloidose, Asthma und bestimmte Herzerkrankungen sein. Regelmäßige Tierarztbesuche sind wichtig. Sie sind im Allgemeinen langlebig und können 15-20 Jahre alt werden.",
+  "health": "Siamesen können anfällig für Amyloidose, Asthma und bestimmte Herzerkrankungen sein. Regelmäßige Tierarztbesuche sind wichtig. Sie sind im Allgemeinen langlebig und können 12-20 Jahre alt werden.",
   "care": "Ihr kurzes Fell braucht minimale Pflege – wöchentliches Bürsten reicht aus. Sie brauchen viel geistige Stimulation und soziale Interaktion. Einsamkeit tolerieren sie schlecht, daher ist ein Spielkamerad oder viel menschliche Gesellschaft ideal."
  },
  "abyssinian": {
@@ -74,7 +74,7 @@
  "burmese": {
   "description": "Burmakatzen sind für ihr hundeähnliches Wesen bekannt: Sie folgen ihren Besitzern überallhin und sind äußerst gesellig.",
   "overview": "Die Burma ist eine kompakte, muskulöse Katze mit seidigem Fell und ausdrucksstarken goldenen Augen. Ursprünglich aus Birma (Myanmar) stammend, ist sie für ihre hundeähnliche Persönlichkeit und ihre unerschütterliche Hingabe an ihre Menschen bekannt. Wegen ihrer Anhänglichkeit wird sie oft als 'Klettkatze' bezeichnet.",
-  "health": "Burmakatzen können zu Diabetes mellitus, Hypokaliämie (Kaliummangel) und in manchen Linien zu Schädeldeformationen neigen. Auch Augenerkrankungen können auftreten. Regelmäßige Tierarztkontrollen sind wichtig. Bei guter Pflege werden sie 15–18 Jahre alt.",
+  "health": "Burmakatzen können zu Diabetes mellitus, Hypokaliämie (Kaliummangel) und in manchen Linien zu Schädeldeformationen neigen. Auch Augenerkrankungen können auftreten. Regelmäßige Tierarztkontrollen sind wichtig. Bei guter Pflege werden sie 16–18 Jahre alt.",
   "care": "Ihr kurzes, satinartiges Fell braucht nur minimale Pflege — wöchentliches Bürsten genügt. Sie sind sehr sozial und vertragen Alleinsein schlecht; überlegen Sie, gleich zwei anzuschaffen. Sie bleiben bis weit ins Erwachsenenalter verspielt und brauchen täglich interaktives Spiel. Achten Sie auf ihre Ernährung, da sie zu Übergewicht neigen."
  },
  "oriental-shorthair": {
@@ -116,7 +116,7 @@
  "tonkinese": {
   "description": "Tonkinesen sind eine Kreuzung aus Siam und Burma und vereinen das Beste aus beiden – gesellig, verspielt und liebevoll.",
   "overview": "Die Tonkanese ist eine Kreuzung aus Siam und Burma und vereint das Beste beider Rassen. Sie hat aquamarinfarbene Augen, einen mittelkräftigen Körperbau und ein seidiges Fell. Verspielt, sozial und gesprächig (aber weniger als die Siam) ist sie der perfekte Mittelweg.",
-  "health": "Tonkanesen können Gesundheitsprobleme beider Elternrassen erben: Atemwegsinfektionen, Zahnprobleme und (selten) Schielen. Auch eine Neigung zu chronisch-entzündlichen Darmerkrankungen (IBD) kann bestehen. Insgesamt gesund mit einer Lebenserwartung von 12–16 Jahren.",
+  "health": "Tonkanesen können Gesundheitsprobleme beider Elternrassen erben: Atemwegsinfektionen, Zahnprobleme und (selten) Schielen. Auch eine Neigung zu chronisch-entzündlichen Darmerkrankungen (IBD) kann bestehen. Insgesamt gesund mit einer Lebenserwartung von 15–18 Jahren.",
   "care": "Ihr seidiges Fell braucht nur wöchentliches Bürsten. Sie sind sehr sozial und brauchen Gesellschaft — Alleinsein vertragen sie schlecht. Bieten Sie viel interaktives Spielzeug und Klettermöglichkeiten an. Sie bleiben ihr Leben lang verspielt und neugierig."
  },
  "ragamuffin": {
@@ -182,7 +182,7 @@
  "singapura": {
   "description": "Singapuras sind die kleinste Katzenrasse, haben aber eine riesige Persönlichkeit. Sie lieben es, in alles einbezogen zu werden.",
   "overview": "Die Singapura ist eine der kleinsten Katzenrassen und wiegt nur 2–4 kg. Trotz ihrer winzigen Größe hat sie eine riesige Persönlichkeit — neugierig, verspielt und immer mittendrin. Ihre großen Augen und das getickte Fell verleihen ihr ein ewiges Kätzchengesicht.",
-  "health": "Singapuras können zu Pyruvatkinase-Mangel (PK-Defizienz) und bei Kätzinnen zu Wehenschwäche (Geburtsschwierigkeiten) neigen; zudem ist der Genpool relativ klein. Manche entwickeln Muskeldystrophie. Insgesamt gesund mit einer Lebenserwartung von 12–15 Jahren.",
+  "health": "Singapuras können zu Pyruvatkinase-Mangel (PK-Defizienz) und bei Kätzinnen zu Wehenschwäche (Geburtsschwierigkeiten) neigen; zudem ist der Genpool relativ klein. Manche entwickeln Muskeldystrophie. Insgesamt gesund mit einer Lebenserwartung von 11–15 Jahren.",
   "care": "Ihr kurzes, feines Fell braucht nur minimale Pflege — wöchentliches Bürsten genügt. Sie sind Wärmesucher, die warme Plätze lieben. Bieten Sie viele Klettermöglichkeiten und interaktives Spiel an. Sie bleiben ihr Leben lang kätzchenhaft und verspielt."
  },
  "manx": {
@@ -236,7 +236,7 @@
  "burmilla": {
   "description": "Burmillas sind eine Kreuzung aus Burma und Chinchilla-Perser und vereinen das Beste aus beiden – ein süßes Wesen und ein wunderschönes silbernes Fell.",
   "overview": "Die Burmilla entstand 1981 aus einer zufälligen Verpaarung einer Burma mit einem Chinchilla-Perser. Sie hat ein schimmerndes silbernes Fell mit dezenter Schattierung. Verspielt, aber weniger fordernd als die Burma, ist sie anhänglich, ohne aufdringlich zu sein.",
-  "health": "Burmillas können Gesundheitsprobleme beider Elternrassen erben: Polyzystische Nierenerkrankung (PKD) von der Perser-Seite sowie Allergien. Manche entwickeln Zahnprobleme. Regelmäßige Tierarztkontrollen sind wichtig. Die Lebenserwartung beträgt typischerweise 12–15 Jahre.",
+  "health": "Burmillas können Gesundheitsprobleme beider Elternrassen erben: Polyzystische Nierenerkrankung (PKD) von der Perser-Seite sowie Allergien. Manche entwickeln Zahnprobleme. Regelmäßige Tierarztkontrollen sind wichtig. Die Lebenserwartung beträgt typischerweise 10–15 Jahre.",
   "care": "Ihr kurzes, seidiges Fell sollte wöchentlich gebürstet werden. Es sind anpassungsfähige Katzen, die gut mit Familien und anderen Haustieren zurechtkommen. Mäßig aktiv — sie spielen gern, entspannen aber ebenso gern. Sie sind sozial, kommen aber auch eine Weile allein zurecht."
  },
  "toyger": {
@@ -254,7 +254,7 @@
  "cymric": {
   "description": "Cymrics sind langhaarige Manx-Katzen mit demselben Schwanzlosigkeits-Gen. Sie sind sanft, verspielt und binden sich eng an ihre Familie.",
   "overview": "Die Cymric (ausgesprochen KIM-rick) ist die langhaarige Variante der Manx und teilt mit ihr dasselbe Schwanzlosigkeits-Gen und die rundliche Erscheinung. Es sind intelligente, verspielte Katzen, die sich oft eher wie Hunde verhalten – sie lernen Tricks und apportieren.",
-  "health": "Wie die Manx können Cymrics das Manx-Syndrom entwickeln – Wirbelsäulenprobleme durch das Schwanzlosigkeits-Gen. Verpaaren Sie niemals zwei völlig schwanzlose Katzen miteinander. Lassen Sie auf Wirbelsäulenprobleme untersuchen. Die Lebenserwartung beträgt 9–13 Jahre, bei gesundheitlichen Problemen weniger.",
+  "health": "Wie die Manx können Cymrics das Manx-Syndrom entwickeln – Wirbelsäulenprobleme durch das Schwanzlosigkeits-Gen. Verpaaren Sie niemals zwei völlig schwanzlose Katzen miteinander. Lassen Sie auf Wirbelsäulenprobleme untersuchen. Die Lebenserwartung beträgt 8–14 Jahre, bei gesundheitlichen Problemen weniger.",
   "care": "Ihr langes, doppeltes Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Achten Sie auf Anzeichen von Bewegungs- oder Toilettenproblemen, die auf Wirbelsäulenprobleme hindeuten könnten. Es sind aktive, intelligente Katzen, die geistige Anregung und Spiel brauchen."
  },
  "american-bobtail": {
@@ -290,7 +290,7 @@
  "australian-mist": {
   "description": "Australian Mists sind Australiens erste Rassekatzen, gezüchtet als perfekte Wohnungsgefährten – tolerant, sanft und pflegeleicht.",
   "overview": "Die Australian Mist (früher Spotted Mist) ist Australiens erste Rassekatze. Sie hat ein charakteristisch getupftes/marmoriertes Fell mit nebelartigem Erscheinungsbild. Entwickelt aus Abessinier, Burma und Hauskatzen mit Tabby-Zeichnung, ist sie freundlich, anpassungsfähig und ideal für Familien.",
-  "health": "Australian Mists sind im Allgemeinen sehr gesund und haben nur wenige rassespezifische Probleme. Manche können Hautallergien entwickeln. Robuste Rasse mit einer Lebenserwartung von 14–19 Jahren. Dank ihres vielfältigen genetischen Hintergrunds eine der gesünderen Rassekatzen.",
+  "health": "Australian Mists sind im Allgemeinen sehr gesund und haben nur wenige rassespezifische Probleme. Manche können Hautallergien entwickeln. Robuste Rasse mit einer Lebenserwartung von 15–18 Jahren. Dank ihres vielfältigen genetischen Hintergrunds eine der gesünderen Rassekatzen.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind anpassungsfähige, tolerante Katzen, die gut mit Kindern und anderen Haustieren zurechtkommen. Moderates Aktivitätsniveau – sie spielen gern, entspannen aber ebenso gern. Als reine Wohnungskatzen fühlen sie sich durchaus wohl."
  },
  "peterbald": {
@@ -332,7 +332,7 @@
  "khao-manee": {
   "description": "Khao Manees sind alte thailändische Katzen, bekannt als „Weißer Edelstein\". Viele haben verschiedenfarbige Augen (eines blau, eines gold).",
   "overview": "Die Khao Manee ist eine seltene thailändische Rasse, bekannt für ihr reinweißes Fell und ihre auffälligen Augen – oft verschiedenfarbig, mit einem blauen und einem goldenen Auge. In Thailand gelten sie als Glücksbringer. Sie sind verspielt, intelligent und menschenbezogen.",
-  "health": "Weiße Khao Manees mit blauen Augen können taub sein – lassen Sie das Gehör testen. Sie können durch Sonneneinstrahlung zu Hautkrebs neigen. Ansonsten im Allgemeinen gesund mit einer Lebenserwartung von 12–16 Jahren. Halten Sie sie von direkter Sonneneinstrahlung fern.",
+  "health": "Weiße Khao Manees mit blauen Augen können taub sein – lassen Sie das Gehör testen. Sie können durch Sonneneinstrahlung zu Hautkrebs neigen. Ansonsten im Allgemeinen gesund mit einer Lebenserwartung von 10–12 Jahren. Halten Sie sie von direkter Sonneneinstrahlung fern.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Lernen Sie bei blauäugigen Tieren, visuell mit einer tauben Katze zu kommunizieren. Halten Sie sie im Haus, um Sonnenbrand zu vermeiden. Es sind soziale, verspielte Katzen, die Zuwendung brauchen."
  },
  "lykoi": {
@@ -356,19 +356,19 @@
  "serengeti": {
   "description": "Serengetis wurden gezüchtet, um wie wilde Servale auszusehen, sind aber vollständig domestiziert. Sie sind hochbeinig, gefleckt und sehr aktiv.",
   "overview": "Die Serengeti wurde gezüchtet, um dem afrikanischen Serval zu ähneln – ganz ohne Wildblut, aus Kreuzungen von Bengal und Orientalisch Kurzhaar. Sie hat lange Beine, große Ohren und ein geflecktes Fell. Aktiv und selbstbewusst, ist sie sehr menschenbezogen.",
-  "health": "Serengetis sind im Allgemeinen gesund, können aber Probleme der Elternrassen erben. Manche können Blasensteine oder Herzerkrankungen entwickeln. Als sich entwickelnde Rasse werden Gesundheitsdaten noch gesammelt. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "health": "Serengetis sind im Allgemeinen gesund, können aber Probleme der Elternrassen erben. Manche können Blasensteine oder Herzerkrankungen entwickeln. Als sich entwickelnde Rasse werden Gesundheitsdaten noch gesammelt. Die Lebenserwartung beträgt 10–15 Jahre.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sehr aktive Katzen, die viel Spiel und Kletterraum brauchen. Sie sind sozial und mögen es nicht, allein zu sein. Viele lassen sich an die Leine gewöhnen."
  },
  "thai": {
   "description": "Thai-Katzen sind die traditionellen Siamkatzen alten Typs mit einem weniger extremen Körperbau. Sie sind gesellig, gesprächig und liebevoll.",
   "overview": "Die Thai ist die traditionelle, moderate Form der Siamkatze – bevor die moderne Zucht die Siam extremer machte. Auch „Old-Style Siamese\" oder „Wichien Maat\" genannt, hat sie die klassischen Colorpoints, aber eine natürlichere Körperform.",
-  "health": "Thais können zu einigen gesundheitlichen Problemen der Siamkatze neigen: Zahnprobleme, Atemwegsprobleme und Augenerkrankungen. Im Allgemeinen gesünder als moderne, extrem gezüchtete Siamkatzen. Die Lebenserwartung beträgt 15–20 Jahre.",
+  "health": "Thais können zu einigen gesundheitlichen Problemen der Siamkatze neigen: Zahnprobleme, Atemwegsprobleme und Augenerkrankungen. Im Allgemeinen gesünder als moderne, extrem gezüchtete Siamkatzen. Die Lebenserwartung beträgt 12–16 Jahre.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Weniger gesprächig als moderne Siamkatzen, aber immer noch mitteilsam. Soziale Katzen, die Gesellschaft brauchen. Intelligent und lernfähig. Sie vertragen sich gut mit anderen Haustieren."
  },
  "chantilly-tiffany": {
   "description": "Chantilly-Tiffanys haben ein wunderschönes seidiges Fell und ein ergebenes Wesen. Sie sind mäßig aktiv und sehr treu.",
   "overview": "Die Chantilly-Tiffany (oder Chantilly) ist eine halblanghaarige, schokoladenfarbene Katze, bekannt für ihr seidiges Fell und ihr treues Wesen. Einst für ausgestorben gehalten, ist sie noch immer selten. Es sind ausgeglichene, loyale Katzen, die ihren Haltern überallhin folgen.",
-  "health": "Chantilly-Tiffanys können vermehrte Ohrenschmalzbildung und Verdauungsempfindlichkeiten entwickeln. Ansonsten im Allgemeinen gesund. Ihre Seltenheit wirft Fragen zur genetischen Vielfalt auf. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "health": "Chantilly-Tiffanys können vermehrte Ohrenschmalzbildung und Verdauungsempfindlichkeiten entwickeln. Ansonsten im Allgemeinen gesund. Ihre Seltenheit wirft Fragen zur genetischen Vielfalt auf. Die Lebenserwartung beträgt 14–16 Jahre.",
   "care": "Ihr seidiges Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Reinigen Sie die Ohren häufig. Es sind treue Katzen mit moderatem Energielevel. Längeres Alleinsein mögen sie nicht. Gut verträglich mit Kindern und anderen Haustieren."
  },
  "york-chocolate": {
@@ -386,7 +386,7 @@
  "javanese": {
   "description": "Javanesen sind langhaarige Colorpoint Shorthairs – dieselbe Siam-Persönlichkeit mit einem seidigen Fell in verschiedenen Point-Farben.",
   "overview": "Die Javanese ist eine langhaarige Colorpoint Shorthair (bzw. eine Balinese in nicht-traditionellen Farben). Sie vereint das Siam-Wesen mit einem seidigen, fließenden Fell in Farben wie Red, Creme und Tortie Point. Intelligent, gesprächig und treu ergeben.",
-  "health": "Javanesen können wie ihre Siam-Verwandten Herzprobleme, Augenprobleme und Zahnerkrankungen entwickeln. Manche können zu Leber-Amyloidose neigen. Regelmäßige tierärztliche Kontrollen sind wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "health": "Javanesen können wie ihre Siam-Verwandten Herzprobleme, Augenprobleme und Zahnerkrankungen entwickeln. Manche können zu Leber-Amyloidose neigen. Regelmäßige tierärztliche Kontrollen sind wichtig. Die Lebenserwartung beträgt 10–15 Jahre.",
   "care": "Ihr einschichtiges Fell verfilzt kaum – wöchentliches Bürsten genügt. Sehr sozial und brauchen viel Zuwendung. Sehr gesprächig. Bieten Sie Intelligenzspielzeug und Klettermöglichkeiten. Alleinsein bekommt ihnen nicht."
  },
  "oriental-longhair": {
@@ -404,13 +404,13 @@
  "asian": {
   "description": "Asian-Katzen sind Katzen vom Burma-Typ in nicht-traditionellen Farben und Mustern. Sie teilen das liebevolle Wesen der Burma.",
   "overview": "Die Gruppe der Asian-Katzen umfasst Varietäten wie die Burmilla, Asian Smoke und Asian Tabby. Sie kombinieren das Wesen der Burma mit verschiedenen Fellmustern und -farben. Verspielt, sozial und anhänglich, ohne übermäßig fordernd zu sein.",
-  "health": "Asian-Katzen können gesundheitliche Probleme der Burma erben: Diabetes, Nierenprobleme und Zahnerkrankungen. Im Allgemeinen gesund mit einer Lebenserwartung von 12–15 Jahren. Regelmäßige tierärztliche Kontrollen sind wichtig.",
+  "health": "Asian-Katzen können gesundheitliche Probleme der Burma erben: Diabetes, Nierenprobleme und Zahnerkrankungen. Im Allgemeinen gesund mit einer Lebenserwartung von 12–18 Jahren. Regelmäßige tierärztliche Kontrollen sind wichtig.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind soziale Katzen, die den Familienanschluss genießen, aber auch etwas Alleinsein verkraften. Moderates Aktivitätsniveau. Gut verträglich mit Kindern und anderen Haustieren."
  },
  "tiffanie": {
   "description": "Tiffanies sind die halblanghaarige Version der Burmilla und vereinen das wunderschöne silberne Fell mit einem sanften Wesen.",
   "overview": "Die Tiffanie ist eine halblanghaarige Asian-Katze, ähnlich der Burmilla, aber mit fließendem Fell. In Großbritannien entwickelt, ist sie trotz des ähnlichen Namens nicht mit der amerikanischen Chantilly-Tiffany verwandt. Verspielt, anhänglich und intelligent.",
-  "health": "Tiffanies können gesundheitliche Probleme der Asian/Burma erben. Manche können Nierenprobleme oder Allergien entwickeln. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "health": "Tiffanies können gesundheitliche Probleme der Asian/Burma erben. Manche können Nierenprobleme oder Allergien entwickeln. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–16 Jahre.",
   "care": "Ihr seidiges Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Soziale, verspielte Katzen, die Zuwendung genießen. Moderates Energielevel – verspielt, aber nicht hyperaktiv. Gut für Familien geeignet."
  },
  "california-spangled": {
@@ -428,7 +428,7 @@
  "suphalak": {
   "description": "Suphalaks sind alte thailändische Katzen, die in den Katzenbuch-Gedichten erwähnt werden. Sie haben ein einzigartiges kupferbraunes Fell und ein liebevolles Wesen.",
   "overview": "Die Suphalak ist eine uralte thailändische Rasse, die in den vor über 300 Jahren verfassten Katzengedichten (Cat-Book Poems) beschrieben wird. Sie hat ein sattes rotbraunes Fell und goldene Augen. Extrem selten, ist sie anhänglich, verspielt und bindet sich stark an ihre Familie.",
-  "health": "Suphalaks sind im Allgemeinen gesund, haben aber einen sehr kleinen Genpool. Aufgrund ihrer Seltenheit sind nur begrenzte Gesundheitsdaten verfügbar. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung wird auf 12–15 Jahre geschätzt.",
+  "health": "Suphalaks sind im Allgemeinen gesund, haben aber einen sehr kleinen Genpool. Aufgrund ihrer Seltenheit sind nur begrenzte Gesundheitsdaten verfügbar. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung wird auf 12–16 Jahre geschätzt.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Soziale Katzen, die menschliche Gesellschaft genießen. Mäßig aktiv mit verspieltem Wesen. Sehr selten – Züchter zu finden ist schwierig."
  },
  "aphrodite-giant": {
@@ -440,7 +440,7 @@
  "cyprus": {
   "description": "Zypern-Katzen sind die auf der Insel Zypern heimischen Hauskatzen mit einer Geschichte, die Tausende von Jahren zurückreicht.",
   "overview": "Die Zypern-Katze ist eine der ältesten domestizierten Katzenrassen der Welt – Nachweise für Katzen auf Zypern reichen 9.500 Jahre zurück. Sie ist eine natürliche Landrasse, angepasst an das Mittelmeerklima. Freundlich, intelligent und ein ausgezeichneter Jäger.",
-  "health": "Zypern-Katzen sind äußerst gesund und haben keine rassespezifischen Probleme. Jahrtausende natürlicher Selektion haben sie robust gemacht. Eine der gesündesten Katzen mit einer Lebenserwartung von 15–20 Jahren.",
+  "health": "Zypern-Katzen sind äußerst gesund und haben keine rassespezifischen Probleme. Jahrtausende natürlicher Selektion haben sie robust gemacht. Eine der gesündesten Katzen mit einer Lebenserwartung von 12–15 Jahren.",
   "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind anpassungsfähige, unabhängige Katzen und gute Jäger. Sozial mit der Familie, aber eigenständig. Sie kommen mit verschiedenen Klimazonen gut zurecht."
  }
 }

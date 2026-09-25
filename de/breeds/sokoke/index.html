@@ -76,6 +76,12 @@
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Rassen",
+      "item": "https://catfinder.app/de/breeds/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Sokoke",
       "item": "https://catfinder.app/de/breeds/sokoke/"
     }
@@ -93,8 +99,20 @@
                 <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="/de/search/" class="text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
-                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Quiz starten</a>
+                <a href="/de/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Rassen durchsuchen</a>
+                <a href="/de/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Quiz starten</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>DE</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/breeds/sokoke/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/breeds/sokoke/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/breeds/sokoke/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -104,7 +122,7 @@
             <ol class="flex items-center gap-2 text-slate-600">
                 <li><a href="/de/" class="hover:text-teal-600">Startseite</a></li>
                 <li>/</li>
-                <li><a href="/de/search/" class="hover:text-teal-600">Rassen</a></li>
+                <li><a href="/de/breeds/" class="hover:text-teal-600">Rassen</a></li>
                 <li>/</li>
                 <li class="text-slate-900 font-medium">Sokoke</li>
             </ol>
@@ -124,7 +142,7 @@
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
                             <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <div><p class="text-xs text-slate-500">Lebenserwartung</p><p class="font-semibold text-slate-700">15-20 Jahre</p></div>
+                            <div><p class="text-xs text-slate-500">Lebenserwartung</p><p class="font-semibold text-slate-700">12-15 Jahre</p></div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
                             <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
@@ -159,7 +177,7 @@
 
         <!-- Accordion Sections -->
         <div class="space-y-4 mb-8">
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -167,10 +185,10 @@
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
-                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Die Sokoke ist eine seltene Naturrasse aus dem Sokoke-Wald in Kenia. Ihr charakteristisches „afrikanisches Tabby"-Muster und ihr athletischer Körperbau spiegeln ihre wilde Herkunft wider. Es sind aktive, intelligente Katzen, die eine tiefe Bindung zu ihrer Familie aufbauen.</p></div>
+                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Die Sokoke ist eine seltene Naturrasse aus dem Sokoke-Wald in Kenia. Ihr charakteristisches „afrikanisches Tabby"-Muster und ihr athletischer Körperbau spiegeln ihre wilde Herkunft wider. Es sind aktive, intelligente Katzen, die eine tiefe Bindung zu ihrer <a href="/de/articles/best-cats-for-families/" class="text-teal-600 hover:underline">Familie</a> aufbauen.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -181,7 +199,7 @@
                 <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Sokokes sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Der kleine Genpool kann ein Problem darstellen. Sie können empfindlich auf bestimmte Impfstoffe oder Medikamente reagieren. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–15 Jahre.</p></div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
@@ -189,9 +207,10 @@
                     </h2>
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
-                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Ihr kurzes Fell braucht nur minimale Pflege. Sie brauchen viel Aktivität und geistige Anregung – Schoßkatzen sind sie nicht! Bieten Sie Klettermöglichkeiten und interaktives Spiel. Sie sind sozial und binden sich oft besonders an eine Person.</p></div>
+                <div class="px-6 pb-6"><p class="text-slate-600 leading-relaxed">Ihr kurzes Fell braucht nur minimale Pflege. Sie brauchen viel Aktivität und geistige Anregung – Schoßkatzen sind sie nicht! Bieten Sie Klettermöglichkeiten und interaktives Spiel. Sie sind sozial und binden sich oft besonders an eine Person. Wenn Ihnen die Rasse Sokoke gefällt, sehen Sie sich auch <a href="/de/breeds/siamese/" class="text-teal-600 hover:underline">Siamkatze</a> und <a href="/de/breeds/oriental-shorthair/" class="text-teal-600 hover:underline">Orientalisch Kurzhaar</a> an oder <a href="/de/compare/" class="text-teal-600 hover:underline">vergleichen Sie Rassen direkt</a>.</p></div>
             </details>
         </div>
+        <script>if(window.matchMedia&&window.matchMedia('(min-width: 768px)').matches){document.querySelectorAll('details[data-acc]').forEach(function(d){d.open=true;});}</script>
 
         <section class="bg-gradient-to-br from-teal-50 via-cream-100 to-teal-50 rounded-2xl p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Ist diese Rasse die richtige für Sie?</h2>
@@ -222,7 +241,7 @@
                     <span class="text-xl font-display">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">
-                    <a href="/de/search/" class="hover:text-white">Rassen</a>
+                    <a href="/de/breeds/" class="hover:text-white">Rassen</a>
                     <a href="/de/quiz/" class="hover:text-white">Quiz</a>
                     <a href="/de/compare/" class="hover:text-white">Vergleichen</a>
                     <a href="/de/about/" class="hover:text-white">Über uns</a>

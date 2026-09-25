@@ -115,6 +115,12 @@
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Breeds",
+      "item": "https://catfinder.app/breeds/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Snowshoe Cat Breed",
       "item": "https://catfinder.app/breeds/snowshoe/"
     }
@@ -132,8 +138,20 @@
                 <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="/search/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
-                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
+                <a href="/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Take Quiz</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>EN</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/breeds/snowshoe/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">English</a>
+                        <a href="/es/breeds/snowshoe/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Español</a>
+                        <a href="/de/breeds/snowshoe/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -142,7 +160,7 @@
         <nav class="text-sm text-slate-500 mb-6">
             <a href="/" class="hover:text-teal-600">Home</a>
             <span class="mx-2">/</span>
-            <a href="/search/" class="hover:text-teal-600">Breeds</a>
+            <a href="/breeds/" class="hover:text-teal-600">Breeds</a>
             <span class="mx-2">/</span>
             <span class="text-slate-700">Snowshoe</span>
         </nav>
@@ -241,7 +259,7 @@
 
         <!-- Accordion Sections -->
         <div class="space-y-4 mb-8">
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group" open>
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -250,11 +268,11 @@
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
                 <div class="px-6 pb-6">
-                    <p class="text-slate-600 leading-relaxed">The Snowshoe is a rare breed combining Siamese colorpoints with distinctive white 'snowshoe' paws. They're social, vocal cats who bond strongly with their families. Less intense than Siamese but equally loving and interactive.</p>
+                    <p class="text-slate-600 leading-relaxed">The Snowshoe is a rare breed combining <a href="/breeds/siamese/" class="text-teal-600 hover:underline">Siamese</a> colorpoints with distinctive white 'snowshoe' paws. They're social, vocal cats who bond strongly with their <a href="/articles/best-cats-for-families/" class="text-teal-600 hover:underline">families</a>. Less intense than Siamese but equally loving and interactive.</p>
                 </div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -267,7 +285,7 @@
                 </div>
             </details>
 
-            <details class="bg-white rounded-2xl card-shadow border border-cream-300 group">
+            <details data-acc class="bg-white rounded-2xl card-shadow border border-cream-300 group">
                 <summary class="p-6 cursor-pointer flex items-center justify-between">
                     <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
                         <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
@@ -276,10 +294,11 @@
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
                 <div class="px-6 pb-6">
-                    <p class="text-slate-600 leading-relaxed">Their short coat needs minimal grooming. They're very social and don't do well alone—consider a companion. Provide lots of interactive play and puzzle toys. They're good with children and other pets.</p>
+                    <p class="text-slate-600 leading-relaxed">Their short coat needs <a href="/articles/low-maintenance-cats/" class="text-teal-600 hover:underline">minimal grooming</a>. They're very social and don't do well alone—consider a companion. Provide lots of interactive play and puzzle toys. They're good with children and other pets.</p>
                 </div>
             </details>
         </div>
+        <script>if(window.matchMedia&&window.matchMedia('(min-width: 768px)').matches){document.querySelectorAll('details[data-acc]').forEach(function(d){d.open=true;});}</script>
 
         <section class="bg-gradient-to-br from-teal-50 via-cream-100 to-teal-50 rounded-2xl p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Is This Breed Right for You?</h2>
@@ -376,7 +395,7 @@
                     <span class="text-xl font-display">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">
-                    <a href="/search/" class="hover:text-white">Breeds</a>
+                    <a href="/breeds/" class="hover:text-white">Breeds</a>
                     <a href="/quiz/" class="hover:text-white">Quiz</a>
                     <a href="/compare/" class="hover:text-white">Compare</a>
                     <a href="/about/" class="hover:text-white">About</a>

@@ -17,9 +17,9 @@
     <link rel="alternate" hreflang="en" href="https://catfinder.app/compare/comparisons/">
     <link rel="alternate" hreflang="x-default" href="https://catfinder.app/compare/comparisons/">
     
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon-192.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192.png">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://catfinder.app/compare/comparisons/">
@@ -32,44 +32,47 @@
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }
+        .card-shadow { box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03); }
+        .card-shadow:hover { box-shadow: 0 4px 12px rgba(40,37,29,0.06), 0 8px 24px rgba(40,37,29,0.05); }
     </style>
 </head>
-<body class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 min-h-screen text-slate-800">
-    <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+<body class="bg-cream-100 min-h-screen text-slate-800">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../../" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
-            <nav class="flex items-center gap-6 text-sm font-medium">
-                <a href="../" class="text-slate-600 hover:text-fuchsia-600 transition">Compare Tool</a>
-                <a href="../../search/" class="text-slate-600 hover:text-fuchsia-600 transition">All Breeds</a>
-                <a href="../../quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Take Quiz</a>
+            <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
+                <a href="/breeds/" class="text-slate-600 hover:text-teal-600 transition">Browse Breeds</a>
+                <a href="/compare/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Compare</a>
+                <a href="/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-teal-600 transition">Take Quiz</a>
             </nav>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-12">
         <!-- Breadcrumb -->
-        <nav class="text-sm text-slate-600 mb-6">
-            <a href="../../" class="hover:text-fuchsia-600">Home</a>
-            <span class="mx-2">›</span>
-            <a href="../" class="hover:text-fuchsia-600">Compare</a>
-            <span class="mx-2">›</span>
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="/" class="hover:text-teal-600">Home</a>
+            <span class="mx-2">/</span>
+            <a href="/compare/" class="hover:text-teal-600">Compare</a>
+            <span class="mx-2">/</span>
             <span class="text-slate-800">Breed Comparisons</span>
         </nav>
 
         <!-- Header -->
         <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
                 Breed
-                <span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Comparisons</span>
+                <span class="text-teal-500">Comparisons</span>
             </h1>
             <p class="text-lg text-slate-600 max-w-2xl mx-auto">In-depth head-to-head guides comparing popular cat breeds. Size, temperament, grooming needs, and which is right for you.</p>
         </div>
@@ -77,14 +80,14 @@
         <!-- Comparison Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <!-- Persian vs Ragdoll -->
-            <a href="persian-vs-ragdoll.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-                <div class="h-32 bg-gradient-to-br from-fuchsia-100 to-purple-100 flex items-center justify-center gap-4 p-4">
-                    <img src="../../images/heads/persian.webp" alt="Persian" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
-                    <span class="text-2xl font-bold text-fuchsia-500">VS</span>
-                    <img src="../../images/heads/ragdoll.webp" alt="Ragdoll" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
+            <a href="/compare/comparisons/persian-vs-ragdoll/" class="group bg-white rounded-2xl card-shadow border border-cream-300 transition overflow-hidden">
+                <div class="h-32 bg-gradient-to-br from-teal-50 to-cream-200 flex items-center justify-center gap-4 p-4">
+                    <img src="/images/heads/persian.webp" alt="Persian" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
+                    <span class="text-2xl font-bold text-teal-500">VS</span>
+                    <img src="/images/heads/ragdoll.webp" alt="Ragdoll" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
                 </div>
                 <div class="p-5">
-                    <h2 class="text-xl font-bold mb-2 group-hover:text-fuchsia-600 transition">Persian vs Ragdoll</h2>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-teal-600 transition">Persian vs Ragdoll</h2>
                     <p class="text-slate-600 text-sm mb-3">The ultimate fluffy lap cat showdown. Both gentle and affectionate, but very different grooming needs.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-600">Fluffy</span>
@@ -95,14 +98,14 @@
             </a>
 
             <!-- Maine Coon vs Norwegian Forest Cat -->
-            <a href="maine-coon-vs-norwegian-forest-cat.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-                <div class="h-32 bg-gradient-to-br from-purple-100 to-fuchsia-100 flex items-center justify-center gap-4 p-4">
-                    <img src="../../images/heads/maine-coon.webp" alt="Maine Coon" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🦁</span>'">
-                    <span class="text-2xl font-bold text-purple-500">VS</span>
-                    <img src="../../images/heads/norwegian-forest-cat.webp" alt="Norwegian Forest Cat" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
+            <a href="/compare/comparisons/maine-coon-vs-norwegian-forest-cat/" class="group bg-white rounded-2xl card-shadow border border-cream-300 transition overflow-hidden">
+                <div class="h-32 bg-gradient-to-br from-teal-50 to-cream-200 flex items-center justify-center gap-4 p-4">
+                    <img src="/images/heads/maine-coon.webp" alt="Maine Coon" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🦁</span>'">
+                    <span class="text-2xl font-bold text-teal-500">VS</span>
+                    <img src="/images/heads/norwegian-forest-cat.webp" alt="Norwegian Forest Cat" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
                 </div>
                 <div class="p-5">
-                    <h2 class="text-xl font-bold mb-2 group-hover:text-fuchsia-600 transition">Maine Coon vs Norwegian Forest</h2>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-teal-600 transition">Maine Coon vs Norwegian Forest</h2>
                     <p class="text-slate-600 text-sm mb-3">Battle of the gentle giants! Two magnificent large breeds from different continents.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-600">Large</span>
@@ -113,14 +116,14 @@
             </a>
 
             <!-- Siamese vs Bengal -->
-            <a href="siamese-vs-bengal.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-                <div class="h-32 bg-gradient-to-br from-fuchsia-100 to-purple-100 flex items-center justify-center gap-4 p-4">
-                    <img src="../../images/heads/siamese.webp" alt="Siamese" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
-                    <span class="text-2xl font-bold text-fuchsia-500">VS</span>
-                    <img src="../../images/heads/bengal.webp" alt="Bengal" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐆</span>'">
+            <a href="/compare/comparisons/siamese-vs-bengal/" class="group bg-white rounded-2xl card-shadow border border-cream-300 transition overflow-hidden">
+                <div class="h-32 bg-gradient-to-br from-teal-50 to-cream-200 flex items-center justify-center gap-4 p-4">
+                    <img src="/images/heads/siamese.webp" alt="Siamese" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐱</span>'">
+                    <span class="text-2xl font-bold text-teal-500">VS</span>
+                    <img src="/images/heads/bengal.webp" alt="Bengal" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🐆</span>'">
                 </div>
                 <div class="p-5">
-                    <h2 class="text-xl font-bold mb-2 group-hover:text-fuchsia-600 transition">Siamese vs Bengal</h2>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-teal-600 transition">Siamese vs Bengal</h2>
                     <p class="text-slate-600 text-sm mb-3">Two highly intelligent, active breeds. Classic elegance meets wild exotic looks.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-600">Active</span>
@@ -131,14 +134,14 @@
             </a>
 
             <!-- British Shorthair vs Scottish Fold -->
-            <a href="british-shorthair-vs-scottish-fold.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-                <div class="h-32 bg-gradient-to-br from-purple-100 to-fuchsia-100 flex items-center justify-center gap-4 p-4">
-                    <img src="../../images/heads/british-shorthair.webp" alt="British Shorthair" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🧸</span>'">
-                    <span class="text-2xl font-bold text-purple-500">VS</span>
-                    <img src="../../images/heads/scottish-fold.webp" alt="Scottish Fold" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🦉</span>'">
+            <a href="/compare/comparisons/british-shorthair-vs-scottish-fold/" class="group bg-white rounded-2xl card-shadow border border-cream-300 transition overflow-hidden">
+                <div class="h-32 bg-gradient-to-br from-teal-50 to-cream-200 flex items-center justify-center gap-4 p-4">
+                    <img src="/images/heads/british-shorthair.webp" alt="British Shorthair" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🧸</span>'">
+                    <span class="text-2xl font-bold text-teal-500">VS</span>
+                    <img src="/images/heads/scottish-fold.webp" alt="Scottish Fold" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🦉</span>'">
                 </div>
                 <div class="p-5">
-                    <h2 class="text-xl font-bold mb-2 group-hover:text-fuchsia-600 transition">British Shorthair vs Scottish Fold</h2>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-teal-600 transition">British Shorthair vs Scottish Fold</h2>
                     <p class="text-slate-600 text-sm mb-3">Two adorable British breeds. Teddy bear looks vs owl-like charm, plus important health info.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-600">Calm</span>
@@ -149,14 +152,14 @@
             </a>
 
             <!-- Sphynx vs Devon Rex -->
-            <a href="sphynx-vs-devon-rex.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-                <div class="h-32 bg-gradient-to-br from-fuchsia-100 to-purple-100 flex items-center justify-center gap-4 p-4">
-                    <img src="../../images/heads/sphynx.webp" alt="Sphynx" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>👽</span>'">
-                    <span class="text-2xl font-bold text-fuchsia-500">VS</span>
-                    <img src="../../images/heads/devon-rex.webp" alt="Devon Rex" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🧝</span>'">
+            <a href="/compare/comparisons/sphynx-vs-devon-rex/" class="group bg-white rounded-2xl card-shadow border border-cream-300 transition overflow-hidden">
+                <div class="h-32 bg-gradient-to-br from-teal-50 to-cream-200 flex items-center justify-center gap-4 p-4">
+                    <img src="/images/heads/sphynx.webp" alt="Sphynx" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>👽</span>'">
+                    <span class="text-2xl font-bold text-teal-500">VS</span>
+                    <img src="/images/heads/devon-rex.webp" alt="Devon Rex" class="w-16 h-16 rounded-xl object-cover shadow-md" onerror="this.outerHTML='<span class=\'text-4xl\'>🧝</span>'">
                 </div>
                 <div class="p-5">
-                    <h2 class="text-xl font-bold mb-2 group-hover:text-fuchsia-600 transition">Sphynx vs Devon Rex</h2>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-teal-600 transition">Sphynx vs Devon Rex</h2>
                     <p class="text-slate-600 text-sm mb-3">Unique, elfin breeds that are incredibly affectionate. Hairless vs wavy-coated pixie.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-600">Unique</span>
@@ -167,7 +170,7 @@
             </a>
 
             <!-- Custom Compare CTA -->
-            <a href="../" class="group bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col items-center justify-center text-white p-6 text-center">
+            <a href="/compare/" class="group bg-teal-500 rounded-2xl card-shadow border border-cream-300 transition overflow-hidden flex flex-col items-center justify-center text-white p-6 text-center">
                 <div class="text-4xl mb-3">⚖️</div>
                 <h2 class="text-xl font-bold mb-2">Build Your Own Comparison</h2>
                 <p class="text-white/80 text-sm">Compare any 2-3 breeds side by side with our interactive tool</p>
@@ -197,14 +200,27 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-100 mt-16 py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center text-slate-600 text-sm">
-            <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere. · <a href="/privacy/" class="hover:underline">Privacy</a></p>
+    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="text-xl font-display">CatFinder</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a href="/quiz/" class="hover:text-white transition">Breed Quiz</a>
+                    <a href="/compare/" class="hover:text-white transition">Compare</a>
+                    <a href="/articles/" class="hover:text-white transition">Guides</a>
+                    <a href="/about/" class="hover:text-white transition">About</a>
+                    <a href="/privacy/" class="hover:text-white transition">Privacy</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+                <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+            </div>
         </div>
     </footer>
-<script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
+<script>lucide.createIcons();</script>
 <!-- GDPR Cookie Consent -->
 </div>
 </div>

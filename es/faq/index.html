@@ -28,7 +28,7 @@
     <meta property="og:site_name" content="CatFinder">
     
     <meta property="og:image" content="https://catfinder.app/images/og-default.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://catfinder.app/images/og-default.jpg">
     <meta name="twitter:title" content="Preguntas Frecuentes sobre Razas de Gatos">
     <meta name="twitter:description" content="Respuestas a preguntas frecuentes sobre razas de gatos.">
@@ -140,11 +140,11 @@
     </script>
     
     <link rel="stylesheet" href="/css/tailwind.css">
-    <style>html { font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; }</style>
+    <style>html { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; } h1, h2, h3 { font-family: 'Instrument Serif', Georgia, serif; }</style>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .card-shadow {
             box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
@@ -153,23 +153,36 @@
             transform: rotate(180deg);
         }
         .faq-item[open] summary {
-            color: #a21caf;
+            color: #0c4e54;
         }
     </style>
 </head>
-<body class="bg-white min-h-screen text-slate-800">
+<body class="bg-cream-100 min-h-screen text-slate-800">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+            <a href="/es/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="../search/" class="text-slate-600 hover:text-fuchsia-600 transition ml-2 md:ml-0">Explorar Razas</a>
-                <a href="../quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Hacer Quiz</a>
+                <a href="/es/breeds/" class="hidden sm:inline text-slate-600 hover:text-teal-600 transition">Buscar Razas</a>
+                <a href="/es/compare/" class="hidden md:inline text-slate-600 hover:text-teal-600 transition">Comparar</a>
+                <a href="/es/quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap hover:bg-teal-600 transition">Hacer el Test</a>
+                <!-- Language selector -->
+                <div class="relative group">
+                    <button type="button" aria-label="Language" class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span>ES</span>
+                    </button>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block group-focus-within:block min-w-[120px] py-2 z-50">
+                        <a href="/faq/" hreflang="en" lang="en" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">English</a>
+                        <a href="/es/faq/" hreflang="es" lang="es" class="block px-4 py-2 hover:bg-cream-100 font-semibold text-teal-600">Español</a>
+                        <a href="/de/faq/" hreflang="de" lang="de" class="block px-4 py-2 hover:bg-cream-100 text-slate-600">Deutsch</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -178,11 +191,11 @@
         <div class="max-w-3xl mx-auto">
             <!-- Page Header -->
             <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-fuchsia-50 px-4 py-2 rounded-full text-sm font-medium text-fuchsia-600 mb-4">
+                <div class="inline-flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full text-sm font-medium text-teal-600 mb-4">
                     <i data-lucide="help-circle" class="w-4 h-4"></i>
                     Preguntas Frecuentes
                 </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">FAQ sobre Razas de Gatos</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">FAQ sobre Razas de Gatos</h1>
                 <p class="text-lg text-slate-600 max-w-xl mx-auto">Preguntas comunes sobre cómo elegir, cuidar y entender las diferentes razas de gatos.</p>
             </div>
 
@@ -192,15 +205,15 @@
                 <!-- Choosing a Cat -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-fuchsia-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="search" class="w-4 h-4 text-fuchsia-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="search" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Elegir un Gato
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cómo elijo la raza de gato adecuada para mí?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -212,12 +225,12 @@
                                     <li><strong>Situación de vivienda</strong> — Quienes viven en apartamentos necesitan razas más tranquilas</li>
                                     <li><strong>Familia</strong> — ¿Tienes niños u otras mascotas?</li>
                                 </ul>
-                                <p class="mt-3"><a href="../quiz/" class="text-fuchsia-600 underline font-medium">Haz nuestro quiz de razas →</a> para recomendaciones personalizadas.</p>
+                                <p class="mt-3"><a href="../quiz/" class="text-teal-600 underline font-medium">Haz nuestro quiz de razas →</a> para recomendaciones personalizadas.</p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Debería adoptar un gatito o un gato adulto?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -229,7 +242,7 @@
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuál es la diferencia entre gatos de raza pura y mestizos?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -245,74 +258,74 @@
                 <!-- Lifestyle Fit -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="home" class="w-4 h-4 text-purple-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="home" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Estilo de Vida y Vivienda
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuáles son las mejores razas de gatos para apartamentos?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Los mejores gatos para apartamentos son tranquilos, silenciosos y adaptables. Las mejores opciones incluyen:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Persa</a> — El gato de regazo definitivo, extremadamente tranquilo</li>
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Dócil y cariñoso</li>
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">British Shorthair</a> — Independiente y silencioso</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Azul Ruso</a> — Casi silencioso</li>
-                                    <li><a href="../breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> — Dulce y adaptable</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Persa</a> — El gato de regazo definitivo, extremadamente tranquilo</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Dócil y cariñoso</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">British Shorthair</a> — Independiente y silencioso</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Azul Ruso</a> — Casi silencioso</li>
+                                    <li><a href="../breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> — Dulce y adaptable</li>
                                 </ul>
                                 <p class="mt-3">Evita razas de alta energía como Bengalí o razas vocales como Siamés si vives en un apartamento.</p>
-                                <p class="mt-2"><a href="../articles/best-cats-for-apartments/" class="text-fuchsia-600 underline font-medium">Lee nuestra guía completa de gatos para apartamentos →</a></p>
+                                <p class="mt-2"><a href="../articles/best-cats-for-apartments/" class="text-teal-600 underline font-medium">Lee nuestra guía completa de gatos para apartamentos →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuáles son las mejores razas de gatos para familias con niños?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Busca razas pacientes y juguetonas que toleren ser manipuladas:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Gentil y le encanta que lo carguen</li>
-                                    <li><a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a> — "Gigante gentil" amigable</li>
-                                    <li><a href="../breeds/birman/" class="text-fuchsia-600 underline">Birmano</a> — Dulce y paciente</li>
-                                    <li><a href="../breeds/abyssinian/" class="text-fuchsia-600 underline">Abisinio</a> — Juguetón y social</li>
-                                    <li><a href="../breeds/burmese/" class="text-fuchsia-600 underline">Burmés</a> — Orientado a las personas</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Gentil y le encanta que lo carguen</li>
+                                    <li><a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a> — "Gigante gentil" amigable</li>
+                                    <li><a href="../breeds/birman/" class="text-teal-600 underline">Birmano</a> — Dulce y paciente</li>
+                                    <li><a href="../breeds/abyssinian/" class="text-teal-600 underline">Abisinio</a> — Juguetón y social</li>
+                                    <li><a href="../breeds/burmese/" class="text-teal-600 underline">Burmés</a> — Orientado a las personas</li>
                                 </ul>
                                 <p class="mt-3">Siempre enseña a los niños a manejar a los gatos con cuidado y respetar sus límites.</p>
-                                <p class="mt-2"><a href="../articles/best-cats-for-families/" class="text-fuchsia-600 underline font-medium">Lee nuestra guía de gatos familiares →</a></p>
+                                <p class="mt-2"><a href="../articles/best-cats-for-families/" class="text-teal-600 underline font-medium">Lee nuestra guía de gatos familiares →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Pueden los gatos llevarse bien con los perros?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
-                                <p>¡Sí! Muchos gatos viven felizmente con perros. Las razas conocidas por llevarse bien con perros incluyen <a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a>, <a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="../breeds/birman/" class="text-fuchsia-600 underline">Birmano</a>, <a href="../breeds/abyssinian/" class="text-fuchsia-600 underline">Abisinio</a> y <a href="../breeds/american-shorthair/" class="text-fuchsia-600 underline">American Shorthair</a>.</p>
+                                <p>¡Sí! Muchos gatos viven felizmente con perros. Las razas conocidas por llevarse bien con perros incluyen <a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a>, <a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="../breeds/birman/" class="text-teal-600 underline">Birmano</a>, <a href="../breeds/abyssinian/" class="text-teal-600 underline">Abisinio</a> y <a href="../breeds/american-shorthair/" class="text-teal-600 underline">American Shorthair</a>.</p>
                                 <p class="mt-2">El éxito depende de las personalidades de ambos animales y una introducción adecuada. Los gatos criados con perros desde pequeños típicamente se adaptan mejor. Siempre supervisa las interacciones iniciales y proporciona al gato rutas de escape y lugares altos.</p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuáles son las razas de gatos de menor mantenimiento?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas de bajo mantenimiento son independientes, tienen pelajes cortos y no demandan atención constante:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">British Shorthair</a> — Independiente y tranquilo</li>
-                                    <li><a href="../breeds/american-shorthair/" class="text-fuchsia-600 underline">American Shorthair</a> — Fácil de cuidar, saludable</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Azul Ruso</a> — Autosuficiente</li>
-                                    <li><a href="../breeds/chartreux/" class="text-fuchsia-600 underline">Chartreux</a> — Silencioso y adaptable</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">British Shorthair</a> — Independiente y tranquilo</li>
+                                    <li><a href="../breeds/american-shorthair/" class="text-teal-600 underline">American Shorthair</a> — Fácil de cuidar, saludable</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Azul Ruso</a> — Autosuficiente</li>
+                                    <li><a href="../breeds/chartreux/" class="text-teal-600 underline">Chartreux</a> — Silencioso y adaptable</li>
                                 </ul>
                                 <p class="mt-3">Estos gatos son ideales para dueños ocupados que no pueden dedicar horas al aseo o al juego.</p>
                             </div>
@@ -331,26 +344,26 @@
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Existen razas de gatos verdaderamente hipoalergénicas?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Ningún gato es 100% hipoalergénico.</strong> Todos los gatos producen la proteína Fel d 1 que causa alergias. Sin embargo, algunas razas producen menos de esta proteína o mudan menos pelo:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/siberian/" class="text-fuchsia-600 underline">Siberiano</a> — Produce menos Fel d 1</li>
-                                    <li><a href="../breeds/balinese/" class="text-fuchsia-600 underline">Balinés</a> — Pelo largo menos alergénico</li>
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Azul Ruso</a> — El pelaje denso atrapa los alérgenos</li>
-                                    <li><a href="../breeds/bengal/" class="text-fuchsia-600 underline">Bengalí</a> — Menos aseo, menos propagación de saliva</li>
-                                    <li><a href="../breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> — Sin pelo para atrapar alérgenos</li>
+                                    <li><a href="../breeds/siberian/" class="text-teal-600 underline">Siberiano</a> — Produce menos Fel d 1</li>
+                                    <li><a href="../breeds/balinese/" class="text-teal-600 underline">Balinés</a> — Pelo largo menos alergénico</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Azul Ruso</a> — El pelaje denso atrapa los alérgenos</li>
+                                    <li><a href="../breeds/bengal/" class="text-teal-600 underline">Bengalí</a> — Menos aseo, menos propagación de saliva</li>
+                                    <li><a href="../breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> — Sin pelo para atrapar alérgenos</li>
                                 </ul>
                                 <p class="mt-3">Pasar tiempo con una raza antes de adoptar es la mejor manera de probar tu reacción.</p>
-                                <p class="mt-2"><a href="../articles/hypoallergenic-cats/" class="text-fuchsia-600 underline font-medium">Lee nuestra guía de gatos hipoalergénicos →</a></p>
+                                <p class="mt-2"><a href="../articles/hypoallergenic-cats/" class="text-teal-600 underline font-medium">Lee nuestra guía de gatos hipoalergénicos →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuánto tiempo viven los gatos típicamente?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
@@ -366,21 +379,21 @@
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Qué razas de gatos mudan menos pelo?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas que mudan poco pelo incluyen:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> — Sin pelo (necesita cuidado de piel en su lugar)</li>
-                                    <li><a href="../breeds/cornish-rex/" class="text-fuchsia-600 underline">Cornish Rex</a> — Pelaje corto y rizado</li>
-                                    <li><a href="../breeds/devon-rex/" class="text-fuchsia-600 underline">Devon Rex</a> — Muda mínima</li>
-                                    <li><a href="../breeds/siamese/" class="text-fuchsia-600 underline">Siamés</a> — Pelaje corto y fino</li>
-                                    <li><a href="../breeds/bengal/" class="text-fuchsia-600 underline">Bengalí</a> — Pelaje tipo piel</li>
+                                    <li><a href="../breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> — Sin pelo (necesita cuidado de piel en su lugar)</li>
+                                    <li><a href="../breeds/cornish-rex/" class="text-teal-600 underline">Cornish Rex</a> — Pelaje corto y rizado</li>
+                                    <li><a href="../breeds/devon-rex/" class="text-teal-600 underline">Devon Rex</a> — Muda mínima</li>
+                                    <li><a href="../breeds/siamese/" class="text-teal-600 underline">Siamés</a> — Pelaje corto y fino</li>
+                                    <li><a href="../breeds/bengal/" class="text-teal-600 underline">Bengalí</a> — Pelaje tipo piel</li>
                                 </ul>
                                 <p class="mt-3">El cepillado regular ayuda con todas las razas. Los gatos de pelo corto generalmente mudan menos que las variedades de pelo largo.</p>
-                                <p class="mt-2"><a href="../search/?shedding=low" class="text-fuchsia-600 underline font-medium">Explorar razas que mudan poco →</a></p>
+                                <p class="mt-2"><a href="../search/?shedding=low" class="text-teal-600 underline font-medium">Explorar razas que mudan poco →</a></p>
                             </div>
                         </details>
                     </div>
@@ -389,48 +402,48 @@
                 <!-- Personality -->
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="heart" class="w-4 h-4 text-pink-600"></i>
+                        <span class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart" class="w-4 h-4 text-teal-600"></i>
                         </span>
                         Personalidad y Características
                     </h2>
                     
                     <div class="space-y-3">
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuáles razas de gatos son las más cariñosas?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas más cariñosas buscan activamente la compañía humana:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a> — Famosamente dócil, le encanta que lo carguen</li>
-                                    <li><a href="../breeds/siamese/" class="text-fuchsia-600 underline">Siamés</a> — Crea vínculos profundos con sus dueños</li>
-                                    <li><a href="../breeds/burmese/" class="text-fuchsia-600 underline">Burmés</a> — Extremadamente orientado a las personas</li>
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Persa</a> — Gatos de regazo gentiles</li>
-                                    <li><a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a> — Gigantes amistosos</li>
+                                    <li><a href="../breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a> — Famosamente dócil, le encanta que lo carguen</li>
+                                    <li><a href="../breeds/siamese/" class="text-teal-600 underline">Siamés</a> — Crea vínculos profundos con sus dueños</li>
+                                    <li><a href="../breeds/burmese/" class="text-teal-600 underline">Burmés</a> — Extremadamente orientado a las personas</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Persa</a> — Gatos de regazo gentiles</li>
+                                    <li><a href="../breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a> — Gigantes amistosos</li>
                                 </ul>
                                 <p class="mt-3">Estas razas a menudo siguen a sus dueños por toda la casa como "gatos velcro".</p>
-                                <p class="mt-2"><a href="../search/?lap=1" class="text-fuchsia-600 underline font-medium">Explorar gatos de regazo →</a></p>
+                                <p class="mt-2"><a href="../search/?lap=1" class="text-teal-600 underline font-medium">Explorar gatos de regazo →</a></p>
                             </div>
                         </details>
                         
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
-                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
+                            <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-teal-600 transition">
                                 ¿Cuáles son las razas de gatos más silenciosas?
                                 <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas más silenciosas rara vez vocalizan:</p>
                                 <ul class="list-disc ml-5 mt-2 space-y-1">
-                                    <li><a href="../breeds/russian-blue/" class="text-fuchsia-600 underline">Azul Ruso</a> — Casi silencioso</li>
-                                    <li><a href="../breeds/british-shorthair/" class="text-fuchsia-600 underline">British Shorthair</a> — Rara vez maúlla</li>
-                                    <li><a href="../breeds/persian/" class="text-fuchsia-600 underline">Persa</a> — Tranquilo y calmado</li>
-                                    <li><a href="../breeds/chartreux/" class="text-fuchsia-600 underline">Chartreux</a> — Conocido por su silencio</li>
-                                    <li><a href="../breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> — Maullido suave y silencioso</li>
+                                    <li><a href="../breeds/russian-blue/" class="text-teal-600 underline">Azul Ruso</a> — Casi silencioso</li>
+                                    <li><a href="../breeds/british-shorthair/" class="text-teal-600 underline">British Shorthair</a> — Rara vez maúlla</li>
+                                    <li><a href="../breeds/persian/" class="text-teal-600 underline">Persa</a> — Tranquilo y calmado</li>
+                                    <li><a href="../breeds/chartreux/" class="text-teal-600 underline">Chartreux</a> — Conocido por su silencio</li>
+                                    <li><a href="../breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> — Maullido suave y silencioso</li>
                                 </ul>
                                 <p class="mt-3"><strong>Evitar si quieres silencio:</strong> Siamés, Oriental y Burmés son muy conversadores.</p>
-                                <p class="mt-2"><a href="../search/?quiet=1" class="text-fuchsia-600 underline font-medium">Explorar razas silenciosas →</a></p>
+                                <p class="mt-2"><a href="../search/?quiet=1" class="text-teal-600 underline font-medium">Explorar razas silenciosas →</a></p>
                             </div>
                         </details>
                     </div>
@@ -438,11 +451,11 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="mt-16 bg-gradient-to-br from-fuchsia-50 to-purple-50 rounded-3xl p-8 text-center border border-fuchsia-100">
+            <div class="mt-16 bg-teal-50 rounded-3xl p-8 text-center border border-teal-100">
                 <h2 class="text-2xl font-bold text-slate-900 mb-3">¿Aún no estás seguro de qué raza es la adecuada para ti?</h2>
                 <p class="text-slate-600 mb-6">Haz nuestro quiz rápido para obtener recomendaciones de razas personalizadas según tu estilo de vida.</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="../quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition">
+                    <a href="../quiz/" class="inline-flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover: transition">
                         <i data-lucide="target" class="w-5 h-5"></i>
                         Hacer el Quiz de Razas
                     </a>
@@ -460,7 +473,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-2">
-                    <svg class="w-8 h-8 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
                     <span class="text-xl font-bold">CatFinder</span>
                 </div>
                 <div class="flex gap-8 text-sm text-slate-400">
